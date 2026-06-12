@@ -1,0 +1,260 @@
+{
+  "nav": {
+    "sobre": "Sobre",
+    "servicos": "Serviços",
+    "projetos": "Projetos",
+    "blog": "Blog",
+    "contato": "Contato"
+  },
+  "hero": {
+    "headline": "José Werkley",
+    "subtitle": "CTO e Arquiteto de Soluções em Inteligência Artificial Aplicada. Uno mais de 15 anos de vivência em grandes operações e megaeventos para projetar agentes de IA autônomos, automações no n8n e arquiteturas de produtos digitais que eliminam gargalos manuais e escalam negócios.",
+    "pill_empresa": "Sou empresa",
+    "pill_recrutador": "Sou recrutador",
+    "pill_contato": "Fale comigo",
+    "scroll": "scroll to explore"
+  },
+  "credentials": {
+    "label": "Repertório com marcas como"
+  },
+  "about": {
+    "label": "Sobre",
+    "heading": "Do operacional ao sistema.",
+    "paragraph1": "Liderei operações de megaeventos e ativações de marcas globais por mais de 15 anos, onde orçamentos, prazos e equipes sob extrema pressão precisam funcionar de forma impecável.",
+    "paragraph2": "Depois levei esse repertório prático de processos para o código.",
+    "paragraph3": "Hoje projeto arquiteturas de IA robustas: agentes integrados ao WhatsApp, automações n8n multi-etapas e produtos SaaS de alta performance.",
+    "paragraph4": "Meu diferencial é entender a sua operação real e de negócios no detalhe antes de desenhar a sua solução tecnológica.",
+    "stats": [
+      { "value": "15+", "label": "Anos de Execução" },
+      { "value": "MBA", "label": "IA para Negócios" }
+    ],
+    "showMore": "✨ Saber mais sobre minha trajetória",
+    "showLess": "Recolher trajetória"
+  },
+  "products": {
+    "label": "Produtos",
+    "heading": "Meus principais produtos",
+    "moreDetails": "+ especificações",
+    "lessDetails": "- recolher",
+    "items": [
+      {
+        "title": "Agente WhatsApp",
+        "desc": "Agentes autônomos integrados ao WhatsApp para triagem, qualificação de leads e suporte ativo 24/7.",
+        "bullets": ["Atendimento 24/7", "Qualificação de leads", "Agendamento e lembretes", "Organização de demandas"]
+      },
+      {
+        "title": "SaaS sob medida",
+        "desc": "Desenvolvimento rápido de produtos digitais, dashboards e MVPs funcionais focados em validação de mercado.",
+        "bullets": ["MVPs funcionais", "Painéis internos", "Fluxos personalizados", "Integrações com IA"]
+      },
+      {
+        "title": "Criação com IA",
+        "desc": "Aceleração de fluxos criativos e de design com geração inteligente de imagens e vídeos cinematográficos.",
+        "bullets": ["Imagens hiper-realistas", "Vídeos cinematográficos", "Roteiros estruturados", "Edição & Direção criativa"]
+      },
+      {
+        "title": "Sistemas com IA",
+        "desc": "Orquestração de múltiplos agentes de IA conectados a bancos de dados e APIs para apoio estratégico de alto nível.",
+        "bullets": ["Agentes especializados", "Integração com APIs", "Fluxos multi-etapas", "Apoio à decisão"]
+      },
+      {
+        "title": "RAG / Base de conhecimento",
+        "desc": "Sistemas de busca semântica conectando IAs de fronteira a bancos de dados e conteúdos proprietários da empresa.",
+        "bullets": ["Busca semântica", "Bases internas", "Documentos e FAQs", "Respostas contextualizadas"]
+      },
+      {
+        "title": "Automações",
+        "desc": "Arquitetura e desenvolvimento de fluxos no n8n para eliminar tarefas manuais e integrar ferramentas internas.",
+        "bullets": ["n8n", "Webhooks", "APIs REST", "Rotinas automáticas"]
+      }
+    ]
+  },
+  "offers": {
+    "label": "Serviços",
+    "heading": "Outras formas de aplicar IA no seu negócio",
+    "items": [
+      {
+        "title": "Operação Automatizada com IA",
+        "body": "Mapeamento de gargalos internos e implementação de automações de alta eficiência. Reduza o tempo operacional e elimine o erro humano.",
+        "delivery": "Entrega em 4-6 semanas"
+      },
+      {
+        "title": "Produto Digital com IA",
+        "body": "Desenvolvimento ágil de protótipos de alta fidelidade integrados a LLMs. Valide a sua tese de produto com usuários reais em tempo recorde.",
+        "delivery": "Entrega em 6-8 semanas"
+      },
+      {
+        "title": "Consultoria Estratégica em IA",
+        "body": "Diagnóstico do seu negócio e identificação das melhores oportunidades práticas de IA. Evite investimentos em hype e foque em ROI real.",
+        "delivery": "Imersão de 2 semanas"
+      }
+    ]
+  },
+  "howIWork": {
+    "label": "Processo",
+    "heading": "Como eu trabalho",
+    "subtitle": "Sem mistério ou promessas vazias. Foco absoluto em entrega funcional.",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Discovery",
+        "desc": "Mapeamento dos fluxos e identificação de onde a IA traz retorno real sobre o investimento."
+      },
+      {
+        "num": "02",
+        "title": "Arquitetura",
+        "desc": "Desenho técnico da arquitetura, integrações de APIs e fluxogramas detalhados do sistema."
+      },
+      {
+        "num": "03",
+        "title": "Build & Validação",
+        "desc": "Desenvolvimento ágil da solução e validação prática em ambiente real em poucas semanas."
+      },
+      {
+        "num": "04",
+        "title": "Deploy & Operação",
+        "desc": "Implantação em produção, entrega de documentação e treinamento completo para total independência do seu time."
+      }
+    ]
+  },
+  "projects": {
+    "label": "Projetos",
+    "heading": "Projetos que demonstram o que eu construo",
+    "viewProject": "Ver projeto",
+    "items": [
+      {
+        "title": "Konklave",
+        "desc": "Plataforma experimental de orquestração multi-agente com 29 personas de IA debatendo temas complexos com votação ponderada.",
+        "tags": ["plataforma", "ia", "multi-agente"],
+        "link": "https://konklave-iota.vercel.app"
+      },
+      {
+        "title": "Saúde Inteligente",
+        "desc": "SaaS para clínicas integrando 6 agentes especialistas autônomos, WhatsApp Cloud API, fluxos complexos em n8n e Supabase.",
+        "tags": ["saas", "ia", "whatsapp"],
+        "link": ""
+      },
+      {
+        "title": "AI Content Radar",
+        "desc": "Pipeline autônomo monitorando 33 fontes RSS, filtrando e gerando conteúdos otimizados através de LLMs 24 horas por dia.",
+        "tags": ["automação", "ia", "pipeline"],
+        "link": ""
+      }
+    ]
+  },
+  "recruiters": {
+    "label": "Para Recrutadores",
+    "heading": "Oportunidades em IA aplicada",
+    "moreDetails": "+ detalhes técnicos",
+    "lessDetails": "- recolher",
+    "body": "Especialista em IA Aplicada com sólida formação acadêmica (MBA IA para Negócios) e repertório de 15+ anos liderando operações complexas. Há 2 anos focado exclusivamente em projetar agentes autônomos, automações n8n e arquiteturas de produtos baseados em LLMs.",
+    "stackLabel": "Stack que uso diariamente",
+    "stackGroups": [
+      {
+        "group": "IA, Pesquisa & Agentes",
+        "items": ["Claude", "OpenAI", "Gemini", "Perplexity", "OpenRouter", "Codex"]
+      },
+      {
+        "group": "Produto, Frontend & Interfaces",
+        "items": ["Lovable", "Antigravity", "Next.js", "React", "TypeScript", "Tailwind"]
+      },
+      {
+        "group": "Backend, Automação & Dados",
+        "items": ["n8n", "APIs REST", "Webhooks", "Supabase", "RAG", "pgvector"]
+      },
+      {
+        "group": "Deploy, Versionamento & DevTools",
+        "items": ["Railway", "Vercel", "GitHub", "VS Code", "Cursor", "Claude Code"]
+      }
+    ],
+    "projectsLabel": "Projetos demonstráveis",
+    "projectsList": [
+      "Konklave — 29 agentes autônomos, votação ponderada, multi-agent orchestration",
+      "Saúde Inteligente — SaaS multi-agente com 6 assistentes conectados via WhatsApp API",
+      "AI Content Radar — Pipeline autônomo monitorando 33 fontes RSS e gerando insights por LLMs",
+      "GitHub — Repositórios públicos com experimentos, aplicações práticas e código proprietário"
+    ],
+    "lookingLabel": "O que busco",
+    "lookingBody": "Posições com foco em engenharia de IA aplicada, agentes autônomos ou desenvolvimento de produtos baseados em LLMs.",
+    "closingLine": "Curtiu o repertório? Vamos marcar uma conversa pelo WhatsApp ou LinkedIn.",
+    "cta_whatsapp": "Falar comigo no WhatsApp",
+    "cta_linkedin": "LinkedIn",
+    "cta_github": "GitHub"
+  },
+  "standalone": {
+    "label": "Serviços Pontuais",
+    "heading": "Demandas pontuais",
+    "subtitle": "Para projetos específicos que necessitam de soluções pontuais de alta performance.",
+    "items": [
+      "Desenvolvimento de sites institucionais e e-commerces em Next.js com integrações nativas de IA.",
+      "Arquitetura e construção de automações de processos em n8n de alta complexidade.",
+      "Mentoria e consultoria técnica sob demanda para profissionais e empresas migrando para IA."
+    ],
+    "cta": "Falar comigo"
+  },
+  "experience": {
+    "label": "Experiência",
+    "heading": "Experiência operacional real",
+    "body1": "Minha bagagem foi construída em operações complexas onde a execução sob pressão é a única métrica de sucesso: megaeventos, marketing de grande alcance e marcas líderes.",
+    "body2": "Essa vivência prática me deu a capacidade de entender a lógica de processos físicos de negócios, permitindo projetar arquiteturas de IA que resolvem gargalos de forma real, sem foco em modismos ou hype.",
+    "cards": [
+      {
+        "company": "ANENO",
+        "desc": "Gestão de projetos operacionais, cenografia, comunicação visual e ativações de marca."
+      },
+      {
+        "company": "Goa Shantti",
+        "desc": "Marketing de posicionamento, captação de patrocínios, produção e experiências de marca."
+      },
+      {
+        "company": "Skybar",
+        "desc": "Operação logística, gestão de equipes e programação no bar mais alto do Brasil."
+      },
+      {
+        "company": "Helsinki Eventos",
+        "desc": "Direção de produção para marcas globais e nacionais como Moises.ai e Moura Dubeux."
+      }
+    ]
+  },
+  "education": {
+    "label": "Formação",
+    "heading": "Formação acadêmica",
+    "items": [
+      {
+        "title": "MBA em Inteligência Artificial para Negócios",
+        "institution": "Saint Paul / EXAME",
+        "status": "Em andamento"
+      },
+      {
+        "title": "Graduação em Publicidade e Propaganda",
+        "institution": "",
+        "status": "Concluída"
+      },
+      {
+        "title": "Estudos Complementares",
+        "institution": "Prompt Engineering, RAG avançado, arquiteturas de agentes autônomos, orquestração e fluxos n8n avançados.",
+        "status": ""
+      }
+    ]
+  },
+  "finalCta": {
+    "heading": "Quer otimizar a eficiência de sua operação com agentes de IA e automações reais?",
+    "subtitle": "Eu posso desenhar e implementar o seu sistema em poucas semanas.",
+    "cta_whatsapp": "Falar no WhatsApp",
+    "cta_email": "Enviar e-mail",
+    "cta_linkedin": "LinkedIn",
+    "cta_github": "GitHub",
+    "cta_instagram": "Instagram"
+  },
+  "footer": {
+    "identity": "Leko · José Werkley Sarmento Dias",
+    "location": "João Pessoa, PB · Atendimento Brasil e exterior",
+    "whatsapp": "+55 (83) 98174-1213",
+    "email": "werkley.jose@gmail.com",
+    "year": "MMXXVI",
+    "visitor_label": "Visitante nº"
+  },
+  "mobileCta": {
+    "label": "Falar com Leko"
+  }
+}
