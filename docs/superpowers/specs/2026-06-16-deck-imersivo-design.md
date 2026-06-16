@@ -25,15 +25,16 @@ Critério de sucesso: ao percorrer, a experiência lê como uma apresentação g
 - **`Scene`** (`src/components/deck/Scene.tsx`): unidade reutilizável de cena.
   - Props: `id: string`, `label: string` (nome do capítulo p/ spine e menu), `theme: 'paper' | 'paper2' | 'sand' | 'ink' | 'terra'`, `index: number`, `last?: boolean`, `children`.
   - Estrutura: wrapper `sticky top-0 h-[100dvh]` com a cor do tema, topo arredondado + sombra (exceto a 1ª cena), um `.inner` centralizado para o conteúdo, e um `.dim` overlay.
-  - **Recuo (profundidade):** via **framer-motion `useScroll`** atrelado ao elemento da cena, derivando um progresso de "quanto a próxima cena já cobriu esta" e mapeando (`useTransform`) para `scale`/`y` do `.inner` e `opacity` do `.dim`. **Sem GSAP** (regra do projeto). Em `prefers-reduced-motion`, o recuo é desativado (cena estática).
+  - **Recuo (profundidade):** via **framer-motion `useScroll`** atrelado ao elemento externo da cena, com `offset: ["start start", "end start"]` — progresso 0 quando a cena chega ao topo e 1 quando seu fim alcança o topo (i.e., quando a próxima já a cobriu). Mapear (`useTransform`) para `scale` 1 → ~0.92 e `y` 0 → ~-26px do `.inner`, e `opacity` 0 → ~0.55 do `.dim`. **Sem GSAP** (regra do projeto). Em `prefers-reduced-motion`, o recuo é desativado (cena estática).
+  - **Altura/sticky:** o `.inner` sticky precisa ser **mais curto que o wrapper externo** da cena para realmente "grudar e recuar". Cenas que cabem em `100dvh`: wrapper = `100dvh`. Cenas que podem exceder no mobile (ex.: Sobre, Stack): o wrapper cresce com o conteúdo (`min-height` ≥ conteúdo) e o `.inner` permanece `100dvh` sticky, de modo que o empilhamento não corta texto.
   - **Reveal de entrada:** elementos `.rv` revelam (fade + translateY) quando a cena entra, via `whileInView`/IntersectionObserver, com stagger.
-- **`ChapterSpine`** (`src/components/deck/ChapterSpine.tsx`): trilho fixo à direita (desktop) com um item por cena; mostra o capítulo ativo (derivado da posição de scroll) e permite pular (`scrollIntoView`). Esconde no mobile (`< 820px`), onde a navegação fica por menu + barra de progresso.
-- **`useSceneStack`** (hook, opcional): centraliza o registro/ordem das cenas e o cálculo do capítulo ativo, consumido por `Deck`/`ChapterSpine`. Pode ser dispensado se a lista de cenas for estática.
+- **`ChapterSpine`** (`src/components/deck/ChapterSpine.tsx`): trilho fixo à direita (desktop) com um item por cena; mostra o capítulo ativo e permite pular (`scrollIntoView`). O capítulo ativo é derivado por **um único `IntersectionObserver` compartilhado** (o mesmo usado para os reveals de entrada das cenas), evitando listeners de scroll redundantes (§8). Esconde no mobile (`< 820px`), onde a navegação fica por menu + barra de progresso.
+- **Fonte única da lista de cenas (`SCENES`):** uma constante exportada (ex.: `src/components/deck/scenes.ts`) com a ordem/`id`/`label`/`theme` de cada cena. **Consumida por `Deck`, `ChapterSpine` e `ScrambleMenu`** para evitar duplicar a lista em três lugares e divergir. O hook `useSceneStack` é opcional (pode encapsular o observer do capítulo ativo); a constante `SCENES` não é opcional.
 
 ### 3.2 Integração com o que já existe (reaproveitado, sem reescrever)
 
 - **`PageShell`** continua envolvendo o conteúdo e fazendo o *push-aside* lateral quando o menu abre. O `Deck` passa a ser o conteúdo dentro do `PageShell` (no lugar do `<Hero/> + <div>…seções…</div>` atuais em `src/app/page.tsx`).
-- **`ScrambleMenu` + `MenuContext`**: menu scramble *push-aside* mantido; passa a listar as cenas do deck para pular. (Hoje a lista de itens do menu é fixa em `ScrambleMenu.tsx`; será alinhada à lista de cenas do deck.)
+- **`ScrambleMenu` + `MenuContext`**: menu scramble *push-aside* mantido; passa a listar as cenas do deck para pular. Hoje `ScrambleMenu.tsx` tem **7 itens fixos**; passa a consumir a constante `SCENES` (**12 cenas**). Isso exige **novas chaves i18n** (`menu.*`) nos três dicionários (pt-BR/en/es) para as cenas adicionadas (ex.: serviços-pontuais, processo, formação, stack/recrutadores) — mantendo o padrão de fallback já existente no `LanguageContext`.
 - **`Preloader` + `LoadingContext`**: mantidos. A entrada das cenas (e do Hero) continua condicionada ao fim do preloader.
 - **`SmoothScrollProvider` (Lenis)**: mantido; o empilhamento sticky e o `useScroll` leem o scroll dirigido pelo Lenis. O travamento de scroll com menu aberto continua válido.
 - **`CustomCursor`, `GrainOverlay`, `Navbar`, `MobileCTA`**: mantidos.
@@ -45,7 +46,7 @@ Cada componente de seção existente em `src/components/sections/*` é **recompo
 
 ## 4. Mapa de cenas (ordem · tema · tratamento)
 
-Mesmo conteúdo do site atual. Sequência de cores com contraste forte (ajustável no fino durante a implementação):
+Mesmo conteúdo do site atual. **A ordem do §4 é autoritativa e reordena de propósito** em relação ao DOM atual de `page.tsx` (notadamente: *Demandas pontuais/Standalone* sobe para a cena 06, antes de *Como trabalho*; *Recrutadores* desce para a cena 11, depois de *Experiência* e *Formação*). Conteúdo idêntico — só a ordem das cenas muda. Sequência de cores com contraste forte (ajustável no fino durante a implementação):
 
 | # | Cena (componente) | Tema | Tratamento editorial |
 |---|---|---|---|
@@ -68,9 +69,9 @@ Observações:
 
 ## 5. Tokens de cor de cena (`globals.css`)
 
-Adicionar tokens/classes de tema de cena reaproveitando as variáveis existentes:
+Adicionar **novos** tokens de tema de cena (não existem hoje — o que existe é `--bg-primary #F2EFE7` e `--accent-cyan`/`--accent-warm #B5673F`, terracota, nome legado). Os novos podem **aliar** os existentes onde fizer sentido:
 `--paper #F2EFE7 · --paper2 #FBF9F3 · --sand #E6DECF · --ink #13100C · --terra #B5673F · --cream #F4EEE3`.
-Classes `.t-paper/.t-paper2/.t-sand/.t-ink/.t-terra` definem `background`/`color` e ajustam cores de `kick`/`sub`/bordas em fundo escuro. (No light/dark theme já existente, o deck usa a paleta clara como base; modo escuro é fora de escopo desta spec — ver §9.)
+As classes `.t-paper/.t-paper2/.t-sand/.t-ink/.t-terra` **definem `background` e `color` explicitamente** (e ajustam `kick`/`sub`/bordas em fundo escuro), de modo que **cada cena é independente do token de tema light/dark** — o deck não herda o `--bg-primary` do tema. Consequência: o **modo escuro existente** (`--bg-primary #0F0F0F`, lines ~78–87 do `globals.css`) fica **inerte** durante o deck (não vaza para wrapper/gutters porque toda cena pinta seu próprio fundo). Modo escuro do deck é fora de escopo (§9).
 
 ## 6. Navegação
 
