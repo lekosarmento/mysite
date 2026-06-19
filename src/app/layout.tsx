@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
-import { Inter, IBM_Plex_Mono } from "next/font/google";
+import { Bricolage_Grotesque, IBM_Plex_Mono } from "next/font/google";
 import { SmoothScrollProvider } from "@/components/ui/SmoothScrollProvider";
 import { CustomCursor } from "@/components/ui/CustomCursor";
 import { GrainOverlay } from "@/components/ui/GrainOverlay";
+import { Preloader } from "@/components/ui/Preloader";
 import { LanguageProvider } from "@/lib/LanguageContext";
+import { LoadingProvider } from "@/lib/LoadingContext";
+import { MenuProvider } from "@/lib/MenuContext";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+const bricolage = Bricolage_Grotesque({
+  variable: "--font-bricolage",
   subsets: ["latin"],
   display: "swap",
-  weight: ["300", "400", "500"],
 });
 
 const plexMono = IBM_Plex_Mono({
@@ -78,15 +80,20 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${inter.variable} ${plexMono.variable} font-sans antialiased bg-bg-primary text-text-secondary selection:bg-accent-cyan selection:text-bg-primary`}
+        className={`${bricolage.variable} ${plexMono.variable} font-sans antialiased bg-bg-primary text-text-secondary selection:bg-accent-cyan selection:text-bg-primary`}
       >
         <LanguageProvider>
-          <GrainOverlay />
-          <SmoothScrollProvider>
-            <CustomCursor />
-            {children}
-            <Analytics />
-          </SmoothScrollProvider>
+          <LoadingProvider>
+            <MenuProvider>
+              <Preloader />
+              <GrainOverlay />
+              <SmoothScrollProvider>
+                <CustomCursor />
+                {children}
+                <Analytics />
+              </SmoothScrollProvider>
+            </MenuProvider>
+          </LoadingProvider>
         </LanguageProvider>
       </body>
     </html>

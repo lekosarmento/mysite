@@ -1,0 +1,30 @@
+"use client";
+
+import type { ReactNode } from "react";
+import { useReducedMotion } from "framer-motion";
+import { useMenu, MENU_WIDTH } from "@/lib/MenuContext";
+
+/**
+ * Empurra todo o conteúdo (Hero + seções) para a esquerda quando o menu abre,
+ * revelando o painel do menu na faixa que surge à direita. Sem escurecer nada.
+ *
+ * Usa transform via CSS transition (não framer) de propósito: em repouso o
+ * transform fica "none", então nenhum descendente fixed/sticky é afetado.
+ */
+export function PageShell({ children }: { children: ReactNode }) {
+  const { open } = useMenu();
+  const reduce = useReducedMotion();
+
+  return (
+    <div
+      className="w-full"
+      style={{
+        transform: open ? `translateX(calc(-1 * ${MENU_WIDTH}))` : undefined,
+        transition: reduce ? undefined : "transform 0.8s cubic-bezier(0.76, 0, 0.24, 1)",
+        willChange: open ? "transform" : undefined,
+      }}
+    >
+      {children}
+    </div>
+  );
+}
