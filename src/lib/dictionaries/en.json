@@ -1,4 +1,25 @@
 {
+  "preloader": {
+    "init": "Initializing architecture",
+    "ready": "Ready to explore"
+  },
+  "menu": {
+    "open": "Menu",
+    "close": "Close",
+    "inicio": "Home",
+    "sobre": "About",
+    "produtos": "Products",
+    "servicos": "Services",
+    "projetos": "Projects",
+    "experiencia": "Experience",
+    "contato": "Contact",
+    "tese": "Thesis",
+    "pontuais": "On-demand",
+    "processo": "Process",
+    "formacao": "Education",
+    "stack": "Stack",
+    "foot": "João Pessoa, BR · Worldwide"
+  },
   "nav": {
     "sobre": "About",
     "servicos": "Services",
@@ -8,11 +29,17 @@
   },
   "hero": {
     "headline": "José Werkley",
-    "subtitle": "CTO and AI Solutions Architect. Leveraging 15+ years leading large operations and mega-events to engineer autonomous AI agents, advanced n8n workflows, and SaaS architectures that eliminate manual bottlenecks and scale businesses.",
+    "kicker": "Applied AI Builder | Marketing & Creative Strategy | AI Agents, RAG, Automations",
+    "subtitle": "15+ years running operations for mega-events and global brands, now engineering applied AI — agents, automations, and products that take manual bottlenecks out of the way.",
     "pill_empresa": "For Companies",
     "pill_recrutador": "For Recruiters",
     "pill_contato": "Get in Touch",
     "scroll": "scroll to explore"
+  },
+  "statement": {
+    "line1": "No stage.",
+    "line2": "Just operations.",
+    "caption": "Whoever understands the physical bottleneck of a complex operation designs the AI architecture that solves it."
   },
   "credentials": {
     "label": "Track record with brands like"
@@ -20,10 +47,10 @@
   "about": {
     "label": "About",
     "heading": "From operations to systems.",
-    "paragraph1": "Leded operations of mega-events and global brand activations for 15+ years under extreme pressure, where large budgets and complex logistics must run flawlessly.",
+    "paragraph1": "Led operations of mega-events and global brand activations for 15+ years under extreme pressure, where large budgets and complex logistics must run flawlessly.",
     "paragraph2": "Then translated that practical, process-oriented background into code.",
-    "paragraph3": "Today, I build robust AI architectures: custom WhatsApp agents, multi-step n8n automation, and high-performance SaaS products.",
-    "paragraph4": "My edge is understanding your physical business operations in detail before designing your technological solution.",
+    "paragraph3": "Today I build AI architectures: WhatsApp agents, multi-step n8n automation, SaaS products.",
+    "paragraph4": "My edge is understanding your operation in detail before designing the solution.",
     "stats": [
       { "value": "15+", "label": "Years in Execution" },
       { "value": "MBA", "label": "AI for Business" }
@@ -39,32 +66,32 @@
     "items": [
       {
         "title": "WhatsApp Agent",
-        "desc": "Autonomous agents integrated with WhatsApp for lead qualification, scheduling, and 24/7 smart customer support.",
+        "desc": "Autonomous agents on WhatsApp for triage, lead qualification, and 24/7 support.",
         "bullets": ["24/7 Customer Support", "Lead Qualification", "Scheduling & Reminders", "Operational Organization"]
       },
       {
         "title": "Tailored SaaS",
-        "desc": "Rapid development of digital products, dashboards, and custom MVPs focused on fast market validation.",
+        "desc": "Digital products, dashboards, and MVPs to validate in the market.",
         "bullets": ["Functional MVPs", "Internal Dashboards", "Custom Workflows", "AI Integrations"]
       },
       {
         "title": "AI Creation",
-        "desc": "Accelerating design and creative pipelines with intelligent generation of hyper-realistic images and cinematic videos.",
+        "desc": "Creative pipelines accelerated with generation of hyper-realistic images and cinematic video.",
         "bullets": ["Hyper-realistic Images", "Cinematic Videos", "Structured Scripts", "Creative Direction"]
       },
       {
         "title": "AI Systems",
-        "desc": "Multi-agent orchestration connected to databases and APIs for high-level strategic decision support.",
+        "desc": "Multi-agent orchestration connected to databases and APIs for strategic decision support.",
         "bullets": ["Specialized Agents", "API Integration", "Multi-stage Workflows", "Decision Support"]
       },
       {
         "title": "RAG / Knowledge Base",
-        "desc": "Semantic search systems connecting frontier AI models to your company's proprietary documents and database.",
+        "desc": "Semantic search connecting frontier models to your company's documents and database.",
         "bullets": ["Semantic Search", "Internal Bases", "Docs & FAQs", "Contextualized Answers"]
       },
       {
         "title": "Automations",
-        "desc": "Designing and developing robust n8n workflows to eliminate repetitive manual tasks and connect internal tools.",
+        "desc": "n8n workflows that eliminate manual tasks and connect internal tools.",
         "bullets": ["n8n Integration", "Webhooks", "REST APIs", "Automated Routines"]
       }
     ]
@@ -75,17 +102,17 @@
     "items": [
       {
         "title": "Operations Automated with AI",
-        "body": "Mapping internal operational bottlenecks and implementing high-efficiency automations. Reduce operating time and eliminate human error.",
+        "body": "Mapping internal bottlenecks and building automations that cut operating time and human error.",
         "delivery": "Delivery in 4-6 weeks"
       },
       {
         "title": "Digital Product with AI",
-        "body": "Agile development of high-fidelity MVPs integrated with LLMs. Validate your product thesis with real users in record time.",
+        "body": "MVPs integrated with LLMs to validate your product thesis with real users.",
         "delivery": "Delivery in 6-8 weeks"
       },
       {
         "title": "Strategic Consulting in AI",
-        "body": "Answering viability questions and designing custom AI architectures for your company. Avoid hype investments and focus on true ROI.",
+        "body": "Diagnosing your business and pinpointing the AI opportunities with real ROI.",
         "delivery": "2-week deep dive"
       }
     ]
@@ -93,7 +120,7 @@
   "howIWork": {
     "label": "Process",
     "heading": "How I Work",
-    "subtitle": "No mysteries or empty promises. Absolute focus on functional execution.",
+    "subtitle": "No mysteries, no empty promises. Focus on delivery that works.",
     "steps": [
       {
         "num": "01",
@@ -121,6 +148,7 @@
     "label": "Projects",
     "heading": "Projects that demonstrate what I build",
     "viewProject": "View project",
+    "imageSoon": "real image coming soon",
     "items": [
       {
         "title": "Konklave",
@@ -184,7 +212,7 @@
   "standalone": {
     "label": "One-off Services",
     "heading": "One-off Demands",
-    "subtitle": "For specific projects requiring fast, high-performance tactical solutions.",
+    "subtitle": "For specific demands that need a one-off solution.",
     "items": [
       "Developing institutional sites and e-commerces in Next.js with native AI integrations.",
       "Designing and building high-complexity operational automations in n8n.",
@@ -194,9 +222,9 @@
   },
   "experience": {
     "label": "Experience",
-    "heading": "Real Operational Experience",
-    "body1": "My background was forged in complex operations where execution under pressure is the only metric: mega-events, high-impact marketing, and leading brands.",
-    "body2": "This practical experience gave me the unique ability to understand the logic of real business processes, allowing me to design AI architectures that actually solve bottlenecks, without relying on buzzwords or hype.",
+    "heading": "Operational Experience",
+    "body1": "My background was forged in complex operations where execution under pressure is the only metric: mega-events, high-impact marketing, leading brands.",
+    "body2": "This practical experience gave me the ability to understand the logic of real business processes, allowing me to design AI architectures that solve the bottleneck, not the pitch.",
     "cards": [
       {
         "company": "ANENO",
@@ -238,7 +266,7 @@
     ]
   },
   "finalCta": {
-    "heading": "Want to optimize your operations with real AI agents and automations?",
+    "heading": "Want to optimize your operations with AI agents and automations?",
     "subtitle": "I can design and deploy your custom system in just a few weeks.",
     "cta_whatsapp": "Talk on WhatsApp",
     "cta_email": "Send Email",

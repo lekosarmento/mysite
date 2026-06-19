@@ -1,4 +1,25 @@
 {
+  "preloader": {
+    "init": "Inicializando arquitetura",
+    "ready": "Pronto pra explorar"
+  },
+  "menu": {
+    "open": "Menu",
+    "close": "Fechar",
+    "inicio": "Início",
+    "sobre": "Sobre",
+    "produtos": "Produtos",
+    "servicos": "Serviços",
+    "projetos": "Projetos",
+    "experiencia": "Experiência",
+    "contato": "Contato",
+    "tese": "Tese",
+    "pontuais": "Demandas",
+    "processo": "Processo",
+    "formacao": "Formação",
+    "stack": "Stack",
+    "foot": "João Pessoa, BR · Atendimento global"
+  },
   "nav": {
     "sobre": "Sobre",
     "servicos": "Serviços",
@@ -8,11 +29,17 @@
   },
   "hero": {
     "headline": "José Werkley",
-    "subtitle": "CTO e Arquiteto de Soluções em Inteligência Artificial Aplicada. Uno mais de 15 anos de vivência em grandes operações e megaeventos para projetar agentes de IA autônomos, automações no n8n e arquiteturas de produtos digitais que eliminam gargalos manuais e escalam negócios.",
+    "kicker": "Applied AI Builder | Marketing & Creative Strategy | AI Agents, RAG, Automations",
+    "subtitle": "Uno 15+ anos de operação em megaeventos e marcas globais à engenharia de IA aplicada — agentes, automações e produtos que tiram o gargalo manual do caminho.",
     "pill_empresa": "Sou empresa",
     "pill_recrutador": "Sou recrutador",
     "pill_contato": "Fale comigo",
     "scroll": "scroll to explore"
+  },
+  "statement": {
+    "line1": "Sem palco.",
+    "line2": "Só operação.",
+    "caption": "Quem entende o gargalo físico de uma operação complexa projeta a arquitetura de IA que resolve."
   },
   "credentials": {
     "label": "Repertório com marcas como"
@@ -22,8 +49,8 @@
     "heading": "Do operacional ao sistema.",
     "paragraph1": "Liderei operações de megaeventos e ativações de marcas globais por mais de 15 anos, onde orçamentos, prazos e equipes sob extrema pressão precisam funcionar de forma impecável.",
     "paragraph2": "Depois levei esse repertório prático de processos para o código.",
-    "paragraph3": "Hoje projeto arquiteturas de IA robustas: agentes integrados ao WhatsApp, automações n8n multi-etapas e produtos SaaS de alta performance.",
-    "paragraph4": "Meu diferencial é entender a sua operação real e de negócios no detalhe antes de desenhar a sua solução tecnológica.",
+    "paragraph3": "Hoje projeto arquiteturas de IA: agentes no WhatsApp, automações n8n multi-etapas e produtos SaaS.",
+    "paragraph4": "Meu diferencial é entender sua operação no detalhe antes de desenhar a solução.",
     "stats": [
       { "value": "15+", "label": "Anos de Execução" },
       { "value": "MBA", "label": "IA para Negócios" }
@@ -39,32 +66,32 @@
     "items": [
       {
         "title": "Agente WhatsApp",
-        "desc": "Agentes autônomos integrados ao WhatsApp para triagem, qualificação de leads e suporte ativo 24/7.",
+        "desc": "Agentes autônomos no WhatsApp para triagem, qualificação de leads e suporte 24/7.",
         "bullets": ["Atendimento 24/7", "Qualificação de leads", "Agendamento e lembretes", "Organização de demandas"]
       },
       {
         "title": "SaaS sob medida",
-        "desc": "Desenvolvimento rápido de produtos digitais, dashboards e MVPs funcionais focados em validação de mercado.",
+        "desc": "Produtos digitais, dashboards e MVPs para validar a tese no mercado.",
         "bullets": ["MVPs funcionais", "Painéis internos", "Fluxos personalizados", "Integrações com IA"]
       },
       {
         "title": "Criação com IA",
-        "desc": "Aceleração de fluxos criativos e de design com geração inteligente de imagens e vídeos cinematográficos.",
+        "desc": "Fluxos criativos acelerados com geração de imagens e vídeos cinematográficos.",
         "bullets": ["Imagens hiper-realistas", "Vídeos cinematográficos", "Roteiros estruturados", "Edição & Direção criativa"]
       },
       {
         "title": "Sistemas com IA",
-        "desc": "Orquestração de múltiplos agentes de IA conectados a bancos de dados e APIs para apoio estratégico de alto nível.",
+        "desc": "Orquestração de múltiplos agentes conectados a bancos de dados e APIs para apoio estratégico.",
         "bullets": ["Agentes especializados", "Integração com APIs", "Fluxos multi-etapas", "Apoio à decisão"]
       },
       {
         "title": "RAG / Base de conhecimento",
-        "desc": "Sistemas de busca semântica conectando IAs de fronteira a bancos de dados e conteúdos proprietários da empresa.",
+        "desc": "Busca semântica conectando IAs de fronteira aos bancos de dados e conteúdos da sua empresa.",
         "bullets": ["Busca semântica", "Bases internas", "Documentos e FAQs", "Respostas contextualizadas"]
       },
       {
         "title": "Automações",
-        "desc": "Arquitetura e desenvolvimento de fluxos no n8n para eliminar tarefas manuais e integrar ferramentas internas.",
+        "desc": "Fluxos no n8n para eliminar tarefas manuais e integrar ferramentas internas.",
         "bullets": ["n8n", "Webhooks", "APIs REST", "Rotinas automáticas"]
       }
     ]
@@ -75,17 +102,17 @@
     "items": [
       {
         "title": "Operação Automatizada com IA",
-        "body": "Mapeamento de gargalos internos e implementação de automações de alta eficiência. Reduza o tempo operacional e elimine o erro humano.",
+        "body": "Mapeamento de gargalos internos e automações que cortam tempo operacional e erro humano.",
         "delivery": "Entrega em 4-6 semanas"
       },
       {
         "title": "Produto Digital com IA",
-        "body": "Desenvolvimento ágil de protótipos de alta fidelidade integrados a LLMs. Valide a sua tese de produto com usuários reais em tempo recorde.",
+        "body": "Protótipos integrados a LLMs para validar sua tese de produto com usuários reais.",
         "delivery": "Entrega em 6-8 semanas"
       },
       {
         "title": "Consultoria Estratégica em IA",
-        "body": "Diagnóstico do seu negócio e identificação das melhores oportunidades práticas de IA. Evite investimentos em hype e foque em ROI real.",
+        "body": "Diagnóstico do seu negócio e identificação das oportunidades de IA com retorno real.",
         "delivery": "Imersão de 2 semanas"
       }
     ]
@@ -93,7 +120,7 @@
   "howIWork": {
     "label": "Processo",
     "heading": "Como eu trabalho",
-    "subtitle": "Sem mistério ou promessas vazias. Foco absoluto em entrega funcional.",
+    "subtitle": "Sem mistério nem promessa vazia. Foco em entrega que funciona.",
     "steps": [
       {
         "num": "01",
@@ -121,6 +148,7 @@
     "label": "Projetos",
     "heading": "Projetos que demonstram o que eu construo",
     "viewProject": "Ver projeto",
+    "imageSoon": "imagem real em breve",
     "items": [
       {
         "title": "Konklave",
@@ -184,7 +212,7 @@
   "standalone": {
     "label": "Serviços Pontuais",
     "heading": "Demandas pontuais",
-    "subtitle": "Para projetos específicos que necessitam de soluções pontuais de alta performance.",
+    "subtitle": "Para demandas específicas que pedem uma solução pontual.",
     "items": [
       "Desenvolvimento de sites institucionais e e-commerces em Next.js com integrações nativas de IA.",
       "Arquitetura e construção de automações de processos em n8n de alta complexidade.",
@@ -194,9 +222,9 @@
   },
   "experience": {
     "label": "Experiência",
-    "heading": "Experiência operacional real",
-    "body1": "Minha bagagem foi construída em operações complexas onde a execução sob pressão é a única métrica de sucesso: megaeventos, marketing de grande alcance e marcas líderes.",
-    "body2": "Essa vivência prática me deu a capacidade de entender a lógica de processos físicos de negócios, permitindo projetar arquiteturas de IA que resolvem gargalos de forma real, sem foco em modismos ou hype.",
+    "heading": "Experiência operacional",
+    "body1": "Minha bagagem foi construída em operações complexas onde a execução sob pressão é a única métrica: megaeventos, marketing de grande alcance, marcas líderes.",
+    "body2": "Essa vivência prática me deu a capacidade de entender a lógica de processos físicos de negócios, permitindo projetar arquiteturas de IA que resolvem o gargalo, não o discurso.",
     "cards": [
       {
         "company": "ANENO",
@@ -238,7 +266,7 @@
     ]
   },
   "finalCta": {
-    "heading": "Quer otimizar a eficiência de sua operação com agentes de IA e automações reais?",
+    "heading": "Quer otimizar sua operação com agentes de IA e automações?",
     "subtitle": "Eu posso desenhar e implementar o seu sistema em poucas semanas.",
     "cta_whatsapp": "Falar no WhatsApp",
     "cta_email": "Enviar e-mail",

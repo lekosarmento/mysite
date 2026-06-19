@@ -1,90 +1,87 @@
 "use client";
 
-import { useScroll, useTransform, motion } from "framer-motion";
-import { HeroScene } from "../3d/HeroScene";
+import { motion, MotionConfig } from "framer-motion";
 import { useLanguage } from "@/lib/LanguageContext";
+import { useLoading } from "@/lib/LoadingContext";
 
-function scrollToSection(id: string) {
-  const el = document.getElementById(id);
-  if (el) {
-    el.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
-}
+const EASE = [0.16, 1, 0.3, 1] as const;
 
+/**
+ * Cena 01 do deck (tema paper). O wrapper sticky/altura/centragem vêm do
+ * componente Scene; aqui renderizamos só o conteúdo da cena: foto sangrando à
+ * direita (duotone quente), copy e HUD. A entrada (kicker/headline/subtitle)
+ * só dispara quando a cortina do preloader sobe (useLoading). O recuo no scroll
+ * agora é responsabilidade do Scene (--cov), então não há mais parallax próprio.
+ */
 export function Hero() {
-  const { scrollY } = useScroll();
-  const y3D = useTransform(scrollY, [0, 800], [0, 250]);
-  const opacityHero = useTransform(scrollY, [0, 500], [1, 0]);
   const { t } = useLanguage();
+  const { loading } = useLoading();
+  const ready = !loading;
+
+  const headlineWords = t("hero.headline").split(" ");
+
+  const container = {
+    hidden: {},
+    visible: { transition: { staggerChildren: 0.1, delayChildren: 0.15 } },
+  };
+  const lineV = {
+    hidden: { y: "110%" },
+    visible: { y: 0, transition: { duration: 1, ease: EASE } },
+  };
 
   return (
-    <section className="relative flex min-h-[100dvh] w-full flex-col justify-center overflow-hidden px-6 md:px-10">
-      {/* 3D Hologram Background */}
-      <motion.div style={{ y: y3D, opacity: opacityHero }} className="absolute inset-0 pointer-events-none z-0">
-        <HeroScene />
-      </motion.div>
+    <MotionConfig reducedMotion="user">
+      {/* FOTO — sangra à direita da cena */}
+      <div className="hero-photo" aria-hidden>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/images/leko-7.png" alt="José Werkley" />
+        <div className="duo" />
+        <div className="fade" />
+      </div>
 
-      {/* Text Backdrop Gradient — dynamically themed using custom class for robustness */}
-      <div className="absolute inset-0 w-full md:w-[65vw] hero-backdrop-gradient pointer-events-none z-[3]" />
-
-      <motion.div style={{ opacity: opacityHero }} className="relative z-10 flex w-full max-w-[1400px] flex-col gap-0 mx-auto pointer-events-none mt-16 md:pl-8">
-        {/* Headline — "José Werkley" */}
-        <motion.h1
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-          className="text-[clamp(44px,6.5vw,88px)] font-[200] leading-[1.0] tracking-[-3px] text-text-primary"
+      {/* COPY */}
+      <div className="hero-copy">
+        <motion.div
+          className="kick"
+          initial={{ opacity: 0 }}
+          animate={ready ? { opacity: 1 } : { opacity: 0 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
         >
-          {t("hero.headline")}
+          {t("hero.kicker")}
+        </motion.div>
+
+        <motion.h1
+          className="big"
+          style={{ marginTop: 22 }}
+          variants={container}
+          initial="hidden"
+          animate={ready ? "visible" : "hidden"}
+        >
+          {headlineWords.map((w: string, i: number) => (
+            <span key={i} className="block overflow-hidden pb-[0.05em]">
+              <motion.span variants={lineV} className="block">
+                {w}
+              </motion.span>
+            </span>
+          ))}
         </motion.h1>
-        
-        {/* Subtitle */}
-        <motion.p 
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
-          className="text-[15px] md:text-[16px] font-[400] leading-[1.85] text-text-secondary mt-7 max-w-[520px] pointer-events-auto"
+
+        <motion.p
+          className="sub"
+          style={{ marginTop: 24 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={ready ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 1, ease: EASE, delay: 0.55 }}
         >
           {t("hero.subtitle")}
         </motion.p>
+      </div>
 
-        {/* Three Buttons */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.7 }}
-          className="mt-10 flex flex-col sm:flex-row gap-3 pointer-events-auto w-full sm:w-auto"
-        >
-          <button
-            onClick={() => scrollToSection("produtos")}
-            className="font-mono text-[11px] uppercase tracking-[1.5px] px-6 py-3 rounded-full border border-accent-cyan/25 text-accent-cyan hover:bg-accent-cyan/10 transition-all duration-[400ms] ease-[cubic-bezier(0.16,1,0.3,1)] cursor-pointer"
-          >
-            {t("hero.pill_empresa")}
-          </button>
-          <button
-            onClick={() => scrollToSection("recrutadores")}
-            className="font-mono text-[11px] uppercase tracking-[1.5px] px-6 py-3 rounded-full border border-border-subtle text-text-secondary hover:border-border-hover hover:text-text-primary transition-all duration-[400ms] cursor-pointer"
-          >
-            {t("hero.pill_recrutador")}
-          </button>
-          <button
-            onClick={() => scrollToSection("contato")}
-            className="font-mono text-[11px] uppercase tracking-[1.5px] px-6 py-3 rounded-full border border-border-subtle text-text-secondary hover:border-border-hover hover:text-text-primary transition-all duration-[400ms] cursor-pointer"
-          >
-            {t("hero.pill_contato")}
-          </button>
-        </motion.div>
-      </motion.div>
-
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1.2, delay: 2 }}
-        className="absolute bottom-10 left-6 md:left-10 font-mono text-[10px] uppercase tracking-[3px] text-text-muted animate-pulse"
-      >
-        {t("hero.scroll")} ↓
-      </motion.div>
-    </section>
+      {/* HUD */}
+      <div className="hud">
+        <span>LAT -7.115° · LON -34.861°</span>
+        <span>{t("hero.scroll")} ↓</span>
+      </div>
+    </MotionConfig>
   );
 }
