@@ -129,7 +129,15 @@ export function ScrambleMenu() {
       // frame. Cenas são sticky a top:0, então scrollIntoView não serve — rola para o
       // offset index * altura, que torna a cena alvo a visível.
       requestAnimationFrame(() => {
-        window.scrollTo({ top: item.index * window.innerHeight, behavior: reduce ? "auto" : "smooth" });
+        const behavior = reduce ? "auto" : "smooth";
+        if (window.innerWidth <= 820) {
+          // Mobile: deck vira fluxo normal (alturas variáveis) → posição real do elemento.
+          const el = document.getElementById(item.href.slice(1));
+          if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY, behavior });
+        } else {
+          // Desktop: cenas sticky em top:0 → offset índice×altura.
+          window.scrollTo({ top: item.index * window.innerHeight, behavior });
+        }
       });
     },
     [closeMenu, reduce]

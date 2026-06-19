@@ -1,6 +1,6 @@
 "use client";
 
-import type { ReactNode } from "react";
+import { type ReactNode, useEffect, useState } from "react";
 import { useReducedMotion } from "framer-motion";
 import { useMenu, MENU_WIDTH } from "@/lib/MenuContext";
 
@@ -13,7 +13,12 @@ import { useMenu, MENU_WIDTH } from "@/lib/MenuContext";
  */
 export function PageShell({ children }: { children: ReactNode }) {
   const { open } = useMenu();
-  const reduce = useReducedMotion();
+  const reduceRaw = useReducedMotion();
+  // Só aplica reduced-motion após o mount: servidor e 1ª pintura ficam iguais
+  // (com transição), evitando hydration mismatch para quem tem a preferência.
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+  const reduce = mounted && reduceRaw;
 
   return (
     <div

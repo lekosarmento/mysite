@@ -12,7 +12,12 @@ const CURTAIN_DURATION = 1.1;
 export function Preloader() {
   const { loading, setLoaded } = useLoading();
   const { t } = useLanguage();
-  const reduce = useReducedMotion();
+  const reduceRaw = useReducedMotion();
+  // Só aplica reduced-motion após o mount (servidor/1ª pintura iguais → sem
+  // hydration mismatch na barra/cortina para quem tem a preferência).
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+  const reduce = mounted && reduceRaw;
 
   const [count, setCount] = useState(0);
   const [lifting, setLifting] = useState(false); // cortina subindo
