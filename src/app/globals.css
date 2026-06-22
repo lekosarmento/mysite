@@ -243,10 +243,13 @@
 .scene .big {
   font-weight: 800; font-size: clamp(58px, 11vw, 168px);
   line-height: 0.8; letter-spacing: -0.045em;
+  /* room pros acentos (á ã ê...) não serem cortados no topo com line-height < 1 */
+  padding-top: 0.12em;
 }
 .scene .title {
   font-weight: 700; font-size: clamp(40px, 7.5vw, 116px);
   line-height: 0.9; letter-spacing: -0.035em;
+  padding-top: 0.2em;
 }
 .scene .sub {
   font-weight: 300; font-size: clamp(14px, 1.45vw, 17px);
@@ -336,7 +339,7 @@
 /* TESE */
 .tese-h {
   font-weight: 800; font-size: clamp(50px, 12vw, 168px); line-height: 0.84;
-  letter-spacing: -0.045em; position: relative; z-index: 2;
+  letter-spacing: -0.045em; position: relative; z-index: 2; padding-top: 0.1em;
 }
 
 /* ---- DECK: cenas de conteúdo 05–12 ---- */
