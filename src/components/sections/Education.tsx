@@ -12,7 +12,7 @@ export function Education() {
       <span className="ghost" style={{ color: "var(--cream)" }} aria-hidden>
         08
       </span>
-      <div className="idxbig rv">08 — {t("education.label")}</div>
+      <div className="idxbig rv">08 · {t("education.label")}</div>
       <h2 className="title rv" style={{ fontSize: "clamp(34px,5.4vw,76px)", marginTop: 12 }}>
         {t("education.heading")}
       </h2>

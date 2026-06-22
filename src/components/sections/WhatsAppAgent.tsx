@@ -24,7 +24,7 @@ export function Products() {
       </span>
 
       <div className="prodhead rv">
-        <div className="idxbig">04 — {t("products.label")}</div>
+        <div className="idxbig">04 · {t("products.label")}</div>
         <h2 className="title" style={{ fontSize: "clamp(34px,5.4vw,76px)", marginTop: 12 }}>
           {t("products.heading")}
         </h2>

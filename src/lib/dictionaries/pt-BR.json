@@ -33,7 +33,7 @@
   "hero": {
     "headline": "José Werkley",
     "kicker": "AI Builder & Creative Technologist",
-    "subtitle": "Conecto 15 anos de marketing, eventos e live marketing à engenharia de IA aplicada. Projeto e codifico agentes, automações e produtos — do briefing ao deploy — que viram solução real, não slide.",
+    "subtitle": "Conecto 15 anos de marketing, eventos e live marketing à engenharia de IA aplicada. Projeto e codifico agentes, automações e produtos do briefing ao deploy. Solução real, não slide.",
     "pill_empresa": "Sou empresa",
     "pill_recrutador": "Sou recrutador",
     "pill_contato": "Fale comigo",
@@ -42,7 +42,7 @@
   "statement": {
     "line1": "Do palco",
     "line2": "ao deploy.",
-    "caption": "Não troquei marketing por código — uni os dois. A mesma cabeça que produziu 1.000+ eventos e cresceu marcas do zero hoje arquiteta os agentes de IA que resolvem o gargalo."
+    "caption": "Não troquei marketing por código. Uni os dois. A mesma cabeça que produziu 1.000+ eventos e cresceu marcas do zero hoje arquiteta os agentes de IA que resolvem o gargalo."
   },
   "credentials": {
     "label": "Repertório com marcas como"
@@ -50,9 +50,9 @@
   "about": {
     "label": "Sobre",
     "heading": "Marketing, operação e IA no mesmo cérebro.",
-    "paragraph1": "Não troquei marketing por código — aprofundei. Foram 15 anos liderando marketing, eventos e live marketing para marcas como Jack Daniel's, Ambev, Red Bull e Kwai, com equipes de até 100 pessoas e mais de 1.000 eventos produzidos.",
+    "paragraph1": "Não troquei marketing por código, aprofundei. Foram 15 anos liderando marketing, eventos e live marketing para marcas como Jack Daniel's, Ambev, Red Bull e Kwai, com equipes de até 100 pessoas e mais de 1.000 eventos produzidos.",
     "paragraph2": "Esse repertório de operação real é o que hoje potencializa a IA que construo: entendo o gargalo do negócio antes de desenhar a arquitetura.",
-    "paragraph3": "Projeto e codifico agentes autônomos, automações n8n, RAG e produtos SaaS — e também a camada criativa com IA (imagem, vídeo, conteúdo).",
+    "paragraph3": "Projeto e codifico agentes autônomos, automações n8n, RAG e produtos SaaS. E também a camada criativa com IA (imagem, vídeo, conteúdo).",
     "paragraph4": "Do briefing ao deploy, sem terceirizar execução.",
     "stats": [
       { "value": "15+", "label": "Anos de operação" },
@@ -69,7 +69,7 @@
     "lessDetails": "- recolher",
     "items": [
       { "title": "Agentes de IA no WhatsApp", "desc": "Atendimento, triagem e qualificação 24/7 em linguagem natural, com handoff humano quando precisa." },
-      { "title": "SaaS sob medida com IA", "desc": "Produtos como recepção médica e assistente jurídico — do MVP ao sistema em produção." },
+      { "title": "SaaS sob medida com IA", "desc": "Produtos como recepção médica e assistente jurídico, do MVP ao sistema em produção." },
       { "title": "RAG & base de conhecimento", "desc": "Busca semântica conectando LLMs aos dados e documentos da sua empresa." },
       { "title": "Automações n8n", "desc": "Fluxos multi-etapas que eliminam trabalho manual e integram suas ferramentas." },
       { "title": "Produção criativa com IA", "desc": "Imagem, vídeo e conteúdo para marketing e ativações de marca, em escala." },
@@ -115,7 +115,7 @@
       {
         "num": "03",
         "title": "Produtos rodando, não slides",
-        "desc": "Donna, Saúde Inteligente e Konklave em produção — com testes, segurança e LGPD. Não provas de conceito."
+        "desc": "Donna, Saúde Inteligente e Konklave em produção, com testes, segurança e LGPD. Não provas de conceito."
       },
       {
         "num": "04",
@@ -133,7 +133,7 @@
     "items": [
       {
         "title": "Donna",
-        "desc": "SaaS jurídico com 7 motores: monitora PJe/DJe, calcula prazos e mapeia o perfil decisório de juízes — inteligência inédita no mercado. ~10k linhas, multi-tenant, LGPD.",
+        "desc": "SaaS jurídico com 7 motores: monitora PJe/DJe, calcula prazos e mapeia o perfil decisório de juízes, inteligência inédita no mercado. ~10k linhas, multi-tenant, LGPD.",
         "tags": ["saas", "jurídico", "multi-agente"],
         "link": "https://github.com/lekosarmento/donna"
       },
@@ -200,10 +200,10 @@
     ],
     "projectsLabel": "Projetos demonstráveis",
     "projectsList": [
-      "Konklave — 29 agentes autônomos, votação ponderada, multi-agent orchestration",
-      "Saúde Inteligente — SaaS multi-agente com 6 assistentes conectados via WhatsApp API",
-      "AI Content Radar — Pipeline autônomo monitorando 33 fontes RSS e gerando insights por LLMs",
-      "GitHub — Repositórios públicos com experimentos, aplicações práticas e código proprietário"
+      "Konklave: 29 agentes autônomos, votação ponderada, multi-agent orchestration",
+      "Saúde Inteligente: SaaS multi-agente com 6 assistentes conectados via WhatsApp API",
+      "AI Content Radar: pipeline autônomo monitorando 33 fontes RSS e gerando insights por LLMs",
+      "GitHub: repositórios públicos com experimentos, aplicações práticas e código proprietário"
     ],
     "lookingLabel": "O que busco",
     "lookingBody": "Posições com foco em engenharia de IA aplicada, agentes autônomos ou desenvolvimento de produtos baseados em LLMs.",

@@ -9,7 +9,7 @@ export function HowIWork() {
 
   return (
     <>
-      <div className="idxbig rv">05 — {t("howIWork.label")}</div>
+      <div className="idxbig rv">05 · {t("howIWork.label")}</div>
       <h2 className="title rv" style={{ fontSize: "clamp(34px,5.4vw,76px)", marginTop: 12 }}>
         {t("howIWork.heading")}
       </h2>

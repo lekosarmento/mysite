@@ -9,7 +9,7 @@ export function Recruiters() {
 
   return (
     <>
-      <div className="idxbig rv">09 — {t("menu.stack")}</div>
+      <div className="idxbig rv">09 · {t("menu.stack")}</div>
       <h2 className="title rv" style={{ fontSize: "clamp(30px,4.4vw,58px)", marginTop: 10 }}>
         {t("recruiters.heading")}
       </h2>

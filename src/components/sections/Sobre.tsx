@@ -39,7 +39,7 @@ export function Sobre() {
         </div>
 
         <div>
-          <div className="idxbig rv">02 — {t("about.label")}</div>
+          <div className="idxbig rv">02 · {t("about.label")}</div>
           <h2 className="title rv" style={{ fontSize: "clamp(34px,5.4vw,76px)", marginTop: 14 }}>
             {t("about.heading")}
           </h2>

@@ -23,7 +23,7 @@ export function Projetos() {
       <span className="ghost" style={{ color: "var(--terra)" }} aria-hidden>
         06
       </span>
-      <div className="idxbig rv">06 — {t("projects.label")}</div>
+      <div className="idxbig rv">06 · {t("projects.label")}</div>
       <h2 className="title rv" style={{ fontSize: "clamp(30px,4.4vw,58px)", marginTop: 10 }}>
         {t("projects.heading")}
       </h2>
