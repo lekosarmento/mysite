@@ -21,7 +21,12 @@ export function Scene({
   children: ReactNode;
 }) {
   return (
-    <section id={id} data-scene={index} className={`scene t-${theme}${index > 0 ? " stacked" : ""}`}>
+    <section
+      id={id}
+      data-scene={index}
+      className={`scene t-${theme}${index > 0 ? " stacked" : ""}`}
+      style={{ zIndex: index + 1 }}
+    >
       <div className="scene-inner">{children}</div>
       <div className="scene-dim" aria-hidden />
     </section>
