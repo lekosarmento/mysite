@@ -11,8 +11,8 @@ interface Project {
 }
 
 /**
- * Cena 08 do deck (tema ink). Projetos em cards com placeholder tipográfico
- * (inicial gigante) já que ainda não há imagens reais; tags + link.
+ * Cena 06 do deck (tema sand). Portfólio de produtos IA em cards com inicial
+ * gigante; tags + link (ou "em produção" quando não há link público).
  */
 export function Projetos() {
   const { t } = useLanguage();
@@ -20,10 +20,10 @@ export function Projetos() {
 
   return (
     <>
-      <span className="ghost" style={{ color: "var(--cream)" }} aria-hidden>
-        08
+      <span className="ghost" style={{ color: "var(--terra)" }} aria-hidden>
+        06
       </span>
-      <div className="idxbig rv">08 — {t("projects.label")}</div>
+      <div className="idxbig rv">06 — {t("projects.label")}</div>
       <h2 className="title rv" style={{ fontSize: "clamp(30px,4.4vw,58px)", marginTop: 10 }}>
         {t("projects.heading")}
       </h2>
@@ -33,7 +33,7 @@ export function Projetos() {
           const inner = (
             <>
               <div className="init">{p.title.charAt(0)}</div>
-              {!p.link && <div className="soon">{t("projects.imageSoon")}</div>}
+              {!p.link && <div className="soon">{t("projects.inProduction")}</div>}
               <div className="ch" style={{ marginTop: 14 }}>{p.title}</div>
               <div className="cd">{p.desc}</div>
               <div className="tags">

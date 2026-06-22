@@ -9,7 +9,7 @@ export function Recruiters() {
 
   return (
     <>
-      <div className="idxbig rv">11 — {t("menu.stack")}</div>
+      <div className="idxbig rv">09 — {t("menu.stack")}</div>
       <h2 className="title rv" style={{ fontSize: "clamp(30px,4.4vw,58px)", marginTop: 10 }}>
         {t("recruiters.heading")}
       </h2>
@@ -31,7 +31,7 @@ export function Recruiters() {
       </div>
 
       <p className="ed-lead rv" style={{ marginTop: 18, maxWidth: "72ch" }}>
-        <strong style={{ fontWeight: 600, color: "var(--cream)" }}>{t("recruiters.lookingLabel")}:</strong>{" "}
+        <strong style={{ fontWeight: 600 }}>{t("recruiters.lookingLabel")}:</strong>{" "}
         {t("recruiters.lookingBody")}
       </p>
     </>

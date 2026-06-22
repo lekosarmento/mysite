@@ -29,7 +29,7 @@ export function FinalCTA() {
 
   return (
     <>
-      <div className="idxbig rv">12 — {t("menu.contato")}</div>
+      <div className="idxbig rv">10 — {t("menu.contato")}</div>
       <h2
         className="title rv"
         style={{ fontSize: "clamp(32px,5vw,80px)", marginTop: 12, maxWidth: "18ch" }}

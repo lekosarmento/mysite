@@ -8,18 +8,16 @@ export interface SceneMeta {
   theme: SceneTheme;
 }
 
-// ORDEM AUTORITATIVA (spec §4). Reordena de propósito vs. DOM atual.
+// ORDEM AUTORITATIVA (10 cenas). Convergência marketing + operação + IA.
 export const SCENES: SceneMeta[] = [
   { id: "inicio", labelKey: "menu.inicio", theme: "paper" },
   { id: "sobre", labelKey: "menu.sobre", theme: "ink" },
   { id: "tese", labelKey: "menu.tese", theme: "terra" },
-  { id: "produtos", labelKey: "menu.produtos", theme: "paper2" },
-  { id: "servicos", labelKey: "menu.servicos", theme: "ink" },
-  { id: "pontuais", labelKey: "menu.pontuais", theme: "sand" },
-  { id: "processo", labelKey: "menu.processo", theme: "paper" },
-  { id: "projetos", labelKey: "menu.projetos", theme: "ink" },
-  { id: "experiencia", labelKey: "menu.experiencia", theme: "sand" },
+  { id: "construo", labelKey: "menu.construo", theme: "paper2" },
+  { id: "diferenciais", labelKey: "menu.diferenciais", theme: "ink" },
+  { id: "portfolio", labelKey: "menu.portfolio", theme: "sand" },
+  { id: "experiencia", labelKey: "menu.experiencia", theme: "paper" },
   { id: "formacao", labelKey: "menu.formacao", theme: "terra" },
-  { id: "stack", labelKey: "menu.stack", theme: "ink" },
+  { id: "stack", labelKey: "menu.stack", theme: "paper2" },
   { id: "contato", labelKey: "menu.contato", theme: "ink" },
 ];

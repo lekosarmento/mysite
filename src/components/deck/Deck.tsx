@@ -11,8 +11,6 @@ import { Hero } from "@/components/sections/Hero";
 import { Sobre } from "@/components/sections/Sobre";
 import { Statement } from "@/components/sections/Statement";
 import { Products } from "@/components/sections/WhatsAppAgent";
-import { Offers } from "@/components/sections/Offers";
-import { Standalone } from "@/components/sections/Standalone";
 import { HowIWork } from "@/components/sections/HowIWork";
 import { Projetos } from "@/components/sections/Projetos";
 import { Experience } from "@/components/sections/Experience";
@@ -20,16 +18,15 @@ import { Education } from "@/components/sections/Education";
 import { Recruiters } from "@/components/sections/Recruiters";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 
-// As 12 cenas do deck, na ordem de SCENES.
+// As 10 cenas do deck, na ordem de SCENES.
+// (Products = "O que eu construo"; HowIWork = "Diferenciais"; Projetos = "Portfólio".)
 const REGISTRY: Record<string, React.ComponentType> = {
   inicio: Hero,
   sobre: Sobre,
   tese: Statement,
-  produtos: Products,
-  servicos: Offers,
-  pontuais: Standalone,
-  processo: HowIWork,
-  projetos: Projetos,
+  construo: Products,
+  diferenciais: HowIWork,
+  portfolio: Projetos,
   experiencia: Experience,
   formacao: Education,
   stack: Recruiters,

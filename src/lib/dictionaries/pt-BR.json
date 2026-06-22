@@ -16,6 +16,9 @@
     "tese": "Tese",
     "pontuais": "Demandas",
     "processo": "Processo",
+    "construo": "Soluções",
+    "diferenciais": "Diferenciais",
+    "portfolio": "Portfólio",
     "formacao": "Formação",
     "stack": "Stack",
     "foot": "João Pessoa, BR · Atendimento global"
@@ -29,71 +32,48 @@
   },
   "hero": {
     "headline": "José Werkley",
-    "kicker": "Engenheiro de IA Aplicada · Marketing & Estratégia Criativa · Agentes de IA, RAG, Automações",
-    "subtitle": "Uno 15+ anos de operação em megaeventos e marcas globais à engenharia de IA aplicada — agentes, automações e produtos que tiram o gargalo manual do caminho.",
+    "kicker": "AI Builder & Creative Technologist",
+    "subtitle": "Conecto 15 anos de marketing, eventos e live marketing à engenharia de IA aplicada. Projeto e codifico agentes, automações e produtos — do briefing ao deploy — que viram solução real, não slide.",
     "pill_empresa": "Sou empresa",
     "pill_recrutador": "Sou recrutador",
     "pill_contato": "Fale comigo",
     "scroll": "scroll to explore"
   },
   "statement": {
-    "line1": "Sem palco.",
-    "line2": "Só operação.",
-    "caption": "Quem entende o gargalo físico de uma operação complexa projeta a arquitetura de IA que resolve."
+    "line1": "Do palco",
+    "line2": "ao deploy.",
+    "caption": "Não troquei marketing por código — uni os dois. A mesma cabeça que produziu 1.000+ eventos e cresceu marcas do zero hoje arquiteta os agentes de IA que resolvem o gargalo."
   },
   "credentials": {
     "label": "Repertório com marcas como"
   },
   "about": {
     "label": "Sobre",
-    "heading": "Do operacional ao sistema.",
-    "paragraph1": "Liderei operações de megaeventos e ativações de marcas globais por mais de 15 anos, onde orçamentos, prazos e equipes sob extrema pressão precisam funcionar de forma impecável.",
-    "paragraph2": "Depois levei esse repertório prático de processos para o código.",
-    "paragraph3": "Hoje projeto arquiteturas de IA: agentes no WhatsApp, automações n8n multi-etapas e produtos SaaS.",
-    "paragraph4": "Meu diferencial é entender sua operação no detalhe antes de desenhar a solução.",
+    "heading": "Marketing, operação e IA no mesmo cérebro.",
+    "paragraph1": "Não troquei marketing por código — aprofundei. Foram 15 anos liderando marketing, eventos e live marketing para marcas como Jack Daniel's, Ambev, Red Bull e Kwai, com equipes de até 100 pessoas e mais de 1.000 eventos produzidos.",
+    "paragraph2": "Esse repertório de operação real é o que hoje potencializa a IA que construo: entendo o gargalo do negócio antes de desenhar a arquitetura.",
+    "paragraph3": "Projeto e codifico agentes autônomos, automações n8n, RAG e produtos SaaS — e também a camada criativa com IA (imagem, vídeo, conteúdo).",
+    "paragraph4": "Do briefing ao deploy, sem terceirizar execução.",
     "stats": [
-      { "value": "15+", "label": "Anos de Execução" },
+      { "value": "15+", "label": "Anos de operação" },
+      { "value": "1.000+", "label": "Eventos produzidos" },
       { "value": "MBA", "label": "IA para Negócios" }
     ],
     "showMore": "✨ Saber mais sobre minha trajetória",
     "showLess": "Recolher trajetória"
   },
   "products": {
-    "label": "Produtos",
-    "heading": "Meus principais produtos",
+    "label": "Soluções",
+    "heading": "O que eu construo",
     "moreDetails": "+ especificações",
     "lessDetails": "- recolher",
     "items": [
-      {
-        "title": "Agente WhatsApp",
-        "desc": "Agentes autônomos no WhatsApp para triagem, qualificação de leads e suporte 24/7.",
-        "bullets": ["Atendimento 24/7", "Qualificação de leads", "Agendamento e lembretes", "Organização de demandas"]
-      },
-      {
-        "title": "SaaS sob medida",
-        "desc": "Produtos digitais, dashboards e MVPs para validar a tese no mercado.",
-        "bullets": ["MVPs funcionais", "Painéis internos", "Fluxos personalizados", "Integrações com IA"]
-      },
-      {
-        "title": "Criação com IA",
-        "desc": "Fluxos criativos acelerados com geração de imagens e vídeos cinematográficos.",
-        "bullets": ["Imagens hiper-realistas", "Vídeos cinematográficos", "Roteiros estruturados", "Edição & Direção criativa"]
-      },
-      {
-        "title": "Sistemas com IA",
-        "desc": "Orquestração de múltiplos agentes conectados a bancos de dados e APIs para apoio estratégico.",
-        "bullets": ["Agentes especializados", "Integração com APIs", "Fluxos multi-etapas", "Apoio à decisão"]
-      },
-      {
-        "title": "RAG / Base de conhecimento",
-        "desc": "Busca semântica conectando IAs de fronteira aos bancos de dados e conteúdos da sua empresa.",
-        "bullets": ["Busca semântica", "Bases internas", "Documentos e FAQs", "Respostas contextualizadas"]
-      },
-      {
-        "title": "Automações",
-        "desc": "Fluxos no n8n para eliminar tarefas manuais e integrar ferramentas internas.",
-        "bullets": ["n8n", "Webhooks", "APIs REST", "Rotinas automáticas"]
-      }
+      { "title": "Agentes de IA no WhatsApp", "desc": "Atendimento, triagem e qualificação 24/7 em linguagem natural, com handoff humano quando precisa." },
+      { "title": "SaaS sob medida com IA", "desc": "Produtos como recepção médica e assistente jurídico — do MVP ao sistema em produção." },
+      { "title": "RAG & base de conhecimento", "desc": "Busca semântica conectando LLMs aos dados e documentos da sua empresa." },
+      { "title": "Automações n8n", "desc": "Fluxos multi-etapas que eliminam trabalho manual e integram suas ferramentas." },
+      { "title": "Produção criativa com IA", "desc": "Imagem, vídeo e conteúdo para marketing e ativações de marca, em escala." },
+      { "title": "UX/UI & sites com IA", "desc": "Landing pages, interfaces e produtos digitais com foco em clareza, conversão e marca." }
     ]
   },
   "offers": {
@@ -118,55 +98,74 @@
     ]
   },
   "howIWork": {
-    "label": "Processo",
-    "heading": "Como eu trabalho",
-    "subtitle": "Sem mistério nem promessa vazia. Foco em entrega que funciona.",
+    "label": "Diferenciais",
+    "heading": "Por que eu",
+    "subtitle": "O que me separa de quem só domina a parte técnica.",
     "steps": [
       {
         "num": "01",
-        "title": "Discovery",
-        "desc": "Mapeamento dos fluxos e identificação de onde a IA traz retorno real sobre o investimento."
+        "title": "Operação + IA",
+        "desc": "15 anos de marketing, eventos e operação real que potencializam a IA que construo. Entendo o negócio antes de codar."
       },
       {
         "num": "02",
-        "title": "Arquitetura",
-        "desc": "Desenho técnico da arquitetura, integrações de APIs e fluxogramas detalhados do sistema."
+        "title": "Projeto, codifico e entrego",
+        "desc": "Não terceirizo execução. Do briefing ao deploy em produção, a arquitetura e o código são meus."
       },
       {
         "num": "03",
-        "title": "Build & Validação",
-        "desc": "Desenvolvimento ágil da solução e validação prática em ambiente real em poucas semanas."
+        "title": "Produtos rodando, não slides",
+        "desc": "Donna, Saúde Inteligente e Konklave em produção — com testes, segurança e LGPD. Não provas de conceito."
       },
       {
         "num": "04",
-        "title": "Deploy & Operação",
-        "desc": "Implantação em produção, entrega de documentação e treinamento completo para total independência do seu time."
+        "title": "Engenheiro + criativo",
+        "desc": "Backend de agentes e RAG e também a camada criativa (imagem, vídeo, marca) com IA. Os dois lados, integrados."
       }
     ]
   },
   "projects": {
-    "label": "Projetos",
-    "heading": "Projetos que demonstram o que eu construo",
+    "label": "Portfólio",
+    "heading": "Portfólio de Produtos IA",
     "viewProject": "Ver projeto",
     "imageSoon": "imagem real em breve",
+    "inProduction": "em produção",
     "items": [
       {
-        "title": "Konklave",
-        "desc": "Plataforma experimental de orquestração multi-agente com 29 personas de IA debatendo temas complexos com votação ponderada.",
-        "tags": ["plataforma", "ia", "multi-agente"],
-        "link": "https://konklave-iota.vercel.app"
+        "title": "Donna",
+        "desc": "SaaS jurídico com 7 motores: monitora PJe/DJe, calcula prazos e mapeia o perfil decisório de juízes — inteligência inédita no mercado. ~10k linhas, multi-tenant, LGPD.",
+        "tags": ["saas", "jurídico", "multi-agente"],
+        "link": "https://github.com/lekosarmento/donna"
       },
       {
         "title": "Saúde Inteligente",
-        "desc": "SaaS para clínicas integrando 6 agentes especialistas autônomos, WhatsApp Cloud API, fluxos complexos em n8n e Supabase.",
+        "desc": "Recepção médica com 6 agentes autônomos no WhatsApp: triagem, agendamento e FAQ no canal do paciente; resumos e alertas no canal do médico. Opera 24/7.",
         "tags": ["saas", "ia", "whatsapp"],
-        "link": ""
+        "link": "https://saudeinteligente.vercel.app/"
+      },
+      {
+        "title": "Konklave",
+        "desc": "Plataforma multi-agente com 29 personas de IA debatendo temas complexos, regras de interação e votação ponderada.",
+        "tags": ["plataforma", "multi-agente"],
+        "link": "https://konklave-iota.vercel.app"
       },
       {
         "title": "AI Content Radar",
-        "desc": "Pipeline autônomo monitorando 33 fontes RSS, filtrando e gerando conteúdos otimizados através de LLMs 24 horas por dia.",
-        "tags": ["automação", "ia", "pipeline"],
+        "desc": "Pipeline autônomo monitorando 33 fontes RSS e gerando conteúdo otimizado por LLMs, 24 horas por dia.",
+        "tags": ["automação", "pipeline"],
         "link": ""
+      },
+      {
+        "title": "ANENO",
+        "desc": "Site institucional + Org Chart para gestão visual de equipes e projetos da agência. Produto interno em produção.",
+        "tags": ["site", "produto", "next.js"],
+        "link": "https://site-aneno.vercel.app/"
+      },
+      {
+        "title": "Este site",
+        "desc": "Portfólio em deck imersivo vertical (Next.js, R3F, framer-motion). Projetado e codado por mim.",
+        "tags": ["next.js", "r3f", "design"],
+        "link": "https://leko.ai"
       }
     ]
   },
@@ -193,6 +192,10 @@
       {
         "group": "Deploy, Versionamento & DevTools",
         "items": ["Railway", "Vercel", "GitHub", "VS Code", "Cursor", "Claude Code"]
+      },
+      {
+        "group": "Criação & Marketing IA",
+        "items": ["Midjourney", "Runway", "Veo", "Google Flow", "Suno", "Heygen", "Higgsfield", "ComfyUI", "ManusIA", "Canva AI"]
       }
     ],
     "projectsLabel": "Projetos demonstráveis",

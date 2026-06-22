@@ -16,6 +16,9 @@
     "tese": "Thesis",
     "pontuais": "On-demand",
     "processo": "Process",
+    "construo": "Solutions",
+    "diferenciais": "Edge",
+    "portfolio": "Portfolio",
     "formacao": "Education",
     "stack": "Stack",
     "foot": "João Pessoa, BR · Worldwide"
@@ -149,6 +152,7 @@
     "heading": "Projects that demonstrate what I build",
     "viewProject": "View project",
     "imageSoon": "real image coming soon",
+    "inProduction": "in production",
     "items": [
       {
         "title": "Konklave",

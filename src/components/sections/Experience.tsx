@@ -9,7 +9,7 @@ export function Experience() {
 
   return (
     <>
-      <div className="idxbig rv">09 — {t("experience.label")}</div>
+      <div className="idxbig rv">07 — {t("experience.label")}</div>
       <h2 className="title rv" style={{ fontSize: "clamp(32px,5vw,68px)", marginTop: 12 }}>
         {t("experience.heading")}
       </h2>

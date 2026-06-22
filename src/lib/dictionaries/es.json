@@ -16,6 +16,9 @@
     "tese": "Tesis",
     "pontuais": "Puntuales",
     "processo": "Proceso",
+    "construo": "Soluciones",
+    "diferenciais": "Diferenciales",
+    "portfolio": "Portafolio",
     "formacao": "Formación",
     "stack": "Stack",
     "foot": "João Pessoa, BR · Atención global"
@@ -149,6 +152,7 @@
     "heading": "Proyectos que demuestran lo que construyo",
     "viewProject": "Ver proyecto",
     "imageSoon": "imagen real en breve",
+    "inProduction": "en producción",
     "items": [
       {
         "title": "Konklave",
