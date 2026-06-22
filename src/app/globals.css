@@ -186,8 +186,10 @@
   inset: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: clamp(30px, 6vw, 100px);
+  /* centraliza quando cabe; alinha ao topo quando o conteúdo é mais alto que a
+     viewport (evita cortar o topo do título em telas mais baixas). */
+  justify-content: safe center;
+  padding: clamp(28px, 4.5vh, 64px) clamp(30px, 6vw, 100px);
   transform-origin: 50% 30%;
   transform: scale(calc(1 - var(--cov) * 0.08)) translateY(calc(var(--cov) * -26px));
   will-change: transform;
