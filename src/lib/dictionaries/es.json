@@ -1,7 +1,8 @@
 {
   "preloader": {
     "init": "Inicializando arquitectura",
-    "ready": "Listo para explorar"
+    "ready": "Listo para explorar",
+    "tagline": "Del escenario al deploy"
   },
   "menu": {
     "open": "Menú",

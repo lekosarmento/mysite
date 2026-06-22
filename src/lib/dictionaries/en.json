@@ -1,7 +1,8 @@
 {
   "preloader": {
     "init": "Initializing architecture",
-    "ready": "Ready to explore"
+    "ready": "Ready to explore",
+    "tagline": "From stage to deploy"
   },
   "menu": {
     "open": "Menu",

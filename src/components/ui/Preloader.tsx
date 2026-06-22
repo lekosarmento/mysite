@@ -5,25 +5,34 @@ import { motion, useReducedMotion } from "framer-motion";
 import { useLoading } from "@/lib/LoadingContext";
 import { useLanguage } from "@/lib/LanguageContext";
 
-// Mesma curva de cortina do protótipo v3 (.pre.done)
-const CURTAIN_EASE = [0.76, 0, 0.24, 1] as const;
-const CURTAIN_DURATION = 1.1;
+const EASE = [0.76, 0, 0.24, 1] as const;
+const LAYER_DURATION = 1.0; // s
+
+// Cortinas em camadas, da FRENTE (com o contador) para o fundo. Ao abrir,
+// sobem em sequência (stagger) como cortinas de palco, revelando o hero.
+// Conceito: "do palco ao deploy" (ink → terra → paper → site).
+const LAYERS = [
+  { bg: "#13100C", delay: 0 },     // ink (frente, segura o contador)
+  { bg: "#B5673F", delay: 0.16 },  // terra
+  { bg: "#F2EFE7", delay: 0.32 },  // paper (funde no hero, que também é paper)
+];
 
 export function Preloader() {
   const { loading, setLoaded } = useLoading();
   const { t } = useLanguage();
   const reduceRaw = useReducedMotion();
+
   // Só aplica reduced-motion após o mount (servidor/1ª pintura iguais → sem
-  // hydration mismatch na barra/cortina para quem tem a preferência).
+  // hydration mismatch para quem tem a preferência).
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
   const reduce = mounted && reduceRaw;
 
   const [count, setCount] = useState(0);
-  const [lifting, setLifting] = useState(false); // cortina subindo
+  const [opening, setOpening] = useState(false); // cortinas abrindo
   const [gone, setGone] = useState(false); // desmontado
 
-  // Contador 0 → 100 (incremento desacelerando, igual ao protótipo)
+  // Contador 0 → 100 (incremento desacelerando)
   useEffect(() => {
     if (reduce) {
       setCount(100);
@@ -41,22 +50,24 @@ export function Preloader() {
     return () => clearTimeout(timer);
   }, [reduce]);
 
-  // Ao chegar em 100: pausa curta, sobe a cortina e libera o resto do site
+  // Ao chegar em 100: abre as cortinas e libera o resto do site
   useEffect(() => {
     if (count < 100) return;
     const timer = setTimeout(() => {
-      setLifting(true);
+      setOpening(true);
       setLoaded();
-    }, reduce ? 0 : 300);
+    }, reduce ? 0 : 380);
     return () => clearTimeout(timer);
   }, [count, reduce, setLoaded]);
 
-  // Desmonta depois que a cortina terminou de subir
+  // Desmonta depois que a última cortina terminou de subir
   useEffect(() => {
-    if (!lifting) return;
-    const timer = setTimeout(() => setGone(true), reduce ? 0 : CURTAIN_DURATION * 1000 + 60);
+    if (!opening) return;
+    const lastDelay = LAYERS[LAYERS.length - 1].delay;
+    const total = reduce ? 0 : (lastDelay + LAYER_DURATION) * 1000 + 80;
+    const timer = setTimeout(() => setGone(true), total);
     return () => clearTimeout(timer);
-  }, [lifting, reduce]);
+  }, [opening, reduce]);
 
   // Trava o scroll nativo enquanto o preloader está visível
   useEffect(() => {
@@ -69,32 +80,45 @@ export function Preloader() {
   if (gone) return null;
 
   return (
-    <motion.div
-      aria-hidden
-      initial={{ y: 0 }}
-      animate={{ y: lifting ? "-101%" : 0 }}
-      transition={{ duration: reduce ? 0 : CURTAIN_DURATION, ease: CURTAIN_EASE }}
-      className="fixed inset-0 z-[120] flex flex-col justify-end px-8 pb-10 md:px-11"
-      style={{ backgroundColor: "#0E0D0B" }}
-    >
-      <div
-        className="font-[700] leading-[0.85] tracking-[-4px] tabular-nums"
-        style={{ fontSize: "clamp(60px,13vw,170px)", color: "#F2EFE7" }}
-      >
-        {count}
-      </div>
+    <div className="fixed inset-0 z-[120] overflow-hidden" aria-hidden>
+      {LAYERS.map((l, i) => (
+        <motion.div
+          key={i}
+          initial={{ y: 0 }}
+          animate={opening ? { y: "-101%" } : { y: 0 }}
+          transition={{
+            duration: reduce ? 0 : LAYER_DURATION,
+            ease: EASE,
+            delay: opening && !reduce ? l.delay : 0,
+          }}
+          className="absolute inset-0"
+          style={{ background: l.bg, zIndex: LAYERS.length - i }}
+        >
+          {/* Contador só na camada da frente (ink) — sobe junto com ela */}
+          {i === 0 && (
+            <div className="absolute inset-0 flex flex-col justify-end px-8 pb-10 md:px-11">
+              <div
+                className="font-[700] leading-[0.85] tracking-[-4px] tabular-nums"
+                style={{ fontSize: "clamp(60px,13vw,170px)", color: "#F2EFE7" }}
+              >
+                {count}
+              </div>
 
-      <div className="mt-3 flex items-center justify-between font-mono text-[11px] uppercase tracking-[2px] text-accent-cyan">
-        <span>{t("preloader.init")}</span>
-        <span>{t("preloader.ready")}</span>
-      </div>
+              <div className="mt-3 flex items-center justify-between font-mono text-[11px] uppercase tracking-[2px]" style={{ color: "#B5673F" }}>
+                <span>{t("preloader.init")}</span>
+                <span>{t("preloader.tagline")}</span>
+              </div>
 
-      <div className="mt-4 h-px w-full bg-accent-cyan/20">
-        <div
-          className="h-full bg-accent-cyan"
-          style={{ width: `${count}%`, transition: reduce ? "none" : "width 120ms linear" }}
-        />
-      </div>
-    </motion.div>
+              <div className="mt-4 h-px w-full" style={{ background: "rgba(181,103,63,0.22)" }}>
+                <div
+                  className="h-full"
+                  style={{ width: `${count}%`, background: "#B5673F", transition: reduce ? "none" : "width 120ms linear" }}
+                />
+              </div>
+            </div>
+          )}
+        </motion.div>
+      ))}
+    </div>
   );
 }
