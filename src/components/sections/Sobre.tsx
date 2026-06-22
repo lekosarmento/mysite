@@ -2,17 +2,19 @@
 
 import { useLanguage } from "@/lib/LanguageContext";
 
+// Logomarcas em /public/images/brands/<file>.svg (preferir SVG; PNG com fundo
+// transparente também serve). Renderizadas em branco (brightness(0) invert(1)).
 const brands = [
-  "Jack Daniel's",
-  "Ambev",
-  "Kwai",
-  "Pringles",
-  "Red Bull",
-  "Café de La Musique",
-  "Jeep",
-  "Corona",
-  "Chivas",
-  "Absolut",
+  { name: "Jack Daniel's", file: "jack-daniels" },
+  { name: "Ambev", file: "ambev" },
+  { name: "Kwai", file: "kwai" },
+  { name: "Pringles", file: "pringles" },
+  { name: "Red Bull", file: "red-bull" },
+  { name: "Café de La Musique", file: "cafe-de-la-musique" },
+  { name: "Jeep", file: "jeep" },
+  { name: "Corona", file: "corona" },
+  { name: "Chivas", file: "chivas" },
+  { name: "Absolut", file: "absolut" },
 ];
 
 /**
@@ -55,7 +57,24 @@ export function Sobre() {
             ))}
           </div>
 
-          <p className="brands rv">{brands.join(" · ")}</p>
+          <div className="brandwall rv">
+            <span className="brandwall-label">{t("credentials.label")}</span>
+            <div className="brandwall-logos">
+              {brands.map((b) => (
+                /* eslint-disable-next-line @next/next/no-img-element */
+                <img
+                  key={b.file}
+                  src={`/images/brands/${b.file}.svg`}
+                  alt={b.name}
+                  title={b.name}
+                  onError={(e) => {
+                    // Enquanto o arquivo da logo não existir, esconde (sem ícone quebrado).
+                    e.currentTarget.style.display = "none";
+                  }}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </>

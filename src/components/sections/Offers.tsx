@@ -5,7 +5,7 @@ import { useLanguage } from "@/lib/LanguageContext";
 /** Cena 05 do deck (tema ink). Serviços em linhas editoriais. */
 export function Offers() {
   const { t } = useLanguage();
-  const items = t("offers.items") as { title: string; body: string; delivery: string }[];
+  const items = t("offers.items") as { title: string; body: string }[];
 
   return (
     <>
@@ -25,7 +25,6 @@ export function Offers() {
               <div className="rt">{it.title}</div>
               <div className="rd">{it.body}</div>
             </div>
-            <span className="rtag">{it.delivery}</span>
           </div>
         ))}
       </div>

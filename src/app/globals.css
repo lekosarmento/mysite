@@ -227,9 +227,9 @@
 
 .scene .kick {
   font-family: var(--font-mono);
-  font-size: clamp(10px, 1.05vw, 12px);
-  letter-spacing: 2px; text-transform: uppercase;
-  color: var(--terra); max-width: 42ch;
+  font-size: clamp(12px, 1.25vw, 15px);
+  letter-spacing: 2.5px; line-height: 1.75; text-transform: uppercase;
+  color: var(--terra); max-width: 50ch;
 }
 .scene.t-ink .kick { color: rgba(244, 238, 227, 0.7); }
 .scene.t-terra .kick { color: rgba(244, 238, 227, 0.85); }
@@ -298,6 +298,19 @@
   font-family: var(--font-mono); font-size: 11px; letter-spacing: 1px;
   color: rgba(244, 238, 227, 0.45); margin-top: 26px; max-width: 46ch; line-height: 1.9;
 }
+/* parede de logomarcas (Sobre) */
+.brandwall { margin-top: 28px; max-width: 48ch; }
+.brandwall-label {
+  display: block; margin-bottom: 14px; font-family: var(--font-mono);
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: rgba(244, 238, 227, 0.5);
+}
+.brandwall-logos { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 26px; }
+.brandwall-logos img {
+  height: 22px; width: auto; object-fit: contain;
+  filter: brightness(0) invert(1); opacity: 0.55; transition: opacity 0.3s;
+}
+.brandwall-logos img:hover { opacity: 1; }
 .stats { display: flex; gap: 44px; margin-top: 32px; }
 .stats .v { font-weight: 800; font-size: clamp(30px, 3.4vw, 48px); letter-spacing: -0.03em; color: var(--cream); }
 .stats .l {
