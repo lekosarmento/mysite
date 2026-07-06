@@ -172,8 +172,10 @@
 
 .scene {
   position: sticky;
+  /* Cenas mais altas que a viewport recebem top NEGATIVO via JS (useDeck):
+     rolam até o fim do próprio conteúdo antes de a próxima cobrir. */
   top: 0;
-  height: 100dvh;
+  min-height: 100dvh;
   overflow: hidden;
   --cov: 0;
 }
@@ -181,9 +183,14 @@
   border-radius: 30px 30px 0 0;
   box-shadow: 0 -30px 70px rgba(0, 0, 0, 0.28);
 }
+/* Pausa entre cenas: distância extra de scroll em que a cena atual fica
+   inteira/parada na tela antes de a próxima começar a cobri-la. */
+.scene-gap { height: 55dvh; }
 .scene-inner {
-  position: absolute;
-  inset: 0;
+  /* Em fluxo normal (não absoluto): o conteúdo dita a altura da cena, então
+     nada fica clipado embaixo — a cena rola até o fim antes de ser coberta. */
+  position: relative;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   /* centraliza quando cabe; alinha ao topo quando o conteúdo é mais alto que a
@@ -191,7 +198,9 @@
   justify-content: safe center;
   padding: clamp(28px, 4.5vh, 64px) clamp(30px, 6vw, 100px);
   transform-origin: 50% 30%;
-  transform: scale(calc(1 - var(--cov) * 0.08)) translateY(calc(var(--cov) * -26px));
+  /* Saída: além do recuo de escala, o conteúdo desliza pra CIMA enquanto a
+     próxima cena cobre — o final da cena continua legível por mais tempo. */
+  transform: scale(calc(1 - var(--cov) * 0.08)) translateY(calc(var(--cov) * -12dvh));
   will-change: transform;
 }
 .scene-dim {
@@ -366,22 +375,22 @@
 .scene.t-terra .row .rn, .scene.t-terra .row .rtag { color: var(--cream); }
 
 /* grids de cards (processo, experiência) */
-.cards { position: relative; z-index: 2; display: grid; gap: clamp(16px, 2vw, 28px); margin-top: clamp(16px, 2.6vh, 32px); }
+.cards { position: relative; z-index: 2; display: grid; gap: clamp(12px, 1.4vw, 20px); margin-top: clamp(14px, 2vh, 26px); }
 .cards.c4 { grid-template-columns: repeat(4, 1fr); }
 .cards.c3 { grid-template-columns: repeat(3, 1fr); }
 .card { padding: clamp(16px, 1.6vw, 24px); border: 1px solid var(--hair); border-radius: 14px; }
 .card .cn { font-family: var(--font-mono); font-size: 12px; color: var(--terra); }
 .card .ch { font-weight: 700; font-size: clamp(17px, 1.6vw, 22px); letter-spacing: -0.01em; margin-top: 8px; }
-.card .cd { font-weight: 300; font-size: 13.5px; line-height: 1.6; margin-top: 8px; opacity: 0.78; }
+.card .cd { font-weight: 300; font-size: 12.5px; line-height: 1.5; margin-top: 8px; opacity: 0.78; }
 
 /* projetos — placeholder tipográfico */
-.projcard { padding: clamp(18px, 1.8vw, 26px); border: 1px solid var(--hair); border-radius: 14px; display: flex; flex-direction: column; text-decoration: none; color: inherit; transition: transform 0.35s, border-color 0.35s; }
+.projcard { padding: clamp(13px, 1.2vw, 18px); border: 1px solid var(--hair); border-radius: 14px; display: flex; flex-direction: column; text-decoration: none; color: inherit; transition: transform 0.35s, border-color 0.35s; }
 .projcard:hover { transform: translateY(-4px); border-color: var(--terra); }
-.projcard .init { font-weight: 800; font-size: clamp(54px, 6vw, 90px); line-height: 0.9; letter-spacing: -0.04em; color: var(--terra); }
+.projcard .init { font-weight: 800; font-size: clamp(30px, 3vw, 44px); line-height: 0.95; letter-spacing: -0.03em; color: var(--terra); }
 .projcard .soon { font-family: var(--font-mono); font-size: 10px; letter-spacing: 1px; text-transform: uppercase; opacity: 0.45; margin-top: 4px; }
 
 /* tags & pills */
-.tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 10px; }
 .tag { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 1px; text-transform: uppercase; border: 1px solid var(--hair); border-radius: 999px; padding: 4px 10px; opacity: 0.8; }
 .pills { position: relative; z-index: 2; display: flex; flex-wrap: wrap; gap: 12px; margin-top: clamp(18px, 3vh, 34px); }
 .pill { font-family: var(--font-mono); font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; border: 1px solid var(--hair); border-radius: 999px; padding: 12px 22px; text-decoration: none; color: inherit; transition: background 0.35s, color 0.35s, border-color 0.35s; }
@@ -426,6 +435,8 @@
     transform: none; padding: clamp(84px, 16vw, 104px) 24px clamp(48px, 12vw, 64px);
   }
   .scene-dim { display: none; }
+  /* Sem empilhamento no mobile → a pausa entre cenas viraria um buraco em branco. */
+  .scene-gap { display: none; }
 
   .hero-photo { width: 100%; opacity: 0.42; }
   .hero-photo .fade { background: linear-gradient(180deg, transparent, var(--paper) 72%); }

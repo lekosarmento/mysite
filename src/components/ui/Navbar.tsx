@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
@@ -20,11 +20,9 @@ const locales = [
 ];
 
 export function Navbar() {
-  const [hidden, setHidden] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const { open: menuOpen, openMenu } = useMenu();
+  const { openMenu } = useMenu();
   const { scrollY } = useScroll();
-  const lastScrollY = useRef(0);
   const { locale, setLocale, t } = useLanguage();
   const [theme, setTheme] = useState<"light" | "dark">("light");
 
@@ -45,20 +43,15 @@ export function Navbar() {
     document.documentElement.classList.toggle("dark", nextTheme === "dark");
   };
 
+  // A navbar é FIXA do início ao fim (não some ao rolar) — o menu precisa
+  // estar sempre acessível; só o fundo ganha blur depois de rolar.
   useMotionValueEvent(scrollY, "change", (latest) => {
-    const previous = lastScrollY.current;
-    if (latest > previous && latest > 80) setHidden(true);
-    if (latest < previous) setHidden(false);
     setScrolled(latest > 60);
-    lastScrollY.current = latest;
   });
 
   return (
     <>
       <motion.header
-        initial={{ y: 0 }}
-        animate={{ y: hidden && !menuOpen ? -100 : 0 }}
-        transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
         className={cn(
           "fixed left-0 right-0 top-0 z-50 flex h-20 items-center justify-between px-6 md:px-10",
           scrolled ? "header-scrolled backdrop-blur-[20px]" : "border-transparent bg-transparent"
@@ -69,7 +62,15 @@ export function Navbar() {
       >
         <div className="w-1" />
 
-        <div className="flex items-center gap-5 md:gap-7">
+        {/* No topo (sem a faixa blur), os controles ficam sobre a foto escura do
+            hero — a pílula translúcida garante contraste desde o primeiro paint. */}
+        <div
+          className={cn(
+            "flex items-center gap-5 rounded-full px-4 py-1.5 transition-colors duration-500 md:gap-7",
+            !scrolled &&
+              "bg-[rgba(242,239,231,0.78)] backdrop-blur-md dark:bg-[rgba(18,16,12,0.65)]"
+          )}
+        >
           {/* Language Selector */}
           <div className="flex items-center gap-1">
             {locales.map((loc, i) => (
@@ -110,9 +111,11 @@ export function Navbar() {
             className="flex cursor-pointer items-center gap-2.5 text-text-primary"
             aria-label={t("menu.open")}
           >
-            <span className="relative block h-[7px] w-[22px]">
-              <span className="absolute left-0 top-0 h-px w-full bg-current" />
-              <span className="absolute left-0 top-[6px] h-px w-full bg-current" />
+            {/* Três barrinhas verticais */}
+            <span className="relative block h-[16px] w-[16px]">
+              <span className="absolute left-0 top-0 h-full w-px bg-current" />
+              <span className="absolute left-1/2 top-0 h-full w-px -translate-x-1/2 bg-current" />
+              <span className="absolute right-0 top-0 h-full w-px bg-current" />
             </span>
             <span className="font-mono text-[11px] uppercase tracking-[1px]">{t("menu.open")}</span>
           </button>

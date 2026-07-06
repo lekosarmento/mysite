@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { Fragment, useRef } from "react";
 import { SCENES } from "./scenes";
 import { Scene } from "./Scene";
 import { useDeck } from "./useDeck";
@@ -44,18 +44,23 @@ export function Deck() {
       {SCENES.map((s, i) => {
         const C = REGISTRY[s.id];
         return (
-          <Scene key={s.id} id={s.id} theme={s.theme} index={i}>
-            {C ? (
-              <C />
-            ) : (
-              <h2
-                className="rv"
-                style={{ fontWeight: 800, fontSize: "clamp(40px,8vw,120px)", letterSpacing: "-.03em" }}
-              >
-                {t(s.labelKey)}
-              </h2>
-            )}
-          </Scene>
+          <Fragment key={s.id}>
+            {/* Pausa de leitura: a cena anterior fica um tempo INTEIRA na tela
+                (dá pra ler o final) antes de esta começar a subir por cima. */}
+            {i > 0 && <div className="scene-gap" aria-hidden />}
+            <Scene id={s.id} theme={s.theme} index={i}>
+              {C ? (
+                <C />
+              ) : (
+                <h2
+                  className="rv"
+                  style={{ fontWeight: 800, fontSize: "clamp(40px,8vw,120px)", letterSpacing: "-.03em" }}
+                >
+                  {t(s.labelKey)}
+                </h2>
+              )}
+            </Scene>
+          </Fragment>
         );
       })}
     </div>

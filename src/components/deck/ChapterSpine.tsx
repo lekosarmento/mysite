@@ -2,6 +2,7 @@
 
 import { useReducedMotion } from "framer-motion";
 import { SCENES } from "./scenes";
+import { sceneScrollTop } from "./useDeck";
 import { useLanguage } from "@/lib/LanguageContext";
 
 /**
@@ -13,11 +14,12 @@ export function ChapterSpine({ activeId }: { activeId: string | null }) {
   const { t } = useLanguage();
   const reduce = useReducedMotion();
 
-  // Cada cena é sticky a top:0, então scrollIntoView não funciona (todas ficam
-  // grudadas). A posição de scroll que torna a cena i a visível é index * altura.
+  // Cada cena é sticky, então scrollIntoView não funciona (todas ficam
+  // grudadas). sceneScrollTop dá a posição de layout real da cena (cenas podem
+  // ser mais altas que a viewport, então índice × altura não serve mais).
   const go = (e: React.MouseEvent, index: number) => {
     e.preventDefault();
-    window.scrollTo({ top: index * window.innerHeight, behavior: reduce ? "auto" : "smooth" });
+    window.scrollTo({ top: sceneScrollTop(index), behavior: reduce ? "auto" : "smooth" });
   };
 
   return (

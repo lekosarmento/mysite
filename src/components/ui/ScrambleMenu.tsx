@@ -5,6 +5,7 @@ import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { useLanguage } from "@/lib/LanguageContext";
 import { useMenu, MENU_WIDTH } from "@/lib/MenuContext";
 import { SCENES } from "@/components/deck/scenes";
+import { sceneScrollTop } from "@/components/deck/useDeck";
 
 // Alfabeto de embaralhamento (igual ao protótipo v3)
 const CH = "ABCDEFGHIJKLMNOPQRSTUVWXYZ#%&/<>_[]áéí";
@@ -126,18 +127,11 @@ export function ScrambleMenu() {
       e.preventDefault();
       closeMenu();
       // Fecha primeiro (libera o scroll travado + reseta o push-aside); rola no próximo
-      // frame. Cenas são sticky a top:0, então scrollIntoView não serve — rola para o
-      // offset index * altura, que torna a cena alvo a visível.
+      // frame. Cenas são sticky, então scrollIntoView não serve — sceneScrollTop dá a
+      // posição de layout real (vale para desktop empilhado e mobile em fluxo normal).
       requestAnimationFrame(() => {
         const behavior = reduce ? "auto" : "smooth";
-        if (window.innerWidth <= 820) {
-          // Mobile: deck vira fluxo normal (alturas variáveis) → posição real do elemento.
-          const el = document.getElementById(item.href.slice(1));
-          if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY, behavior });
-        } else {
-          // Desktop: cenas sticky em top:0 → offset índice×altura.
-          window.scrollTo({ top: item.index * window.innerHeight, behavior });
-        }
+        window.scrollTo({ top: sceneScrollTop(item.index), behavior });
       });
     },
     [closeMenu, reduce]
