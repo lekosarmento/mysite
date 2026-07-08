@@ -33,71 +33,48 @@
   },
   "hero": {
     "headline": "José Werkley",
-    "kicker": "Applied AI Builder | Marketing & Creative Strategy | AI Agents, RAG, Automations",
-    "subtitle": "15+ years running operations for mega-events and global brands, now engineering applied AI — agents, automations, and products that take manual bottlenecks out of the way.",
+    "kicker": "AI Strategy for Marketing, Creativity & Productivity",
+    "subtitle": "I don't come from the lab, I come from the field. I spent 15 years making marketing and events happen in real life, and that's the experience I bring to building AI agents, automations, and products that work day to day, not just in the demo.",
     "pill_empresa": "For Companies",
     "pill_recrutador": "For Recruiters",
     "pill_contato": "Get in Touch",
     "scroll": "scroll to explore"
   },
   "statement": {
-    "line1": "No stage.",
-    "line2": "Just operations.",
-    "caption": "Whoever understands the physical bottleneck of a complex operation designs the AI architecture that solves it."
+    "line1": "From stage",
+    "line2": "to deploy.",
+    "caption": "I didn't trade marketing for code. I merged them. The same mind that produced 1,000+ events and grew brands from zero now architects the AI agents that solve the bottleneck."
   },
   "credentials": {
     "label": "Track record with brands like"
   },
   "about": {
     "label": "About",
-    "heading": "From operations to systems.",
-    "paragraph1": "Led operations of mega-events and global brand activations for 15+ years under extreme pressure, where large budgets and complex logistics must run flawlessly.",
-    "paragraph2": "Then translated that practical, process-oriented background into code.",
-    "paragraph3": "Today I build AI architectures: WhatsApp agents, multi-step n8n automation, SaaS products.",
-    "paragraph4": "My edge is understanding your operation in detail before designing the solution.",
+    "heading": "Marketing, operations, and AI in the same brain.",
+    "paragraph1": "I didn't trade marketing for code, I went deeper. Fifteen years leading marketing, events, and live marketing for brands like Jack Daniel's, Ambev, Red Bull, and Kwai, with teams of up to 100 people and over 1,000 events produced.",
+    "paragraph2": "That repertoire of real operations is what now powers the AI I build: I understand the business bottleneck before designing the architecture.",
+    "paragraph3": "I design and code autonomous agents, n8n automations, RAG, and SaaS products. Plus the creative layer with AI (image, video, content).",
+    "paragraph4": "From briefing to deploy, without outsourcing execution.",
     "stats": [
-      { "value": "15+", "label": "Years in Execution" },
+      { "value": "15+", "label": "Years of operations" },
+      { "value": "1,000+", "label": "Events produced" },
       { "value": "MBA", "label": "AI for Business" }
     ],
     "showMore": "✨ Learn more about my journey",
     "showLess": "Collapse journey"
   },
   "products": {
-    "label": "Products",
-    "heading": "My Core Products",
+    "label": "Solutions",
+    "heading": "What I build",
     "moreDetails": "+ specifications",
     "lessDetails": "- collapse",
     "items": [
-      {
-        "title": "WhatsApp Agent",
-        "desc": "Autonomous agents on WhatsApp for triage, lead qualification, and 24/7 support.",
-        "bullets": ["24/7 Customer Support", "Lead Qualification", "Scheduling & Reminders", "Operational Organization"]
-      },
-      {
-        "title": "Tailored SaaS",
-        "desc": "Digital products, dashboards, and MVPs to validate in the market.",
-        "bullets": ["Functional MVPs", "Internal Dashboards", "Custom Workflows", "AI Integrations"]
-      },
-      {
-        "title": "AI Creation",
-        "desc": "Creative pipelines accelerated with generation of hyper-realistic images and cinematic video.",
-        "bullets": ["Hyper-realistic Images", "Cinematic Videos", "Structured Scripts", "Creative Direction"]
-      },
-      {
-        "title": "AI Systems",
-        "desc": "Multi-agent orchestration connected to databases and APIs for strategic decision support.",
-        "bullets": ["Specialized Agents", "API Integration", "Multi-stage Workflows", "Decision Support"]
-      },
-      {
-        "title": "RAG / Knowledge Base",
-        "desc": "Semantic search connecting frontier models to your company's documents and database.",
-        "bullets": ["Semantic Search", "Internal Bases", "Docs & FAQs", "Contextualized Answers"]
-      },
-      {
-        "title": "Automations",
-        "desc": "n8n workflows that eliminate manual tasks and connect internal tools.",
-        "bullets": ["n8n Integration", "Webhooks", "REST APIs", "Automated Routines"]
-      }
+      { "title": "AI Agents on WhatsApp", "desc": "24/7 support, triage, and lead qualification in natural language, with human handoff when needed." },
+      { "title": "Tailored SaaS with AI", "desc": "Products like medical reception and legal assistants, from MVP to systems in production." },
+      { "title": "RAG & knowledge bases", "desc": "Semantic search connecting LLMs to your company's data and documents." },
+      { "title": "n8n automations", "desc": "Multi-step workflows that eliminate manual work and integrate your tools." },
+      { "title": "AI creative production", "desc": "Image, video, and content for marketing and brand activations, at scale." },
+      { "title": "UX/UI & sites with AI", "desc": "Landing pages, interfaces, and digital products focused on clarity, conversion, and brand." }
     ]
   },
   "offers": {
@@ -111,7 +88,7 @@
       },
       {
         "title": "Digital Product with AI",
-        "body": "MVPs integrated with LLMs to validate your product thesis with real users.",
+        "body": "Prototypes integrated with LLMs to validate your product thesis with real users.",
         "delivery": "Delivery in 6-8 weeks"
       },
       {
@@ -122,56 +99,74 @@
     ]
   },
   "howIWork": {
-    "label": "Process",
-    "heading": "How I Work",
-    "subtitle": "No mysteries, no empty promises. Focus on delivery that works.",
+    "label": "Edge",
+    "heading": "Why me",
+    "subtitle": "What sets me apart from those who only master the technical side.",
     "steps": [
       {
         "num": "01",
-        "title": "Discovery",
-        "desc": "Full process mapping to identify precisely where AI brings real return on investment."
+        "title": "Operations + AI",
+        "desc": "15 years of marketing, events, and real operations powering the AI I build. I understand the business before writing code."
       },
       {
         "num": "02",
-        "title": "Architecture",
-        "desc": "Technical design of the system architecture, API integrations, and detailed flowcharts."
+        "title": "I design, code, and deliver",
+        "desc": "I don't outsource execution. From briefing to production deploy, the architecture and the code are mine."
       },
       {
         "num": "03",
-        "title": "Build & Validation",
-        "desc": "Agile development of the functional prototype and real-world testing within a few weeks."
+        "title": "Products running, not slides",
+        "desc": "Donna, Smart Health, and Konklave in production, with tests, security, and data compliance. Not proofs of concept."
       },
       {
         "num": "04",
-        "title": "Deploy & Operation",
-        "desc": "Production deployment, complete handover documentation, and training for total independence."
+        "title": "Engineer + creative",
+        "desc": "Agent backends and RAG plus the creative layer (image, video, brand) with AI. Both sides, integrated."
       }
     ]
   },
   "projects": {
-    "label": "Projects",
-    "heading": "Projects that demonstrate what I build",
+    "label": "Portfolio",
+    "heading": "AI Product Portfolio",
     "viewProject": "View project",
     "imageSoon": "real image coming soon",
     "inProduction": "in production",
     "items": [
       {
-        "title": "Konklave",
-        "desc": "An experimental multi-agent orchestration platform with 29 distinct AI personas debating complex topics with weighted voting.",
-        "tags": ["platform", "ai", "multi-agent"],
-        "link": "https://konklave-iota.vercel.app"
+        "title": "Donna",
+        "desc": "Legal SaaS with 7 engines: monitors court systems, calculates deadlines, and maps judges' ruling profiles, market-first intelligence. ~10k lines, multi-tenant, data compliant.",
+        "tags": ["saas", "legal", "multi-agent"],
+        "link": "https://github.com/lekosarmento/donna"
       },
       {
         "title": "Smart Health",
-        "desc": "A specialized healthcare SaaS integrating 6 autonomous AI agents, WhatsApp Cloud API, n8n workflows, and Supabase.",
+        "desc": "Medical reception with 6 autonomous agents on WhatsApp: triage, scheduling, and FAQ on the patient channel; summaries and alerts on the doctor's channel. Runs 24/7.",
         "tags": ["saas", "ai", "whatsapp"],
-        "link": ""
+        "link": "https://saudeinteligente.vercel.app/"
+      },
+      {
+        "title": "Konklave",
+        "desc": "Multi-agent platform with 29 AI personas debating complex topics, interaction rules, and weighted voting.",
+        "tags": ["platform", "multi-agent"],
+        "link": "https://konklave-iota.vercel.app"
       },
       {
         "title": "AI Content Radar",
-        "desc": "An autonomous content pipeline monitoring 33 RSS feeds, filtering, and generating optimized insights via LLMs 24/7.",
-        "tags": ["automation", "ai", "pipeline"],
+        "desc": "Autonomous pipeline monitoring 33 RSS sources and generating LLM-optimized content, 24 hours a day.",
+        "tags": ["automation", "pipeline"],
         "link": ""
+      },
+      {
+        "title": "ANENO",
+        "desc": "Institutional site + Org Chart for visual management of the agency's teams and projects. Internal product in production.",
+        "tags": ["site", "product", "next.js"],
+        "link": "https://site-aneno.vercel.app/"
+      },
+      {
+        "title": "This site",
+        "desc": "Portfolio as a vertical immersive deck (Next.js, R3F, framer-motion). Designed and coded by me.",
+        "tags": ["next.js", "r3f", "design"],
+        "link": "https://leko.ai"
       }
     ]
   },
@@ -180,7 +175,7 @@
     "heading": "Opportunities in Applied AI",
     "moreDetails": "+ technical details",
     "lessDetails": "- collapse",
-    "body": "Specialist in Applied AI with solid academic training (MBA AI for Business) and a unique track record of 15+ years leading complex operations. For the last 2 years, fully focused on engineering autonomous agents, n8n automations, and LLM-based SaaS architectures.",
+    "body": "Specialist in Applied AI with solid academic training (MBA AI for Business) and a track record of 15+ years leading complex operations. For the last 2 years, fully focused on designing autonomous agents, n8n automations, and LLM-based product architectures.",
     "stackLabel": "Stack I use daily",
     "stackGroups": [
       {
@@ -198,18 +193,22 @@
       {
         "group": "Deploy, Version Control & DevTools",
         "items": ["Railway", "Vercel", "GitHub", "VS Code", "Cursor", "Claude Code"]
+      },
+      {
+        "group": "Creation & AI Marketing",
+        "items": ["Midjourney", "Runway", "Veo", "Google Omni", "Google Flow", "Suno", "Heygen", "Higgsfield", "ComfyUI", "ManusIA", "Canva AI"]
       }
     ],
     "projectsLabel": "Demonstrable projects",
     "projectsList": [
-      "Konklave — 29 autonomous agents, weighted voting, multi-agent orchestration",
-      "Smart Health — Multi-agent SaaS with 6 specialized assistants connected via WhatsApp API",
-      "AI Content Radar — Autonomous pipeline monitoring 33 RSS feeds and generating insights via LLMs",
-      "GitHub — Public repositories with experiments, practical applications, and proprietary code"
+      "Konklave: 29 autonomous agents, weighted voting, multi-agent orchestration",
+      "Smart Health: multi-agent SaaS with 6 assistants connected via WhatsApp API",
+      "AI Content Radar: autonomous pipeline monitoring 33 RSS sources and generating insights via LLMs",
+      "GitHub: public repositories with experiments, practical applications, and proprietary code"
     ],
     "lookingLabel": "What I'm looking for",
     "lookingBody": "Positions focused on applied AI engineering, autonomous agents, or LLM-based product development.",
-    "closingLine": "Like my portfolio? Let's schedule a call on WhatsApp or LinkedIn.",
+    "closingLine": "Like what you see? Let's schedule a call on WhatsApp or LinkedIn.",
     "cta_whatsapp": "Talk to me on WhatsApp",
     "cta_linkedin": "LinkedIn",
     "cta_github": "GitHub"
@@ -227,9 +226,9 @@
   },
   "experience": {
     "label": "Experience",
-    "heading": "Operational Experience",
-    "body1": "My background was forged in complex operations where execution under pressure is the only metric: mega-events, high-impact marketing, leading brands.",
-    "body2": "This practical experience gave me the ability to understand the logic of real business processes, allowing me to design AI architectures that solve the bottleneck, not the pitch.",
+    "heading": "Operational experience",
+    "body1": "My background was forged in complex operations where execution under pressure is the only metric: mega-events, high-reach marketing, leading brands.",
+    "body2": "This hands-on experience gave me the ability to understand the logic of physical business processes, allowing me to design AI architectures that solve the bottleneck, not the pitch.",
     "cards": [
       {
         "company": "ANENO",
@@ -237,21 +236,21 @@
       },
       {
         "company": "Goa Shantti",
-        "desc": "Positioning marketing, securing sponsors, and producing premium brand experiences."
+        "desc": "Positioning marketing, securing sponsors, production, and brand experiences."
       },
       {
         "company": "Skybar",
-        "desc": "Logistics operations, team management, and scheduling at Brazil's highest bar."
+        "desc": "Logistics operations, team management, and programming at Brazil's highest bar."
       },
       {
         "company": "Helsinki Eventos",
-        "desc": "Production direction for top-tier national brands like Moises.ai and Moura Dubeux."
+        "desc": "Production direction for global and national brands like Moises.ai and Moura Dubeux."
       }
     ]
   },
   "education": {
     "label": "Education",
-    "heading": "Education & Studies",
+    "heading": "Academic background",
     "items": [
       {
         "title": "MBA in Artificial Intelligence for Business",
@@ -272,7 +271,7 @@
   },
   "finalCta": {
     "heading": "Want to optimize your operations with AI agents and automations?",
-    "subtitle": "I can design and deploy your custom system in just a few weeks.",
+    "subtitle": "I can design and deploy your system in just a few weeks.",
     "cta_whatsapp": "Talk on WhatsApp",
     "cta_email": "Send Email",
     "cta_linkedin": "LinkedIn",

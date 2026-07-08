@@ -33,184 +33,183 @@
   },
   "hero": {
     "headline": "José Werkley",
-    "kicker": "Ingeniero de IA Aplicada · Marketing & Estrategia Creativa · Agentes de IA, RAG, Automatizaciones",
-    "subtitle": "15+ años de operación en megaeventos y marcas globales, ahora aplicados a la ingeniería de IA — agentes, automatizaciones y productos que sacan el cuello de botella manual del camino.",
+    "kicker": "Estrategia de IA para Marketing, Creatividad y Productividad",
+    "subtitle": "No vengo del laboratorio, vengo de la operación. Pasé 15 años haciendo que el marketing y los eventos sucedieran en la vida real, y esa es la experiencia que uso para construir agentes, automatizaciones y productos de IA que funcionan en el día a día, no solo en la demo.",
     "pill_empresa": "Soy empresa",
     "pill_recrutador": "Soy reclutador",
     "pill_contato": "Hable conmigo",
     "scroll": "scroll to explore"
   },
   "statement": {
-    "line1": "Sin escenario.",
-    "line2": "Solo operación.",
-    "caption": "Quien entiende el cuello de botella físico de una operación compleja diseña la arquitectura de IA que lo resuelve."
+    "line1": "Del escenario",
+    "line2": "al deploy.",
+    "caption": "No cambié el marketing por el código. Uní los dos. La misma cabeza que produjo 1.000+ eventos y creció marcas desde cero hoy diseña los agentes de IA que resuelven el cuello de botella."
   },
   "credentials": {
     "label": "Trayectoria con marcas como"
   },
   "about": {
-    "label": "Sobre mí",
-    "heading": "De lo operacional al sistema.",
-    "paragraph1": "Lideré operaciones de megaeventos y activaciones de marcas globales por más de 15 años, donde presupuestos, plazos y equipos bajo extrema presión deben funcionar de forma impecable.",
-    "paragraph2": "Luego traduje esa experiencia práctica en procesos directamente en código.",
-    "paragraph3": "Hoy diseño arquitecturas de IA: agentes en WhatsApp, automatizaciones n8n y soluciones SaaS.",
-    "paragraph4": "Mi diferencial es entender su operación en detalle antes de diseñar la solución.",
+    "label": "Sobre",
+    "heading": "Marketing, operación e IA en el mismo cerebro.",
+    "paragraph1": "No cambié el marketing por el código, profundicé. Fueron 15 años liderando marketing, eventos y live marketing para marcas como Jack Daniel's, Ambev, Red Bull y Kwai, con equipos de hasta 100 personas y más de 1.000 eventos producidos.",
+    "paragraph2": "Ese repertorio de operación real es lo que hoy potencia la IA que construyo: entiendo el cuello de botella del negocio antes de diseñar la arquitectura.",
+    "paragraph3": "Diseño y programo agentes autónomos, automatizaciones n8n, RAG y productos SaaS. Y también la capa creativa con IA (imagen, video, contenido).",
+    "paragraph4": "Del briefing al deploy, sin tercerizar la ejecución.",
     "stats": [
-      { "value": "15+", "label": "Años en Ejecución" },
+      { "value": "15+", "label": "Años de operación" },
+      { "value": "1.000+", "label": "Eventos producidos" },
       { "value": "MBA", "label": "IA para Negocios" }
     ],
     "showMore": "✨ Saber más sobre mi trayectoria",
-    "showLess": "Contraer trayectoria"
+    "showLess": "Recoger trayectoria"
   },
   "products": {
-    "label": "Productos",
-    "heading": "Mis principales productos",
+    "label": "Soluciones",
+    "heading": "Lo que construyo",
     "moreDetails": "+ especificaciones",
-    "lessDetails": "- contraer",
+    "lessDetails": "- recoger",
     "items": [
-      {
-        "title": "Agente WhatsApp",
-        "desc": "Agentes autónomos en WhatsApp para triaje, calificación de leads y soporte 24/7.",
-        "bullets": ["Soporte 24/7", "Calificación de leads", "Agendamiento y alertas", "Organización interna"]
-      },
-      {
-        "title": "SaaS a medida",
-        "desc": "Productos digitales, dashboards y MVPs para validar en el mercado.",
-        "bullets": ["MVPs funcionales", "Paneles internos", "Flujos personalizados", "Integraciones con IA"]
-      },
-      {
-        "title": "Creación con IA",
-        "desc": "Flujos creativos acelerados con generación de imágenes hiperrealistas y video cinematográfico.",
-        "bullets": ["Imágenes hiperrealistas", "Videos cinematográficos", "Guiones estructurados", "Dirección creativa"]
-      },
-      {
-        "title": "Sistemas con IA",
-        "desc": "Orquestación de múltiples agentes conectados a bases de datos y APIs para apoyo a la decisión.",
-        "bullets": ["Agentes especializados", "Integración con APIs", "Flujos multi-etapas", "Apoyo en decisiones"]
-      },
-      {
-        "title": "RAG / Base de conocimiento",
-        "desc": "Búsqueda semántica que conecta IAs de frontera a las bases de datos y documentos de su empresa.",
-        "bullets": ["Búsqueda semántica", "Bases internas", "Documentos y FAQs", "Respuestas contextualizadas"]
-      },
-      {
-        "title": "Automatizaciones",
-        "desc": "Flujos en n8n para eliminar tareas manuales e integrar herramientas internas.",
-        "bullets": ["n8n", "Webhooks", "APIs REST", "Rutinas automáticas"]
-      }
+      { "title": "Agentes de IA en WhatsApp", "desc": "Atención, triaje y calificación 24/7 en lenguaje natural, con handoff humano cuando hace falta." },
+      { "title": "SaaS a medida con IA", "desc": "Productos como recepción médica y asistente jurídico, del MVP al sistema en producción." },
+      { "title": "RAG & base de conocimiento", "desc": "Búsqueda semántica conectando LLMs a los datos y documentos de tu empresa." },
+      { "title": "Automatizaciones n8n", "desc": "Flujos multi-etapa que eliminan trabajo manual e integran tus herramientas." },
+      { "title": "Producción creativa con IA", "desc": "Imagen, video y contenido para marketing y activaciones de marca, a escala." },
+      { "title": "UX/UI & sitios con IA", "desc": "Landing pages, interfaces y productos digitales con foco en claridad, conversión y marca." }
     ]
   },
   "offers": {
     "label": "Servicios",
-    "heading": "Otras formas de aplicar IA en su negocio",
+    "heading": "Otras formas de aplicar IA en tu negocio",
     "items": [
       {
         "title": "Operación Automatizada con IA",
-        "body": "Mapeo de cuellos de botella y automatizaciones que reducen tiempo operativo y error humano.",
+        "body": "Mapeo de cuellos de botella internos y automatizaciones que recortan tiempo operativo y error humano.",
         "delivery": "Entrega en 4-6 semanas"
       },
       {
         "title": "Producto Digital con IA",
-        "body": "Prototipos integrados con LLMs para validar su tesis de producto con usuarios reales.",
+        "body": "Prototipos integrados con LLMs para validar tu tesis de producto con usuarios reales.",
         "delivery": "Entrega en 6-8 semanas"
       },
       {
         "title": "Consultoría Estratégica en IA",
-        "body": "Diagnóstico de su negocio e identificación de las oportunidades de IA con retorno real.",
+        "body": "Diagnóstico de tu negocio e identificación de las oportunidades de IA con retorno real.",
         "delivery": "Inmersión de 2 semanas"
       }
     ]
   },
   "howIWork": {
-    "label": "Proceso",
-    "heading": "Cómo trabajo",
-    "subtitle": "Sin misterios ni promesas vacías. Foco en entrega que funciona.",
+    "label": "Diferenciales",
+    "heading": "Por qué yo",
+    "subtitle": "Lo que me separa de quien solo domina la parte técnica.",
     "steps": [
       {
         "num": "01",
-        "title": "Discovery",
-        "desc": "Mapeo completo de procesos e identificación de dónde la IA genera un retorno de inversión real."
+        "title": "Operación + IA",
+        "desc": "15 años de marketing, eventos y operación real que potencian la IA que construyo. Entiendo el negocio antes de programar."
       },
       {
         "num": "02",
-        "title": "Arquitectura",
-        "desc": "Diseño técnico de la arquitectura de sistemas, integraciones de APIs y diagramas de flujo detallados."
+        "title": "Diseño, programo y entrego",
+        "desc": "No tercerizo la ejecución. Del briefing al deploy en producción, la arquitectura y el código son míos."
       },
       {
         "num": "03",
-        "title": "Build & Validación",
-        "desc": "Desarrollo ágil de la solución funcional y pruebas en un entorno real en pocas semanas."
+        "title": "Productos funcionando, no diapositivas",
+        "desc": "Donna, Salud Inteligente y Konklave en producción, con tests, seguridad y protección de datos. No pruebas de concepto."
       },
       {
         "num": "04",
-        "title": "Deploy & Operación",
-        "desc": "Despliegue en producción, entrega de documentación técnica y capacitación para total independencia."
+        "title": "Ingeniero + creativo",
+        "desc": "Backend de agentes y RAG y también la capa creativa (imagen, video, marca) con IA. Los dos lados, integrados."
       }
     ]
   },
   "projects": {
-    "label": "Proyectos",
-    "heading": "Proyectos que demuestran lo que construyo",
+    "label": "Portafolio",
+    "heading": "Portafolio de Productos IA",
     "viewProject": "Ver proyecto",
-    "imageSoon": "imagen real en breve",
+    "imageSoon": "imagen real próximamente",
     "inProduction": "en producción",
     "items": [
       {
-        "title": "Konklave",
-        "desc": "Plataforma experimental de orquestación multi-agente con 29 personas de IA debatiendo temas complejos con votación ponderada.",
-        "tags": ["plataforma", "ia", "multi-agente"],
-        "link": "https://konklave-iota.vercel.app"
+        "title": "Donna",
+        "desc": "SaaS jurídico con 7 motores: monitorea tribunales, calcula plazos y mapea el perfil decisorio de jueces, inteligencia inédita en el mercado. ~10k líneas, multi-tenant, protección de datos.",
+        "tags": ["saas", "jurídico", "multi-agente"],
+        "link": "https://github.com/lekosarmento/donna"
       },
       {
         "title": "Salud Inteligente",
-        "desc": "SaaS para clínicas integrando 6 agentes especialistas autónomos, WhatsApp Cloud API, flujos complejos en n8n y Supabase.",
+        "desc": "Recepción médica con 6 agentes autónomos en WhatsApp: triaje, agendamiento y FAQ en el canal del paciente; resúmenes y alertas en el canal del médico. Opera 24/7.",
         "tags": ["saas", "ia", "whatsapp"],
-        "link": ""
+        "link": "https://saudeinteligente.vercel.app/"
+      },
+      {
+        "title": "Konklave",
+        "desc": "Plataforma multi-agente con 29 personas de IA debatiendo temas complejos, reglas de interacción y votación ponderada.",
+        "tags": ["plataforma", "multi-agente"],
+        "link": "https://konklave-iota.vercel.app"
       },
       {
         "title": "AI Content Radar",
-        "desc": "Pipeline autónomo monitoreando 33 fuentes RSS, filtrando y generando contenidos optimizados mediante LLMs 24/7.",
-        "tags": ["automatización", "ia", "pipeline"],
+        "desc": "Pipeline autónomo monitoreando 33 fuentes RSS y generando contenido optimizado por LLMs, 24 horas al día.",
+        "tags": ["automatización", "pipeline"],
         "link": ""
+      },
+      {
+        "title": "ANENO",
+        "desc": "Sitio institucional + Org Chart para gestión visual de equipos y proyectos de la agencia. Producto interno en producción.",
+        "tags": ["sitio", "producto", "next.js"],
+        "link": "https://site-aneno.vercel.app/"
+      },
+      {
+        "title": "Este sitio",
+        "desc": "Portafolio en deck inmersivo vertical (Next.js, R3F, framer-motion). Diseñado y programado por mí.",
+        "tags": ["next.js", "r3f", "diseño"],
+        "link": "https://leko.ai"
       }
     ]
   },
   "recruiters": {
-    "label": "Para Recrutadores",
+    "label": "Para Reclutadores",
     "heading": "Oportunidades en IA aplicada",
     "moreDetails": "+ detalles técnicos",
-    "lessDetails": "- contraer",
-    "body": "Especialista en IA Aplicada con sólida formación (MBA IA para Negocios) y un trayecto único de 15+ años liderando operaciones complejas. Desde hace 2 años enfocado exclusivamente en diseñar agentes autónomos, automatizaciones n8n y arquitecturas SaaS basadas en LLMs.",
-    "stackLabel": "Stack que uso diariamente",
+    "lessDetails": "- recoger",
+    "body": "Especialista en IA Aplicada con sólida formación académica (MBA IA para Negocios) y repertorio de 15+ años liderando operaciones complejas. Hace 2 años enfocado exclusivamente en diseñar agentes autónomos, automatizaciones n8n y arquitecturas de productos basados en LLMs.",
+    "stackLabel": "Stack que uso a diario",
     "stackGroups": [
       {
-        "group": "IA, Investigación y Agentes",
+        "group": "IA, Investigación & Agentes",
         "items": ["Claude", "OpenAI", "Gemini", "Perplexity", "OpenRouter", "Codex"]
       },
       {
-        "group": "Producto, Frontend e Interfaces",
+        "group": "Producto, Frontend & Interfaces",
         "items": ["Lovable", "Antigravity", "Next.js", "React", "TypeScript", "Tailwind"]
       },
       {
-        "group": "Backend, Automatización y Datos",
+        "group": "Backend, Automatización & Datos",
         "items": ["n8n", "APIs REST", "Webhooks", "Supabase", "RAG", "pgvector"]
       },
       {
-        "group": "Despliegue, Control de Versión y DevTools",
+        "group": "Deploy, Versionado & DevTools",
         "items": ["Railway", "Vercel", "GitHub", "VS Code", "Cursor", "Claude Code"]
+      },
+      {
+        "group": "Creación & Marketing IA",
+        "items": ["Midjourney", "Runway", "Veo", "Google Omni", "Google Flow", "Suno", "Heygen", "Higgsfield", "ComfyUI", "ManusIA", "Canva AI"]
       }
     ],
     "projectsLabel": "Proyectos demostrables",
     "projectsList": [
-      "Konklave — 29 agentes autónomos, votación ponderada, multi-agent orchestration",
-      "Salud Inteligente — SaaS multi-agente con 6 asistentes conectados mediante WhatsApp API",
-      "AI Content Radar — Pipeline autónomo monitoreando 33 fuentes RSS y generando insights por LLMs",
-      "GitHub — Repositorios públicos con experimentos, aplicaciones prácticas y código propietario"
+      "Konklave: 29 agentes autónomos, votación ponderada, multi-agent orchestration",
+      "Salud Inteligente: SaaS multi-agente con 6 asistentes conectados vía WhatsApp API",
+      "AI Content Radar: pipeline autónomo monitoreando 33 fuentes RSS y generando insights por LLMs",
+      "GitHub: repositorios públicos con experimentos, aplicaciones prácticas y código propietario"
     ],
-    "lookingLabel": "Qué busco",
+    "lookingLabel": "Lo que busco",
     "lookingBody": "Posiciones enfocadas en ingeniería de IA aplicada, agentes autónomos o desarrollo de productos basados en LLMs.",
-    "closingLine": "Es interesante mi perfil? Marquemos una llamada por WhatsApp o LinkedIn.",
-    "cta_whatsapp": "Hable conmigo en WhatsApp",
+    "closingLine": "¿Te gustó el repertorio? Agendemos una conversación por WhatsApp o LinkedIn.",
+    "cta_whatsapp": "Hablar conmigo por WhatsApp",
     "cta_linkedin": "LinkedIn",
     "cta_github": "GitHub"
   },
@@ -220,16 +219,16 @@
     "subtitle": "Para demandas específicas que piden una solución puntual.",
     "items": [
       "Desarrollo de sitios institucionales y e-commerces en Next.js con integraciones nativas de IA.",
-      "Arquitectura y construcción de automatizaciones de procesos complejos en n8n.",
-      "Mentoría y consultoría técnica bajo demanda para profesionales y empresas en transición a la IA."
+      "Arquitectura y construcción de automatizaciones de procesos en n8n de alta complejidad.",
+      "Mentoría y consultoría técnica bajo demanda para profesionales y empresas migrando a IA."
     ],
-    "cta": "Hable conmigo"
+    "cta": "Hablar conmigo"
   },
   "experience": {
     "label": "Experiencia",
     "heading": "Experiencia operacional",
     "body1": "Mi bagaje se construyó en operaciones complejas donde la ejecución bajo presión es la única métrica: megaeventos, marketing de gran alcance, marcas líderes.",
-    "body2": "Esta experiencia práctica me dio la capacidad de entender la lógica de procesos físicos de negocios, permitiendo proyectar arquitecturas de IA que resuelven el cuello de botella, no el discurso.",
+    "body2": "Esa vivencia práctica me dio la capacidad de entender la lógica de procesos físicos de negocios, permitiéndome diseñar arquitecturas de IA que resuelven el cuello de botella, no el discurso.",
     "cards": [
       {
         "company": "ANENO",
@@ -245,13 +244,13 @@
       },
       {
         "company": "Helsinki Eventos",
-        "desc": "Dirección de producción para marcas nacionales y globales como Moises.ai y Moura Dubeux."
+        "desc": "Dirección de producción para marcas globales y nacionales como Moises.ai y Moura Dubeux."
       }
     ]
   },
   "education": {
-    "label": "Educación",
-    "heading": "Educación y Estudios",
+    "label": "Formación",
+    "heading": "Formación académica",
     "items": [
       {
         "title": "MBA en Inteligencia Artificial para Negocios",
@@ -259,29 +258,29 @@
         "status": "En curso"
       },
       {
-        "title": "Licenciatura en Publicidad y Propaganda",
+        "title": "Grado en Publicidad y Propaganda",
         "institution": "",
         "status": "Concluida"
       },
       {
-        "title": "Estudios Complementares",
+        "title": "Estudios Complementarios",
         "institution": "Prompt Engineering, RAG avanzado, arquitecturas de agentes autónomos, orquestación y flujos n8n avanzados.",
         "status": ""
       }
     ]
   },
   "finalCta": {
-    "heading": "¿Desea optimizar su operación con agentes de IA y automatizaciones?",
-    "subtitle": "Puedo diseñar e implementar su sistema en pocas semanas.",
-    "cta_whatsapp": "Hablar en WhatsApp",
-    "cta_email": "Enviar correo electrónico",
+    "heading": "¿Quieres optimizar tu operación con agentes de IA y automatizaciones?",
+    "subtitle": "Puedo diseñar e implementar tu sistema en pocas semanas.",
+    "cta_whatsapp": "Hablar por WhatsApp",
+    "cta_email": "Enviar e-mail",
     "cta_linkedin": "LinkedIn",
     "cta_github": "GitHub",
     "cta_instagram": "Instagram"
   },
   "footer": {
     "identity": "Leko · José Werkley Sarmento Dias",
-    "location": "João Pessoa, PB · Atención en todo Brasil y exterior",
+    "location": "João Pessoa, PB · Atención Brasil y exterior",
     "whatsapp": "+55 (83) 98174-1213",
     "email": "werkley.jose@gmail.com",
     "year": "MMXXVI",

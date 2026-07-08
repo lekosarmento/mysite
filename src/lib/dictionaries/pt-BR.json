@@ -33,8 +33,8 @@
   },
   "hero": {
     "headline": "José Werkley",
-    "kicker": "AI Builder & Creative Technologist",
-    "subtitle": "Conecto 15 anos de marketing, eventos e live marketing à engenharia de IA aplicada. Projeto e codifico agentes, automações e produtos do briefing ao deploy. Solução real, não slide.",
+    "kicker": "Estratégia de IA para Marketing, Criatividade e Produtividade",
+    "subtitle": "Não venho do laboratório, venho da operação. Foram 15 anos fazendo marketing e eventos acontecerem na vida real, e é essa bagagem que eu uso pra construir agentes, automações e produtos de IA que funcionam no dia a dia, não só na demo.",
     "pill_empresa": "Sou empresa",
     "pill_recrutador": "Sou recrutador",
     "pill_contato": "Fale comigo",
@@ -196,7 +196,7 @@
       },
       {
         "group": "Criação & Marketing IA",
-        "items": ["Midjourney", "Runway", "Veo", "Google Flow", "Suno", "Heygen", "Higgsfield", "ComfyUI", "ManusIA", "Canva AI"]
+        "items": ["Midjourney", "Runway", "Veo", "Google Omni", "Google Flow", "Suno", "Heygen", "Higgsfield", "ComfyUI", "ManusIA", "Canva AI"]
       }
     ],
     "projectsLabel": "Projetos demonstráveis",
