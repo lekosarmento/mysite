@@ -19,7 +19,7 @@ export function FinalCTA() {
     },
     {
       label: t("finalCta.cta_email"),
-      href: "mailto:werkley.jose@gmail.com?subject=Contato%20pelo%20site%20leko.ai",
+      href: "mailto:werkley.jose@gmail.com?subject=Contato%20pelo%20site%20leko.ia.br",
       primary: false,
     },
     { label: t("finalCta.cta_linkedin"), href: "https://linkedin.com/in/lekosarmento", primary: false },

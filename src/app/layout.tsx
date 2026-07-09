@@ -25,7 +25,7 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://leko.ai"),
+  metadataBase: new URL("https://leko.ia.br"),
   title: "Leko Sarmento — Soluções com Inteligência Artificial",
   description: "Construo agentes de IA, automações e produtos digitais. 15+ anos de experiência operacional aplicados à tecnologia. João Pessoa, Brasil.",
   keywords: ["IA", "Inteligência Artificial", "Agentes de IA", "WhatsApp", "Automação", "SaaS", "Next.js", "Leko Sarmento", "João Pessoa"],
@@ -46,11 +46,11 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   alternates: {
-    canonical: "https://leko.ai",
+    canonical: "https://leko.ia.br",
     languages: {
-      "pt-BR": "https://leko.ai",
-      "en": "https://leko.ai/en",
-      "es": "https://leko.ai/es",
+      "pt-BR": "https://leko.ia.br",
+      "en": "https://leko.ia.br/en",
+      "es": "https://leko.ia.br/es",
     },
   },
 };
