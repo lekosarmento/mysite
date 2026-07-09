@@ -2,7 +2,7 @@
   "preloader": {
     "init": "Inicializando arquitectura",
     "ready": "Listo para explorar",
-    "tagline": "Del escenario al deploy"
+    "tagline": "Estrategia que funciona."
   },
   "menu": {
     "open": "Menú",
@@ -41,9 +41,9 @@
     "scroll": "scroll to explore"
   },
   "statement": {
-    "line1": "Del escenario",
-    "line2": "al deploy.",
-    "caption": "No cambié el marketing por el código. Uní los dos. La misma cabeza que produjo 1.000+ eventos y creció marcas desde cero hoy diseña los agentes de IA que resuelven el cuello de botella."
+    "line1": "Estrategia",
+    "line2": "que funciona.",
+    "caption": "La mayoría entrega la estrategia en diapositivas. Yo la entrego funcionando: agentes en vivo, automatizaciones activas, productos en producción."
   },
   "credentials": {
     "label": "Trayectoria con marcas como"
@@ -54,11 +54,20 @@
     "paragraph1": "No cambié el marketing por el código, profundicé. Fueron 15 años liderando marketing, eventos y live marketing para marcas como Jack Daniel's, Ambev, Red Bull y Kwai, con equipos de hasta 100 personas y más de 1.000 eventos producidos.",
     "paragraph2": "Ese repertorio de operación real es lo que hoy potencia la IA que construyo: entiendo el cuello de botella del negocio antes de diseñar la arquitectura.",
     "paragraph3": "Diseño y programo agentes autónomos, automatizaciones n8n, RAG y productos SaaS. Y también la capa creativa con IA (imagen, video, contenido).",
-    "paragraph4": "Del briefing al deploy, sin tercerizar la ejecución.",
+    "paragraph4": "Del briefing a producción, sin tercerizar la ejecución.",
     "stats": [
-      { "value": "15+", "label": "Años de operación" },
-      { "value": "1.000+", "label": "Eventos producidos" },
-      { "value": "MBA", "label": "IA para Negocios" }
+      {
+        "value": "15+",
+        "label": "Años de operación"
+      },
+      {
+        "value": "1.000+",
+        "label": "Eventos producidos"
+      },
+      {
+        "value": "MBA",
+        "label": "IA para Negocios"
+      }
     ],
     "showMore": "✨ Saber más sobre mi trayectoria",
     "showLess": "Recoger trayectoria"
@@ -69,12 +78,30 @@
     "moreDetails": "+ especificaciones",
     "lessDetails": "- recoger",
     "items": [
-      { "title": "Agentes de IA en WhatsApp", "desc": "Atención, triaje y calificación 24/7 en lenguaje natural, con handoff humano cuando hace falta." },
-      { "title": "SaaS a medida con IA", "desc": "Productos como recepción médica y asistente jurídico, del MVP al sistema en producción." },
-      { "title": "RAG & base de conocimiento", "desc": "Búsqueda semántica conectando LLMs a los datos y documentos de tu empresa." },
-      { "title": "Automatizaciones n8n", "desc": "Flujos multi-etapa que eliminan trabajo manual e integran tus herramientas." },
-      { "title": "Producción creativa con IA", "desc": "Imagen, video y contenido para marketing y activaciones de marca, a escala." },
-      { "title": "UX/UI & sitios con IA", "desc": "Landing pages, interfaces y productos digitales con foco en claridad, conversión y marca." }
+      {
+        "title": "Agentes de IA en WhatsApp",
+        "desc": "Atención, triaje y calificación 24/7 en lenguaje natural, con handoff humano cuando hace falta."
+      },
+      {
+        "title": "SaaS a medida con IA",
+        "desc": "Productos como recepción médica y asistente jurídico, del MVP al sistema en producción."
+      },
+      {
+        "title": "RAG & base de conocimiento",
+        "desc": "Búsqueda semántica conectando LLMs a los datos y documentos de tu empresa."
+      },
+      {
+        "title": "Automatizaciones n8n",
+        "desc": "Flujos multi-etapa que eliminan trabajo manual e integran tus herramientas."
+      },
+      {
+        "title": "Producción creativa con IA",
+        "desc": "Imagen, video y contenido para marketing y activaciones de marca, a escala."
+      },
+      {
+        "title": "UX/UI & sitios con IA",
+        "desc": "Landing pages, interfaces y productos digitales con foco en claridad, conversión y marca."
+      }
     ]
   },
   "offers": {
@@ -135,37 +162,59 @@
       {
         "title": "Donna",
         "desc": "SaaS jurídico con 7 motores: monitorea tribunales, calcula plazos y mapea el perfil decisorio de jueces, inteligencia inédita en el mercado. ~10k líneas, multi-tenant, protección de datos.",
-        "tags": ["saas", "jurídico", "multi-agente"],
+        "tags": [
+          "saas",
+          "jurídico",
+          "multi-agente"
+        ],
         "link": "https://github.com/lekosarmento/donna"
       },
       {
         "title": "Salud Inteligente",
         "desc": "Recepción médica con 6 agentes autónomos en WhatsApp: triaje, agendamiento y FAQ en el canal del paciente; resúmenes y alertas en el canal del médico. Opera 24/7.",
-        "tags": ["saas", "ia", "whatsapp"],
+        "tags": [
+          "saas",
+          "ia",
+          "whatsapp"
+        ],
         "link": "https://saudeinteligente.vercel.app/"
       },
       {
         "title": "Konklave",
         "desc": "Plataforma multi-agente con 29 personas de IA debatiendo temas complejos, reglas de interacción y votación ponderada.",
-        "tags": ["plataforma", "multi-agente"],
+        "tags": [
+          "plataforma",
+          "multi-agente"
+        ],
         "link": "https://konklave-iota.vercel.app"
       },
       {
         "title": "AI Content Radar",
         "desc": "Pipeline autónomo monitoreando 33 fuentes RSS y generando contenido optimizado por LLMs, 24 horas al día.",
-        "tags": ["automatización", "pipeline"],
+        "tags": [
+          "automatización",
+          "pipeline"
+        ],
         "link": ""
       },
       {
         "title": "ANENO",
         "desc": "Sitio institucional + Org Chart para gestión visual de equipos y proyectos de la agencia. Producto interno en producción.",
-        "tags": ["sitio", "producto", "next.js"],
+        "tags": [
+          "sitio",
+          "producto",
+          "next.js"
+        ],
         "link": "https://site-aneno.vercel.app/"
       },
       {
         "title": "Este sitio",
         "desc": "Portafolio en deck inmersivo vertical (Next.js, R3F, framer-motion). Diseñado y programado por mí.",
-        "tags": ["next.js", "r3f", "diseño"],
+        "tags": [
+          "next.js",
+          "r3f",
+          "diseño"
+        ],
         "link": "https://leko.ai"
       }
     ]
@@ -180,23 +229,63 @@
     "stackGroups": [
       {
         "group": "IA, Investigación & Agentes",
-        "items": ["Claude", "OpenAI", "Gemini", "Perplexity", "OpenRouter", "Codex"]
+        "items": [
+          "Claude",
+          "OpenAI",
+          "Gemini",
+          "Perplexity",
+          "OpenRouter",
+          "Codex"
+        ]
       },
       {
         "group": "Producto, Frontend & Interfaces",
-        "items": ["Lovable", "Antigravity", "Next.js", "React", "TypeScript", "Tailwind"]
+        "items": [
+          "Lovable",
+          "Antigravity",
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Tailwind"
+        ]
       },
       {
         "group": "Backend, Automatización & Datos",
-        "items": ["n8n", "APIs REST", "Webhooks", "Supabase", "RAG", "pgvector"]
+        "items": [
+          "n8n",
+          "APIs REST",
+          "Webhooks",
+          "Supabase",
+          "RAG",
+          "pgvector"
+        ]
       },
       {
         "group": "Deploy, Versionado & DevTools",
-        "items": ["Railway", "Vercel", "GitHub", "VS Code", "Cursor", "Claude Code"]
+        "items": [
+          "Railway",
+          "Vercel",
+          "GitHub",
+          "VS Code",
+          "Cursor",
+          "Claude Code"
+        ]
       },
       {
         "group": "Creación & Marketing IA",
-        "items": ["Midjourney", "Runway", "Veo", "Google Omni", "Google Flow", "Suno", "Heygen", "Higgsfield", "ComfyUI", "ManusIA", "Canva AI"]
+        "items": [
+          "Midjourney",
+          "Runway",
+          "Veo",
+          "Google Omni",
+          "Google Flow",
+          "Suno",
+          "Heygen",
+          "Higgsfield",
+          "ComfyUI",
+          "ManusIA",
+          "Canva AI"
+        ]
       }
     ],
     "projectsLabel": "Proyectos demostrables",

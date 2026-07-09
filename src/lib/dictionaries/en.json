@@ -2,7 +2,7 @@
   "preloader": {
     "init": "Initializing architecture",
     "ready": "Ready to explore",
-    "tagline": "From stage to deploy"
+    "tagline": "Strategy that ships."
   },
   "menu": {
     "open": "Menu",
@@ -41,9 +41,9 @@
     "scroll": "scroll to explore"
   },
   "statement": {
-    "line1": "From stage",
-    "line2": "to deploy.",
-    "caption": "I didn't trade marketing for code. I merged them. The same mind that produced 1,000+ events and grew brands from zero now architects the AI agents that solve the bottleneck."
+    "line1": "Strategy",
+    "line2": "that ships.",
+    "caption": "Most people deliver strategy as slides. I deliver it running: agents live, automations active, products in production."
   },
   "credentials": {
     "label": "Track record with brands like"
@@ -54,11 +54,20 @@
     "paragraph1": "I didn't trade marketing for code, I went deeper. Fifteen years leading marketing, events, and live marketing for brands like Jack Daniel's, Ambev, Red Bull, and Kwai, with teams of up to 100 people and over 1,000 events produced.",
     "paragraph2": "That repertoire of real operations is what now powers the AI I build: I understand the business bottleneck before designing the architecture.",
     "paragraph3": "I design and code autonomous agents, n8n automations, RAG, and SaaS products. Plus the creative layer with AI (image, video, content).",
-    "paragraph4": "From briefing to deploy, without outsourcing execution.",
+    "paragraph4": "From briefing to production, without outsourcing execution.",
     "stats": [
-      { "value": "15+", "label": "Years of operations" },
-      { "value": "1,000+", "label": "Events produced" },
-      { "value": "MBA", "label": "AI for Business" }
+      {
+        "value": "15+",
+        "label": "Years of operations"
+      },
+      {
+        "value": "1,000+",
+        "label": "Events produced"
+      },
+      {
+        "value": "MBA",
+        "label": "AI for Business"
+      }
     ],
     "showMore": "✨ Learn more about my journey",
     "showLess": "Collapse journey"
@@ -69,12 +78,30 @@
     "moreDetails": "+ specifications",
     "lessDetails": "- collapse",
     "items": [
-      { "title": "AI Agents on WhatsApp", "desc": "24/7 support, triage, and lead qualification in natural language, with human handoff when needed." },
-      { "title": "Tailored SaaS with AI", "desc": "Products like medical reception and legal assistants, from MVP to systems in production." },
-      { "title": "RAG & knowledge bases", "desc": "Semantic search connecting LLMs to your company's data and documents." },
-      { "title": "n8n automations", "desc": "Multi-step workflows that eliminate manual work and integrate your tools." },
-      { "title": "AI creative production", "desc": "Image, video, and content for marketing and brand activations, at scale." },
-      { "title": "UX/UI & sites with AI", "desc": "Landing pages, interfaces, and digital products focused on clarity, conversion, and brand." }
+      {
+        "title": "AI Agents on WhatsApp",
+        "desc": "24/7 support, triage, and lead qualification in natural language, with human handoff when needed."
+      },
+      {
+        "title": "Tailored SaaS with AI",
+        "desc": "Products like medical reception and legal assistants, from MVP to systems in production."
+      },
+      {
+        "title": "RAG & knowledge bases",
+        "desc": "Semantic search connecting LLMs to your company's data and documents."
+      },
+      {
+        "title": "n8n automations",
+        "desc": "Multi-step workflows that eliminate manual work and integrate your tools."
+      },
+      {
+        "title": "AI creative production",
+        "desc": "Image, video, and content for marketing and brand activations, at scale."
+      },
+      {
+        "title": "UX/UI & sites with AI",
+        "desc": "Landing pages, interfaces, and digital products focused on clarity, conversion, and brand."
+      }
     ]
   },
   "offers": {
@@ -135,37 +162,59 @@
       {
         "title": "Donna",
         "desc": "Legal SaaS with 7 engines: monitors court systems, calculates deadlines, and maps judges' ruling profiles, market-first intelligence. ~10k lines, multi-tenant, data compliant.",
-        "tags": ["saas", "legal", "multi-agent"],
+        "tags": [
+          "saas",
+          "legal",
+          "multi-agent"
+        ],
         "link": "https://github.com/lekosarmento/donna"
       },
       {
         "title": "Smart Health",
         "desc": "Medical reception with 6 autonomous agents on WhatsApp: triage, scheduling, and FAQ on the patient channel; summaries and alerts on the doctor's channel. Runs 24/7.",
-        "tags": ["saas", "ai", "whatsapp"],
+        "tags": [
+          "saas",
+          "ai",
+          "whatsapp"
+        ],
         "link": "https://saudeinteligente.vercel.app/"
       },
       {
         "title": "Konklave",
         "desc": "Multi-agent platform with 29 AI personas debating complex topics, interaction rules, and weighted voting.",
-        "tags": ["platform", "multi-agent"],
+        "tags": [
+          "platform",
+          "multi-agent"
+        ],
         "link": "https://konklave-iota.vercel.app"
       },
       {
         "title": "AI Content Radar",
         "desc": "Autonomous pipeline monitoring 33 RSS sources and generating LLM-optimized content, 24 hours a day.",
-        "tags": ["automation", "pipeline"],
+        "tags": [
+          "automation",
+          "pipeline"
+        ],
         "link": ""
       },
       {
         "title": "ANENO",
         "desc": "Institutional site + Org Chart for visual management of the agency's teams and projects. Internal product in production.",
-        "tags": ["site", "product", "next.js"],
+        "tags": [
+          "site",
+          "product",
+          "next.js"
+        ],
         "link": "https://site-aneno.vercel.app/"
       },
       {
         "title": "This site",
         "desc": "Portfolio as a vertical immersive deck (Next.js, R3F, framer-motion). Designed and coded by me.",
-        "tags": ["next.js", "r3f", "design"],
+        "tags": [
+          "next.js",
+          "r3f",
+          "design"
+        ],
         "link": "https://leko.ai"
       }
     ]
@@ -180,23 +229,63 @@
     "stackGroups": [
       {
         "group": "AI, Research & Agents",
-        "items": ["Claude", "OpenAI", "Gemini", "Perplexity", "OpenRouter", "Codex"]
+        "items": [
+          "Claude",
+          "OpenAI",
+          "Gemini",
+          "Perplexity",
+          "OpenRouter",
+          "Codex"
+        ]
       },
       {
         "group": "Product, Frontend & Interfaces",
-        "items": ["Lovable", "Antigravity", "Next.js", "React", "TypeScript", "Tailwind"]
+        "items": [
+          "Lovable",
+          "Antigravity",
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Tailwind"
+        ]
       },
       {
         "group": "Backend, Automation & Data",
-        "items": ["n8n", "REST APIs", "Webhooks", "Supabase", "RAG", "pgvector"]
+        "items": [
+          "n8n",
+          "REST APIs",
+          "Webhooks",
+          "Supabase",
+          "RAG",
+          "pgvector"
+        ]
       },
       {
         "group": "Deploy, Version Control & DevTools",
-        "items": ["Railway", "Vercel", "GitHub", "VS Code", "Cursor", "Claude Code"]
+        "items": [
+          "Railway",
+          "Vercel",
+          "GitHub",
+          "VS Code",
+          "Cursor",
+          "Claude Code"
+        ]
       },
       {
         "group": "Creation & AI Marketing",
-        "items": ["Midjourney", "Runway", "Veo", "Google Omni", "Google Flow", "Suno", "Heygen", "Higgsfield", "ComfyUI", "ManusIA", "Canva AI"]
+        "items": [
+          "Midjourney",
+          "Runway",
+          "Veo",
+          "Google Omni",
+          "Google Flow",
+          "Suno",
+          "Heygen",
+          "Higgsfield",
+          "ComfyUI",
+          "ManusIA",
+          "Canva AI"
+        ]
       }
     ],
     "projectsLabel": "Demonstrable projects",
