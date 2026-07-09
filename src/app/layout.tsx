@@ -7,6 +7,7 @@ import { Preloader } from "@/components/ui/Preloader";
 import { LanguageProvider } from "@/lib/LanguageContext";
 import { LoadingProvider } from "@/lib/LoadingContext";
 import { MenuProvider } from "@/lib/MenuContext";
+import { AgentProvider } from "@/lib/AgentContext";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
@@ -85,13 +86,15 @@ export default function RootLayout({
         <LanguageProvider>
           <LoadingProvider>
             <MenuProvider>
-              <Preloader />
-              <GrainOverlay />
-              <SmoothScrollProvider>
-                <CustomCursor />
-                {children}
-                <Analytics />
-              </SmoothScrollProvider>
+              <AgentProvider>
+                <Preloader />
+                <GrainOverlay />
+                <SmoothScrollProvider>
+                  <CustomCursor />
+                  {children}
+                  <Analytics />
+                </SmoothScrollProvider>
+              </AgentProvider>
             </MenuProvider>
           </LoadingProvider>
         </LanguageProvider>

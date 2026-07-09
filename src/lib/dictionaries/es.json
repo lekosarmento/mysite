@@ -377,5 +377,41 @@
   },
   "mobileCta": {
     "label": "Hablar con Leko"
+  },
+  "agent": {
+    "invite": {
+      "text": "¡Hola! Soy Leko. Bueno, casi: soy su agente de IA (con su cara incluida). ¿Quieres que te presente el sitio a mi manera?",
+      "yes": "▶ Preséntamelo",
+      "no": "Prefiero explorar solo"
+    },
+    "tour": {
+      "next": "Siguiente →",
+      "skip": "Saltar presentación",
+      "chat": "💬 Hablar con él ahora",
+      "close": "Cerrar",
+      "steps": {
+        "inicio": "Esta es mi carta de presentación: estrategia de IA para marketing, creatividad y productividad. Ven conmigo y te muestro qué significa en la práctica.",
+        "sobre": "Antes del código hubo escenario: 15 años en marketing y eventos, más de 1.000 producciones para marcas como Jack Daniel's, Red Bull y Ambev. De ahí viene mi forma de resolver problemas.",
+        "tese": "Mi tesis cabe en tres palabras: estrategia que funciona. Lo que diseño, lo pongo en producción. Las diapositivas bonitas no pagan las cuentas.",
+        "construo": "Esto es lo que construyo: agentes de WhatsApp, SaaS con IA, RAG, automatizaciones n8n y la capa creativa encima (imagen, video, contenido).",
+        "diferenciais": "¿Por qué yo y no una agencia? Porque aquí quien entiende el negocio, diseña la solución y escribe el código es la misma persona.",
+        "portfolio": "Productos reales, funcionando ahora: Donna en el sector jurídico, Salud Inteligente en medicina, Konklave con 29 agentes debatiendo entre sí. Nada de pruebas de concepto.",
+        "experiencia": "La trayectoria completa está aquí: de la operación de grandes eventos a la ingeniería de IA aplicada.",
+        "formacao": "Base académica también: MBA en IA para Negocios y estudio continuo, porque esta área no espera a nadie.",
+        "stack": "Mis herramientas de todos los días: Claude, OpenAI, Gemini, n8n, Supabase, Next.js y el arsenal creativo con IA. Por cierto, yo mismo estoy hecho con una de ellas.",
+        "contato": "¡Y eso es todo! Si algo aquí tuvo sentido para tu negocio, este es el camino. O mejor: ¿quieres hablar conmigo ahora mismo? Pregúntame lo que quieras."
+      }
+    },
+    "chat": {
+      "title": "Leko (versión IA)",
+      "greeting": "¡Hola! Dispara: un proyecto, una duda técnica, curiosidad sobre mi trayectoria... respondo como respondería Leko.",
+      "placeholder": "Pregúntame lo que quieras...",
+      "send": "Enviar",
+      "error": "Falló la conexión por aquí. ¿Intentas de nuevo?",
+      "disclaimer": "Agente de IA construido por Leko · para hablar con el real, WhatsApp en contacto"
+    },
+    "launcher": {
+      "label": "Hablar con el agente de Leko"
+    }
   }
 }

@@ -452,3 +452,130 @@
   .cards.c4, .cards.c3, .stack-grid { grid-template-columns: 1fr; }
 }
 
+/* ============================================================
+   ANFITRIÃO — agente-avatar do Leko + holofote discreto
+   ============================================================ */
+
+/* Holofote: luz âmbar mínima que segue o cursor (SpotlightGlow) */
+.spot-glow {
+  position: fixed; top: 0; left: 0; width: 800px; height: 800px;
+  pointer-events: none; z-index: 40; opacity: 0;
+  background: radial-gradient(circle, rgba(232, 160, 99, 0.13), rgba(181, 103, 63, 0.05) 42%, transparent 68%);
+  mix-blend-mode: soft-light; transition: opacity 0.6s ease;
+  will-change: transform;
+}
+.t-ink .spot-glow { mix-blend-mode: screen; }
+
+/* Penumbra de palco durante o tour */
+.ag-dim {
+  position: fixed; inset: 0; pointer-events: none; z-index: 55;
+  background: radial-gradient(ellipse 90% 75% at 50% 42%, transparent 40%, rgba(10, 8, 6, 0.5) 100%);
+  opacity: 0; transition: opacity 0.9s ease;
+}
+.ag-dim.on { opacity: 1; }
+
+.ag-root { position: fixed; right: clamp(12px, 2.4vw, 34px); bottom: clamp(12px, 2.4vh, 26px); z-index: 60; }
+
+/* Launcher (avatar redondo, estado idle) */
+.ag-launcher {
+  position: relative; width: 68px; height: 68px; border-radius: 50%;
+  border: 2px solid var(--terra); background: var(--ink); cursor: pointer;
+  overflow: hidden; padding: 0; display: block;
+  box-shadow: 0 8px 28px rgba(19, 16, 12, 0.35);
+  transition: transform 0.3s var(--ease-expo, ease);
+}
+.ag-launcher:hover { transform: scale(1.07); }
+.ag-launcher-img { width: 100%; height: 100%; object-fit: cover; object-position: top; transform: scale(1.5); transform-origin: 50% 12%; }
+.ag-launcher-dot {
+  position: absolute; right: 5px; bottom: 7px; width: 11px; height: 11px;
+  border-radius: 50%; background: #4FBF67; border: 2px solid var(--ink);
+}
+
+/* Cena convite/tour: balão + avatar grande */
+.ag-scene { display: flex; flex-direction: column; align-items: flex-end; gap: 0; }
+.ag-avatar {
+  width: clamp(130px, 15vw, 200px); height: auto;
+  filter: drop-shadow(0 14px 30px rgba(19, 16, 12, 0.35));
+  animation: ag-enter 0.7s var(--ease-expo, ease) both;
+  margin-right: clamp(4px, 1vw, 18px);
+}
+@keyframes ag-enter {
+  from { transform: translateY(46px) scale(0.92); opacity: 0; }
+  to { transform: none; opacity: 1; }
+}
+.ag-bubble {
+  position: relative; max-width: min(380px, calc(100vw - 48px));
+  background: var(--paper); color: var(--ink);
+  border: 1px solid rgba(19, 16, 12, 0.14);
+  border-radius: 16px 16px 4px 16px;
+  padding: 16px 18px; margin-bottom: 12px;
+  box-shadow: 0 16px 44px rgba(19, 16, 12, 0.28);
+  animation: ag-enter 0.55s var(--ease-expo, ease) 0.15s both;
+}
+.ag-bubble p { font-size: 15px; line-height: 1.5; min-height: 3em; }
+.ag-bubble-tag {
+  display: block; font-family: var(--font-mono); font-size: 10px;
+  letter-spacing: 1.6px; text-transform: uppercase; color: var(--terra);
+  margin-bottom: 7px;
+}
+.ag-caret { display: inline-block; width: 8px; height: 1em; background: var(--terra); margin-left: 2px; vertical-align: text-bottom; animation: ag-blink 0.7s steps(1) infinite; }
+@keyframes ag-blink { 50% { opacity: 0; } }
+.ag-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 13px; }
+.ag-btn {
+  font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.4px;
+  padding: 9px 15px; border-radius: 999px; cursor: pointer;
+  border: 1px solid rgba(19, 16, 12, 0.28); background: transparent; color: var(--ink);
+  transition: background 0.25s, color 0.25s, border-color 0.25s;
+}
+.ag-btn:hover { border-color: var(--terra); color: var(--terra); }
+.ag-btn-primary { background: var(--terra); border-color: var(--terra); color: var(--cream, #fff); }
+.ag-btn-primary:hover { background: #9C5231; color: var(--cream, #fff); }
+
+/* Chat */
+.ag-chat {
+  width: min(390px, calc(100vw - 24px)); height: min(540px, calc(100dvh - 90px));
+  display: flex; flex-direction: column; overflow: hidden;
+  background: var(--paper); color: var(--ink);
+  border: 1px solid rgba(19, 16, 12, 0.14); border-radius: 18px;
+  box-shadow: 0 24px 60px rgba(19, 16, 12, 0.35);
+  animation: ag-enter 0.5s var(--ease-expo, ease) both;
+}
+.ag-chat-head {
+  display: flex; align-items: center; gap: 11px; padding: 13px 15px;
+  background: var(--ink); color: var(--cream, #F6F1E7);
+}
+.ag-chat-head strong { display: block; font-size: 14px; letter-spacing: -0.01em; }
+.ag-chat-head small { display: block; font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.4px; opacity: 0.62; margin-top: 2px; max-width: 250px; }
+.ag-chat-face { border-radius: 50%; object-fit: cover; background: var(--terra); }
+.ag-chat-close { margin-left: auto; background: none; border: none; color: inherit; font-size: 15px; cursor: pointer; opacity: 0.7; padding: 6px; }
+.ag-chat-close:hover { opacity: 1; }
+.ag-chat-log { flex: 1; overflow-y: auto; padding: 16px 14px; display: flex; flex-direction: column; gap: 9px; }
+.ag-msg { max-width: 84%; padding: 10px 13px; border-radius: 14px; font-size: 14px; line-height: 1.45; white-space: pre-wrap; }
+.ag-msg-assistant { align-self: flex-start; background: rgba(19, 16, 12, 0.06); border-bottom-left-radius: 4px; }
+.ag-msg-user { align-self: flex-end; background: var(--terra); color: var(--cream, #fff); border-bottom-right-radius: 4px; }
+.ag-msg-typing { display: flex; gap: 4px; padding: 13px 15px; }
+.ag-msg-typing span { width: 6px; height: 6px; border-radius: 50%; background: var(--terra); animation: ag-typing 1s ease-in-out infinite; }
+.ag-msg-typing span:nth-child(2) { animation-delay: 0.15s; }
+.ag-msg-typing span:nth-child(3) { animation-delay: 0.3s; }
+@keyframes ag-typing { 40% { transform: translateY(-4px); opacity: 0.5; } }
+.ag-chat-input { display: flex; gap: 8px; padding: 11px; border-top: 1px solid rgba(19, 16, 12, 0.1); }
+.ag-chat-input input {
+  flex: 1; border: 1px solid rgba(19, 16, 12, 0.18); border-radius: 999px;
+  padding: 10px 15px; font-size: 14px; background: transparent; color: inherit; outline: none;
+}
+.ag-chat-input input:focus { border-color: var(--terra); }
+.ag-chat-input button {
+  font-family: var(--font-mono); font-size: 12px; padding: 0 17px; border-radius: 999px;
+  border: none; background: var(--terra); color: var(--cream, #fff); cursor: pointer;
+}
+.ag-chat-input button:disabled { opacity: 0.45; cursor: default; }
+
+@media (max-width: 640px) {
+  .ag-avatar { width: 108px; }
+  .ag-bubble p { font-size: 14px; }
+  .spot-glow { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ag-avatar, .ag-bubble, .ag-chat { animation: none; }
+  .ag-caret { animation: none; }
+}

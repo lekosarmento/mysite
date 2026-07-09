@@ -377,5 +377,41 @@
   },
   "mobileCta": {
     "label": "Talk to Leko"
+  },
+  "agent": {
+    "invite": {
+      "text": "Hey! I'm Leko. Well, almost: I'm his AI agent (his face included). Want me to show you around the site my way?",
+      "yes": "▶ Show me around",
+      "no": "I'll explore on my own"
+    },
+    "tour": {
+      "next": "Next →",
+      "skip": "Skip the tour",
+      "chat": "💬 Chat with him now",
+      "close": "Close",
+      "steps": {
+        "inicio": "This is my calling card: AI strategy for marketing, creativity, and productivity. Come along and I'll show you what that means in practice.",
+        "sobre": "Before the code, there was a stage: 15 years in marketing and events, 1,000+ productions for brands like Jack Daniel's, Red Bull, and Ambev. That's where my way of solving problems comes from.",
+        "tese": "My thesis fits in three words: strategy that ships. What I design, I put in production. Pretty slides don't pay the bills.",
+        "construo": "This is what I build: WhatsApp agents, AI-powered SaaS, RAG, n8n automations, and the creative layer on top (image, video, content).",
+        "diferenciais": "Why me and not an agency? Because here, the person who understands the business, designs the solution, and writes the code is the same person.",
+        "portfolio": "Real products, running right now: Donna in legal, Smart Health in medicine, Konklave with 29 AI agents debating each other. No proofs of concept.",
+        "experiencia": "The full journey is here: from operating major events to applied AI engineering.",
+        "formacao": "Academic grounding too: an MBA in AI for Business and continuous study, because this field waits for no one.",
+        "stack": "My everyday tools: Claude, OpenAI, Gemini, n8n, Supabase, Next.js, and the AI creative arsenal. By the way, I'm built with one of them myself.",
+        "contato": "And that's it! If anything here made sense for your business, this is the way. Or better: want to talk to me right now? Ask me anything."
+      }
+    },
+    "chat": {
+      "title": "Leko (AI version)",
+      "greeting": "Hey! Fire away: a project, a technical question, curiosity about my journey... I'll answer the way Leko would.",
+      "placeholder": "Ask me anything...",
+      "send": "Send",
+      "error": "Connection hiccup here. Try again?",
+      "disclaimer": "AI agent built by Leko · to talk to the real one, WhatsApp in the contact section"
+    },
+    "launcher": {
+      "label": "Chat with Leko's agent"
+    }
   }
 }
