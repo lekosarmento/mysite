@@ -7,12 +7,31 @@ import { useLanguage } from "@/lib/LanguageContext";
 import { SCENES } from "@/components/deck/scenes";
 import { sceneScrollTop } from "@/components/deck/useDeck";
 
-/** Pose → arquivo. Poses ainda não geradas caem no fallback mais próximo. */
+/** Pose → arquivo. */
 const POSES = {
-  acenando: "/images/agent/avatar-acenando.png",
+  sorrindo: "/images/agent/avatar-sorrindo.png",
+  apresentando: "/images/agent/avatar-apresentando.png",
+  explicando: "/images/agent/avatar-explicando.png",
+  destacando: "/images/agent/avatar-destacando.png",
+  confiante: "/images/agent/avatar-confiante.png",
   neutro: "/images/agent/avatar-neutro.png",
-  apresentando: "/images/agent/avatar-base.png",
+  pensando: "/images/agent/avatar-pensando.png",
+  joinha: "/images/agent/avatar-joinha.png",
 } as const;
+
+/** Pose do tour por cena: gesto acompanha o que está sendo apresentado. */
+const TOUR_POSES: Record<string, (typeof POSES)[keyof typeof POSES]> = {
+  inicio: POSES.apresentando,
+  sobre: POSES.explicando,
+  tese: POSES.destacando,
+  construo: POSES.explicando,
+  diferenciais: POSES.confiante,
+  portfolio: POSES.apresentando,
+  experiencia: POSES.explicando,
+  formacao: POSES.neutro,
+  stack: POSES.destacando,
+  contato: POSES.joinha,
+};
 
 type ChatMsg = { role: "user" | "assistant"; content: string };
 
@@ -134,7 +153,11 @@ export function AgentHost() {
   if (mode === "hidden") return null;
 
   const pose =
-    mode === "invite" ? POSES.acenando : mode === "tour" ? POSES.apresentando : POSES.neutro;
+    mode === "invite"
+      ? POSES.sorrindo
+      : mode === "tour"
+        ? (TOUR_POSES[SCENES[step].id] ?? POSES.apresentando)
+        : POSES.neutro;
 
   return (
     <>
@@ -145,7 +168,7 @@ export function AgentHost() {
         {/* Launcher (estado idle): só o avatar redondo */}
         {mode === "idle" && (
           <button className="ag-launcher" onClick={openChat} aria-label={t("agent.launcher.label")}>
-            <Image src={POSES.neutro} alt="" width={72} height={72} className="ag-launcher-img" />
+            <Image src={POSES.sorrindo} alt="" width={72} height={72} className="ag-launcher-img" />
             <span className="ag-launcher-dot" />
           </button>
         )}
@@ -213,7 +236,13 @@ export function AgentHost() {
         {mode === "chat" && (
           <div className="ag-chat" role="dialog" aria-label={t("agent.chat.title")}>
             <header className="ag-chat-head">
-              <Image src={POSES.neutro} alt="" width={40} height={40} className="ag-chat-face" />
+              <Image
+                src={sending ? POSES.pensando : POSES.neutro}
+                alt=""
+                width={40}
+                height={40}
+                className="ag-chat-face"
+              />
               <div>
                 <strong>{t("agent.chat.title")}</strong>
                 <small>{t("agent.chat.disclaimer")}</small>

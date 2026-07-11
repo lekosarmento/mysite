@@ -481,7 +481,8 @@
   position: relative; width: 68px; height: 68px; border-radius: 50%;
   border: 2px solid var(--terra); background: var(--ink); cursor: pointer;
   overflow: hidden; padding: 0; display: block;
-  box-shadow: 0 8px 28px rgba(19, 16, 12, 0.35);
+  box-shadow: 0 8px 28px rgba(19, 16, 12, 0.35),
+    0 0 16px color-mix(in srgb, var(--accent-warm) 45%, transparent);
   transition: transform 0.3s var(--ease-expo, ease);
 }
 .ag-launcher:hover { transform: scale(1.07); }
@@ -495,7 +496,8 @@
 .ag-scene { display: flex; flex-direction: column; align-items: flex-end; gap: 0; }
 .ag-avatar {
   width: clamp(130px, 15vw, 200px); height: auto;
-  filter: drop-shadow(0 14px 30px rgba(19, 16, 12, 0.35));
+  filter: drop-shadow(0 14px 30px rgba(19, 16, 12, 0.35))
+    drop-shadow(0 0 22px color-mix(in srgb, var(--accent-warm) 42%, transparent));
   animation: ag-enter 0.7s var(--ease-expo, ease) both;
   margin-right: clamp(4px, 1vw, 18px);
 }
