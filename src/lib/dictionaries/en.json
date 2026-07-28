@@ -68,9 +68,7 @@
         "value": "MBA",
         "label": "AI for Business"
       }
-    ],
-    "showMore": "✨ Learn more about my journey",
-    "showLess": "Collapse journey"
+    ]
   },
   "products": {
     "label": "Solutions",
@@ -101,27 +99,6 @@
       {
         "title": "UX/UI & sites with AI",
         "desc": "Landing pages, interfaces, and digital products focused on clarity, conversion, and brand."
-      }
-    ]
-  },
-  "offers": {
-    "label": "Services",
-    "heading": "Other ways to apply AI in your business",
-    "items": [
-      {
-        "title": "Operations Automated with AI",
-        "body": "Mapping internal bottlenecks and building automations that cut operating time and human error.",
-        "delivery": "Delivery in 4-6 weeks"
-      },
-      {
-        "title": "Digital Product with AI",
-        "body": "Prototypes integrated with LLMs to validate your product thesis with real users.",
-        "delivery": "Delivery in 6-8 weeks"
-      },
-      {
-        "title": "Strategic Consulting in AI",
-        "body": "Diagnosing your business and pinpointing the AI opportunities with real ROI.",
-        "delivery": "2-week deep dive"
       }
     ]
   },
@@ -301,17 +278,6 @@
     "cta_whatsapp": "Talk to me on WhatsApp",
     "cta_linkedin": "LinkedIn",
     "cta_github": "GitHub"
-  },
-  "standalone": {
-    "label": "One-off Services",
-    "heading": "One-off Demands",
-    "subtitle": "For specific demands that need a one-off solution.",
-    "items": [
-      "Developing institutional sites and e-commerces in Next.js with native AI integrations.",
-      "Designing and building high-complexity operational automations in n8n.",
-      "On-demand technical mentoring and consulting for professionals and businesses migrating to AI."
-    ],
-    "cta": "Get in touch"
   },
   "experience": {
     "label": "Experience",

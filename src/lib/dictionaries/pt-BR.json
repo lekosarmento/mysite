@@ -68,9 +68,7 @@
         "value": "MBA",
         "label": "IA para Negócios"
       }
-    ],
-    "showMore": "✨ Saber mais sobre minha trajetória",
-    "showLess": "Recolher trajetória"
+    ]
   },
   "products": {
     "label": "Soluções",
@@ -113,27 +111,6 @@
         "desc": "Landing pages e produtos digitais desenhados pra ficar claros pra quem usa e vender pra quem paga.",
         "tech": ["Next.js", "Tailwind", "design system"],
         "detail": "UX, UI e código na mesma mão: design system, acessibilidade, performance e medição. Este site é um exemplo do padrão."
-      }
-    ]
-  },
-  "offers": {
-    "label": "Serviços",
-    "heading": "Outras formas de aplicar IA no seu negócio",
-    "items": [
-      {
-        "title": "Operação Automatizada com IA",
-        "body": "Mapeamento de gargalos internos e automações que cortam tempo operacional e erro humano.",
-        "delivery": "Entrega em 4-6 semanas"
-      },
-      {
-        "title": "Produto Digital com IA",
-        "body": "Protótipos integrados a LLMs para validar sua tese de produto com usuários reais.",
-        "delivery": "Entrega em 6-8 semanas"
-      },
-      {
-        "title": "Consultoria Estratégica em IA",
-        "body": "Diagnóstico do seu negócio e identificação das oportunidades de IA com retorno real.",
-        "delivery": "Imersão de 2 semanas"
       }
     ]
   },
@@ -331,17 +308,6 @@
     "cta_whatsapp": "Falar comigo no WhatsApp",
     "cta_linkedin": "LinkedIn",
     "cta_github": "GitHub"
-  },
-  "standalone": {
-    "label": "Serviços Pontuais",
-    "heading": "Demandas pontuais",
-    "subtitle": "Para demandas específicas que pedem uma solução pontual.",
-    "items": [
-      "Desenvolvimento de sites institucionais e e-commerces em Next.js com integrações nativas de IA.",
-      "Arquitetura e construção de automações de processos em n8n de alta complexidade.",
-      "Mentoria e consultoria técnica sob demanda para profissionais e empresas migrando para IA."
-    ],
-    "cta": "Falar comigo"
   },
   "experience": {
     "label": "Experiência",

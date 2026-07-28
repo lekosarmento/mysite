@@ -68,9 +68,7 @@
         "value": "MBA",
         "label": "IA para Negocios"
       }
-    ],
-    "showMore": "✨ Saber más sobre mi trayectoria",
-    "showLess": "Recoger trayectoria"
+    ]
   },
   "products": {
     "label": "Soluciones",
@@ -101,27 +99,6 @@
       {
         "title": "UX/UI & sitios con IA",
         "desc": "Landing pages, interfaces y productos digitales con foco en claridad, conversión y marca."
-      }
-    ]
-  },
-  "offers": {
-    "label": "Servicios",
-    "heading": "Otras formas de aplicar IA en tu negocio",
-    "items": [
-      {
-        "title": "Operación Automatizada con IA",
-        "body": "Mapeo de cuellos de botella internos y automatizaciones que recortan tiempo operativo y error humano.",
-        "delivery": "Entrega en 4-6 semanas"
-      },
-      {
-        "title": "Producto Digital con IA",
-        "body": "Prototipos integrados con LLMs para validar tu tesis de producto con usuarios reales.",
-        "delivery": "Entrega en 6-8 semanas"
-      },
-      {
-        "title": "Consultoría Estratégica en IA",
-        "body": "Diagnóstico de tu negocio e identificación de las oportunidades de IA con retorno real.",
-        "delivery": "Inmersión de 2 semanas"
       }
     ]
   },
@@ -301,17 +278,6 @@
     "cta_whatsapp": "Hablar conmigo por WhatsApp",
     "cta_linkedin": "LinkedIn",
     "cta_github": "GitHub"
-  },
-  "standalone": {
-    "label": "Servicios Puntuales",
-    "heading": "Demandas puntuales",
-    "subtitle": "Para demandas específicas que piden una solución puntual.",
-    "items": [
-      "Desarrollo de sitios institucionales y e-commerces en Next.js con integraciones nativas de IA.",
-      "Arquitectura y construcción de automatizaciones de procesos en n8n de alta complejidad.",
-      "Mentoría y consultoría técnica bajo demanda para profesionales y empresas migrando a IA."
-    ],
-    "cta": "Hablar conmigo"
   },
   "experience": {
     "label": "Experiencia",
