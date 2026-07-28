@@ -172,61 +172,79 @@
     "inProduction": "em produção",
     "items": [
       {
-        "title": "Donna",
-        "desc": "SaaS jurídico com 7 motores: monitora PJe/DJe, calcula prazos e mapeia o perfil decisório de juízes, inteligência inédita no mercado. ~10k linhas, multi-tenant, LGPD.",
+        "title": "Advogado que não perde mais prazo",
+        "product": "Donna",
+        "desc": "Vigia os processos no PJe e no DJe, calcula os prazos sozinho e ainda mostra como cada juiz costuma decidir.",
         "tags": [
           "saas",
           "jurídico",
           "multi-agente"
         ],
+        "tech": ["SaaS multi-tenant", "7 motores", "LGPD"],
+        "detail": "Sete motores independentes monitorando PJe e DJe, cálculo de prazo processual e mapeamento do perfil decisório de juízes, inteligência que não existia pronta no mercado. ~10k linhas, multi-tenant, em conformidade com a LGPD.",
         "link": "https://github.com/lekosarmento/donna"
       },
       {
-        "title": "Saúde Inteligente",
-        "desc": "Recepção médica com 6 agentes autônomos no WhatsApp: triagem, agendamento e FAQ no canal do paciente; resumos e alertas no canal do médico. Opera 24/7.",
+        "title": "A recepção do consultório, 24 horas",
+        "product": "Saúde Inteligente",
+        "desc": "Faz triagem, marca consulta e tira dúvida no WhatsApp do paciente. O médico recebe o resumo do dia pronto.",
         "tags": [
           "saas",
           "ia",
           "whatsapp"
         ],
+        "tech": ["6 agentes", "WhatsApp API", "Supabase"],
+        "detail": "Seis agentes autônomos em dois canais: triagem, agendamento e FAQ no canal do paciente; resumos e alertas no canal do médico. Opera 24/7 sem intervenção.",
         "link": "https://saudeinteligente.vercel.app/"
       },
       {
-        "title": "Konklave",
-        "desc": "Plataforma multi-agente com 29 personas de IA debatendo temas complexos, regras de interação e votação ponderada.",
+        "title": "29 especialistas de IA discutindo o seu problema",
+        "product": "Konklave",
+        "desc": "Cada um defende um ponto de vista, eles debatem entre si e a decisão sai por voto com peso.",
         "tags": [
           "plataforma",
           "multi-agente"
         ],
+        "tech": ["multi-agente", "orquestração", "votação ponderada"],
+        "detail": "Plataforma com 29 personas de IA, regras de interação entre elas e votação ponderada por competência do agente no tema em debate.",
         "link": "https://konklave-iota.vercel.app"
       },
       {
-        "title": "AI Content Radar",
-        "desc": "Pipeline autônomo monitorando 33 fontes RSS e gerando conteúdo otimizado por LLMs, 24 horas por dia.",
+        "title": "Conteúdo que se abastece sozinho",
+        "product": "AI Content Radar",
+        "desc": "Vasculha 33 fontes o dia inteiro, escolhe o que interessa e entrega o texto pronto pra revisão.",
         "tags": [
           "automação",
           "pipeline"
         ],
+        "tech": ["pipeline autônomo", "RSS", "LLM"],
+        "detail": "Pipeline autônomo monitorando 33 fontes RSS, com crivo de relevância e geração de conteúdo otimizado por LLMs, 24 horas por dia.",
         "link": ""
       },
       {
-        "title": "ANENO",
-        "desc": "Site institucional + Org Chart para gestão visual de equipes e projetos da agência. Produto interno em produção.",
+        "title": "Quem faz o quê, numa tela só",
+        "product": "ANENO",
+        "desc": "Site institucional e organograma vivo pra enxergar equipes e projetos da agência sem planilha.",
         "tags": [
           "site",
           "produto",
           "next.js"
         ],
+        "tech": ["Next.js", "produto interno"],
+        "detail": "Site institucional mais Org Chart para gestão visual de equipes e projetos. Produto interno da agência, em produção.",
         "link": "https://site-aneno.vercel.app/"
       },
       {
         "title": "Este site",
-        "desc": "Portfólio em deck imersivo vertical (Next.js, R3F, framer-motion). Projetado e codado por mim.",
+        "product": "leko.ia.br",
+        "desc": "Desenhado, escrito e codado por mim, incluindo o agente que te recebeu na porta.",
         "tags": [
           "next.js",
           "r3f",
           "design"
         ],
+        "tech": ["Next.js", "R3F", "framer-motion"],
+        "detail": "Portfólio em deck imersivo vertical: cenas que empilham com profundidade, i18n em três idiomas e um agente de IA que apresenta o site e depois vira chat.",
         "link": "https://leko.ia.br"
       }
     ]

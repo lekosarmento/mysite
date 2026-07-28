@@ -2,17 +2,28 @@
 
 import Link from "next/link";
 import { useLanguage } from "@/lib/LanguageContext";
+import { TechDetail } from "@/components/ui/TechDetail";
 
 interface Project {
+  /** o que o produto resolve, em linguagem de negócio */
   title: string;
+  /** nome comercial (Donna, Konklave). Vira o kicker e a inicial gigante */
+  product: string;
   desc: string;
   tags: string[];
+  tech: string[];
+  detail: string;
   link: string;
 }
 
 /**
- * Cena 06 do deck (tema sand). Portfólio de produtos IA em cards com inicial
- * gigante; tags + link (ou "em produção" quando não há link público).
+ * Cena 06 do deck (tema sand). Portfólio de produtos IA em cards.
+ *
+ * O card NÃO é mais um <Link> envolvendo tudo: ele passou a conter um botão (o
+ * disclosure do TechDetail), e botão dentro de link é HTML inválido e quebra o
+ * clique. Em vez disso o card é um <div> e o "Ver projeto" é uma âncora com
+ * link esticado (`::after` cobrindo o card), o que mantém o card inteiro
+ * clicável sem aninhar elementos interativos.
  */
 export function Projetos() {
   const { t } = useLanguage();
@@ -29,43 +40,39 @@ export function Projetos() {
       </h2>
 
       <div className="cards c3 rv">
-        {items.map((p, i) => {
-          const inner = (
-            <>
-              <div className="init">{p.title.charAt(0)}</div>
-              {!p.link && <div className="soon">{t("projects.inProduction")}</div>}
-              <div className="ch" style={{ marginTop: 14 }}>{p.title}</div>
-              <div className="cd">{p.desc}</div>
-              <div className="tags">
-                {p.tags.map((tg) => (
-                  <span className="tag" key={tg}>
-                    {tg}
-                  </span>
-                ))}
-              </div>
-              {p.link && (
-                <span className="rtag" style={{ marginTop: 14, color: "var(--terra)" }}>
-                  {t("projects.viewProject")} →
+        {items.map((p, i) => (
+          <div className="projcard" key={i}>
+            {!p.link && <div className="soon">{t("projects.inProduction")}</div>}
+            <div className="pname">{p.product}</div>
+            <div className="ch">{p.title}</div>
+            <div className="cd">{p.desc}</div>
+            <div className="tags">
+              {p.tags.map((tg) => (
+                <span className="tag" key={tg}>
+                  {tg}
                 </span>
-              )}
-            </>
-          );
-          return p.link ? (
-            <Link
-              className="projcard"
-              key={i}
-              href={p.link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {inner}
-            </Link>
-          ) : (
-            <div className="projcard" key={i}>
-              {inner}
+              ))}
             </div>
-          );
-        })}
+
+            <TechDetail
+              tech={p.tech}
+              detail={p.detail}
+              labelMore={t("products.moreDetails") as string}
+              labelLess={t("products.lessDetails") as string}
+            />
+
+            {p.link && (
+              <Link
+                className="rtag projlink"
+                href={p.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t("projects.viewProject")} →
+              </Link>
+            )}
+          </div>
+        ))}
       </div>
     </>
   );
