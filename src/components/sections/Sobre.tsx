@@ -1,20 +1,24 @@
 "use client";
 
+import type { CSSProperties } from "react";
+
 import { useLanguage } from "@/lib/LanguageContext";
 
-// Logomarcas em /public/images/brands/<file>.svg (preferir SVG; PNG com fundo
-// transparente também serve). Renderizadas em branco (brightness(0) invert(1)).
+// Logomarcas em /public/images/brands/<file>.png — já monocromáticas (branco)
+// com fundo vazado, geradas a partir dos arquivos originais das marcas.
+// `scale` é o ajuste ÓPTICO: com altura fixa, wordmark larga (Heineken) pesa
+// mais que logo empilhada (Jack Daniel's), então a larga encolhe e a alta cresce.
 const brands = [
-  { name: "Jack Daniel's", file: "jack-daniels" },
-  { name: "Ambev", file: "ambev" },
-  { name: "Kwai", file: "kwai" },
-  { name: "Pringles", file: "pringles" },
-  { name: "Red Bull", file: "red-bull" },
-  { name: "Café de La Musique", file: "cafe-de-la-musique" },
-  { name: "Jeep", file: "jeep" },
-  { name: "Corona", file: "corona" },
-  { name: "Chivas", file: "chivas" },
-  { name: "Absolut", file: "absolut" },
+  { name: "Jack Daniel's", file: "jack-daniels", scale: 1.31 },
+  { name: "Red Bull", file: "red-bull", scale: 1.25 },
+  { name: "Heineken", file: "heineken", scale: 0.85 },
+  { name: "Brahma", file: "brahma", scale: 0.89 },
+  { name: "Corona", file: "corona", scale: 1.23 },
+  { name: "Jeep", file: "jeep", scale: 1.05 },
+  { name: "Kwai", file: "kwai", scale: 0.93 },
+  { name: "O Boticário", file: "boticario", scale: 1.02 },
+  { name: "Café de La Musique", file: "cafe-de-la-musique", scale: 1.15 },
+  { name: "Moises", file: "moises", scale: 1.21 },
 ];
 
 /**
@@ -64,13 +68,11 @@ export function Sobre() {
                 /* eslint-disable-next-line @next/next/no-img-element */
                 <img
                   key={b.file}
-                  src={`/images/brands/${b.file}.svg`}
+                  src={`/images/brands/${b.file}.png`}
                   alt={b.name}
                   title={b.name}
-                  onError={(e) => {
-                    // Enquanto o arquivo da logo não existir, esconde (sem ícone quebrado).
-                    e.currentTarget.style.display = "none";
-                  }}
+                  loading="lazy"
+                  style={{ "--logo-scale": b.scale } as CSSProperties}
                 />
               ))}
             </div>
