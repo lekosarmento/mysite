@@ -6,10 +6,10 @@ import { TechDetail } from "@/components/ui/TechDetail";
 interface ProductItem {
   title: string;
   desc: string;
-  /** termos técnicos do lastro (sempre visíveis) */
-  tech: string[];
-  /** detalhe de engenharia, sob demanda */
-  detail: string;
+  /** termos técnicos do lastro (sempre visíveis). Ausente em `en`/`es` */
+  tech?: string[];
+  /** detalhe de engenharia, sob demanda. Ausente em `en`/`es` */
+  detail?: string;
 }
 
 /**

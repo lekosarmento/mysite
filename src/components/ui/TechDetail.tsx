@@ -4,10 +4,10 @@ import { useId, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 
 interface TechDetailProps {
-  /** termos técnicos do lastro, exibidos sempre */
-  tech: string[];
-  /** detalhe de engenharia, colapsado */
-  detail: string;
+  /** termos técnicos do lastro, exibidos sempre. Ausente = nada renderiza */
+  tech?: string[];
+  /** detalhe de engenharia, colapsado. Ausente = só a linha de lastro */
+  detail?: string;
   labelMore: string;
   labelLess: string;
 }
@@ -24,26 +24,37 @@ export function TechDetail({ tech, detail, labelMore, labelLess }: TechDetailPro
   const reduced = useReducedMotion();
   const panelId = useId();
 
+  // Os dicionários `en` e `es` ainda estão com a copy antiga, sem `tech`/`detail`
+  // (sincronia é a fase 5 do plano, presa na aprovação do PT). Sem esta guarda,
+  // trocar de idioma derrubava as cenas Soluções e Portfólio inteiras num
+  // TypeError de `undefined.join`. Faltando o conteúdo, a camada some em vez de
+  // quebrar a página.
+  if (!tech?.length && !detail) return null;
+
   return (
     <div className="techdetail">
       {/* aria-hidden de propósito: pra leitor de tela isso é uma fileira de
           siglas soltas, e o mesmo conteúdo aparece em prosa dentro de `detail` */}
-      <div className="techline" aria-hidden>
-        {tech.join(" · ")}
-      </div>
+      {tech?.length ? (
+        <div className="techline" aria-hidden>
+          {tech.join(" · ")}
+        </div>
+      ) : null}
 
-      <button
-        type="button"
-        className="techtoggle"
-        aria-expanded={open}
-        aria-controls={panelId}
-        onClick={() => setOpen((v) => !v)}
-      >
-        {open ? labelLess : labelMore}
-      </button>
+      {detail ? (
+        <button
+          type="button"
+          className="techtoggle"
+          aria-expanded={open}
+          aria-controls={panelId}
+          onClick={() => setOpen((v) => !v)}
+        >
+          {open ? labelLess : labelMore}
+        </button>
+      ) : null}
 
       <AnimatePresence initial={false}>
-        {open && (
+        {open && detail && (
           <motion.div
             id={panelId}
             className="techbody"
