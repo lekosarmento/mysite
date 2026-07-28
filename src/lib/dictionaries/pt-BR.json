@@ -145,22 +145,22 @@
       {
         "num": "01",
         "title": "Operação + IA",
-        "desc": "15 anos de marketing, eventos e operação real que potencializam a IA que construo. Entendo o negócio antes de codar."
+        "desc": "15 anos de marketing, eventos e operação real que potencializam a IA que construo. Entendo o negócio antes de escrever a primeira linha."
       },
       {
         "num": "02",
-        "title": "Projeto, codifico e entrego",
-        "desc": "Não terceirizo execução. Do briefing ao deploy em produção, a arquitetura e o código são meus."
+        "title": "Desenho, construo e entrego",
+        "desc": "Do primeiro desenho até o sistema no ar, quem faz é a mesma pessoa. Não passo pra terceiro."
       },
       {
         "num": "03",
         "title": "Produtos rodando, não slides",
-        "desc": "Donna, Saúde Inteligente e Konklave em produção, com testes, segurança e LGPD. Não provas de conceito."
+        "desc": "Donna, Saúde Inteligente e Konklave já rodando, com gente usando de verdade, segurança e LGPD em dia. Não é demonstração."
       },
       {
         "num": "04",
         "title": "Engenheiro + criativo",
-        "desc": "Backend de agentes e RAG e também a camada criativa (imagem, vídeo, marca) com IA. Os dois lados, integrados."
+        "desc": "Faço o motor por dentro, o que pensa e busca nos seus dados, e também a parte que aparece: imagem, vídeo, marca. Os dois lados, integrados."
       }
     ]
   },
@@ -423,7 +423,7 @@
         "inicio": "Esse é o meu cartão de visitas: estratégia de IA pra marketing, criatividade e produtividade. Vem comigo que eu te mostro o que isso significa na prática.",
         "sobre": "Antes do código, teve palco: 15 anos de marketing e eventos, mais de 1.000 produções pra marcas como Jack Daniel's, Red Bull e Ambev. É daí que vem o meu jeito de resolver problema.",
         "tese": "Minha tese cabe em três palavras: estratégia que roda. O que eu desenho, eu coloco em produção. Slide bonito não paga boleto.",
-        "construo": "Isso aqui é o que eu construo: agentes de WhatsApp, SaaS com IA, RAG, automações n8n e a camada criativa por cima (imagem, vídeo, conteúdo).",
+        "construo": "Isso aqui é o que eu construo: atendimento que não dorme, sistema sob medida pra quem não acha pronto, respostas tiradas dos seus próprios documentos, trabalho repetitivo saindo da sua mão e a camada criativa por cima, imagem e vídeo no ritmo da campanha.",
         "diferenciais": "Por que eu e não uma agência? Porque aqui quem entende o negócio, desenha a solução e escreve o código é a mesma pessoa.",
         "portfolio": "Produtos reais, rodando agora: Donna no jurídico, Saúde Inteligente na medicina, Konklave com 29 agentes debatendo entre si. Nada de prova de conceito.",
         "experiencia": "A trajetória completa tá aqui: da operação de grandes eventos à engenharia de IA aplicada.",
