@@ -1,11 +1,15 @@
 "use client";
 
 import { useLanguage } from "@/lib/LanguageContext";
+import { TechDetail } from "@/components/ui/TechDetail";
 
 interface ProductItem {
   title: string;
   desc: string;
-  bullets: string[];
+  /** termos técnicos do lastro (sempre visíveis) */
+  tech: string[];
+  /** detalhe de engenharia, sob demanda */
+  detail: string;
 }
 
 /**
@@ -36,6 +40,12 @@ export function Products() {
             <span className="pn">P0{i + 1}</span>
             <span className="pt">{item.title}</span>
             <span className="pd">{item.desc}</span>
+            <TechDetail
+              tech={item.tech}
+              detail={item.detail}
+              labelMore={t("products.moreDetails") as string}
+              labelLess={t("products.lessDetails") as string}
+            />
           </div>
         ))}
       </div>

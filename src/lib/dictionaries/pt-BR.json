@@ -75,32 +75,44 @@
   "products": {
     "label": "Soluções",
     "heading": "O que eu construo",
-    "moreDetails": "+ especificações",
-    "lessDetails": "- recolher",
+    "moreDetails": "+ como funciona",
+    "lessDetails": "− recolher",
     "items": [
       {
-        "title": "Agentes de IA no WhatsApp",
-        "desc": "Atendimento, triagem e qualificação 24/7 em linguagem natural, com handoff humano quando precisa."
+        "title": "Um atendente que não dorme",
+        "desc": "Responde, faz triagem e agenda no WhatsApp do seu cliente a qualquer hora. Quando o caso pede gente, ele passa pra você.",
+        "tech": ["WhatsApp API", "LLM", "handoff humano"],
+        "detail": "Agente ligado à WhatsApp Cloud API, com memória da conversa, classificação de intenção e regra de escalonamento. Quando o assunto foge do que ele resolve, o atendimento cai pra uma pessoa com o histórico junto."
       },
       {
-        "title": "SaaS sob medida com IA",
-        "desc": "Produtos como recepção médica e assistente jurídico, do MVP ao sistema em produção."
+        "title": "O sistema que sua empresa não acha pronto",
+        "desc": "Quando nenhuma ferramenta de prateleira serve, eu construo a sua, do primeiro protótipo até o sistema rodando com seus clientes dentro.",
+        "tech": ["Next.js", "Supabase", "multi-tenant"],
+        "detail": "Produtos como recepção médica e assistente jurídico, do MVP ao sistema em produção: banco multi-tenant, autenticação, painel de administração e deploy contínuo."
       },
       {
-        "title": "RAG & base de conhecimento",
-        "desc": "Busca semântica conectando LLMs aos dados e documentos da sua empresa."
+        "title": "Respostas tiradas dos seus documentos",
+        "desc": "A IA para de inventar e passa a responder com base nos seus contratos, manuais e planilhas.",
+        "tech": ["RAG", "pgvector", "busca semântica"],
+        "detail": "Indexo seus documentos em embeddings e sirvo o trecho certo pro modelo na hora da pergunta. pgvector no Supabase, recorte por seção e citação da fonte junto da resposta, pra você conferir de onde veio."
       },
       {
-        "title": "Automações n8n",
-        "desc": "Fluxos multi-etapas que eliminam trabalho manual e integram suas ferramentas."
+        "title": "O trabalho repetitivo sai da sua mão",
+        "desc": "Aquela tarefa de levar dado de um sistema pro outro passa a acontecer sozinha, ligando as ferramentas que você já usa.",
+        "tech": ["n8n", "APIs REST", "webhooks"],
+        "detail": "Fluxos multi-etapas em n8n, com tratamento de erro e reprocessamento, integrando CRM, planilha, e-mail e WhatsApp. O que hoje é copiar e colar vira gatilho."
       },
       {
-        "title": "Produção criativa com IA",
-        "desc": "Imagem, vídeo e conteúdo para marketing e ativações de marca, em escala."
+        "title": "Imagem e vídeo no ritmo da campanha",
+        "desc": "Peças de marketing e ativação produzidas com IA, em escala, sem travar o cronograma esperando janela de produção.",
+        "tech": ["Veo", "Runway", "Midjourney", "ComfyUI"],
+        "detail": "Direção, geração e finalização de imagem, vídeo e áudio com IA, incluindo pipelines próprios no ComfyUI pra manter consistência de marca entre as peças."
       },
       {
-        "title": "UX/UI & sites com IA",
-        "desc": "Landing pages, interfaces e produtos digitais com foco em clareza, conversão e marca."
+        "title": "Site e interface que convertem",
+        "desc": "Landing pages e produtos digitais desenhados pra ficar claros pra quem usa e vender pra quem paga.",
+        "tech": ["Next.js", "Tailwind", "design system"],
+        "detail": "UX, UI e código na mesma mão: design system, acessibilidade, performance e medição. Este site é um exemplo do padrão."
       }
     ]
   },

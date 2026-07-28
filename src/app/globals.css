@@ -340,14 +340,36 @@
   letter-spacing: 1px; color: rgba(244, 238, 227, 0.6);
 }
 
+/* CAMADA TÉCNICA — lastro sempre visível + detalhe sob demanda (TechDetail) */
+.techdetail { margin-top: 10px; }
+.techline {
+  font-family: var(--font-mono); font-size: 10px; letter-spacing: 1.5px;
+  text-transform: lowercase; opacity: 0.52;
+}
+.techtoggle {
+  margin-top: 8px; padding: 0; border: 0; background: none; cursor: pointer;
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: 1px;
+  color: var(--terra); opacity: 0.85; transition: opacity 0.25s;
+}
+.techtoggle:hover { opacity: 1; }
+.techbody { overflow: hidden; }
+.techbody p {
+  margin-top: 10px; font-weight: 300; font-size: 13.5px; line-height: 1.65;
+  max-width: 46ch; opacity: 0.78;
+}
+.scene.t-ink .techline, .scene.t-terra .techline { opacity: 0.6; }
+.scene.t-terra .techtoggle { color: var(--cream); }
+
 /* PRODUTOS — índice editorial */
 .prodhead { position: relative; z-index: 2; margin-bottom: clamp(14px, 2vh, 30px); }
 .plist { position: relative; z-index: 2; display: flex; flex-direction: column; }
 .prow {
-  display: grid; grid-template-columns: auto 1fr auto; gap: 22px; align-items: baseline;
+  display: grid; grid-template-columns: auto 1fr auto; gap: 4px 22px; align-items: baseline;
   padding: clamp(10px, 1.5vh, 18px) 0; border-top: 1px solid rgba(40, 30, 20, 0.14);
-  cursor: pointer; transition: padding-left 0.3s;
+  transition: padding-left 0.3s;
 }
+/* o lastro técnico ocupa uma 2ª linha da row, alinhado sob o título */
+.prow .techdetail { grid-column: 2 / -1; }
 .prow:last-child { border-bottom: 1px solid rgba(40, 30, 20, 0.14); }
 .prow:hover { padding-left: 14px; }
 .prow .pn { font-family: var(--font-mono); font-size: 12px; color: var(--terra); }
