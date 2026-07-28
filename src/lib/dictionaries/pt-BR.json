@@ -172,7 +172,8 @@
         ],
         "tech": ["6 agentes", "WhatsApp API", "Supabase"],
         "detail": "Seis agentes autônomos em dois canais: triagem, agendamento e FAQ no canal do paciente; resumos e alertas no canal do médico. Opera 24/7 sem intervenção.",
-        "link": "https://saudeinteligente.vercel.app/"
+        "link": "https://saudeinteligente.vercel.app/",
+        "image": "/images/previews/saude-inteligente.jpg"
       },
       {
         "title": "29 especialistas de IA discutindo o seu problema",
@@ -184,7 +185,8 @@
         ],
         "tech": ["multi-agente", "orquestração", "votação ponderada"],
         "detail": "Plataforma com 29 personas de IA, regras de interação entre elas e votação ponderada por competência do agente no tema em debate.",
-        "link": "https://konklave-iota.vercel.app"
+        "link": "https://konklave-iota.vercel.app",
+        "image": "/images/previews/konklave.jpg"
       },
       {
         "title": "Conteúdo que se abastece sozinho",
@@ -209,7 +211,8 @@
         ],
         "tech": ["Next.js", "produto interno"],
         "detail": "Site institucional mais Org Chart para gestão visual de equipes e projetos. Produto interno da agência, em produção.",
-        "link": "https://site-aneno.vercel.app/"
+        "link": "https://site-aneno.vercel.app/",
+        "image": "/images/previews/aneno.jpg"
       },
       {
         "title": "Este site",
@@ -222,7 +225,8 @@
         ],
         "tech": ["Next.js", "R3F", "framer-motion"],
         "detail": "Portfólio em deck imersivo vertical: cenas que empilham com profundidade, i18n em três idiomas e um agente de IA que apresenta o site e depois vira chat.",
-        "link": "https://leko.ia.br"
+        "link": "https://leko.ia.br",
+        "image": "/images/previews/este-site.jpg"
       }
     ]
   },

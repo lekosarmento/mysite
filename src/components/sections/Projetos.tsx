@@ -7,12 +7,15 @@ import { TechDetail } from "@/components/ui/TechDetail";
 interface Project {
   /** o que o produto resolve, em linguagem de negócio */
   title: string;
-  /** nome comercial (Donna, Konklave). Vira o kicker e a inicial gigante */
-  product: string;
+  /** nome comercial (Donna, Konklave). Vira o kicker do card */
+  product?: string;
   desc: string;
   tags: string[];
-  tech: string[];
-  detail: string;
+  /** ausentes em `en`/`es`, que ainda estão com a copy antiga */
+  tech?: string[];
+  detail?: string;
+  /** preview real da tela. Sem ele o card cai no placeholder */
+  image?: string;
   link: string;
 }
 
@@ -42,6 +45,25 @@ export function Projetos() {
       <div className="cards c3 rv">
         {items.map((p, i) => (
           <div className="projcard" key={i}>
+            {/* prova visual antes do texto. Produto sem tela pública (Donna é
+                repositório, o Radar ainda não subiu) fica no placeholder, pra
+                grade não desalinhar */}
+            {p.image ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                className="projshot"
+                src={p.image}
+                alt={p.product ?? p.title}
+                width={1200}
+                height={750}
+                loading="lazy"
+              />
+            ) : (
+              <div className="projshot projshot--soon" aria-hidden>
+                {t("projects.imageSoon")}
+              </div>
+            )}
+
             {!p.link && <div className="soon">{t("projects.inProduction")}</div>}
             <div className="pname">{p.product}</div>
             <div className="ch">{p.title}</div>

@@ -25,7 +25,10 @@ export function MobileCTA() {
         href="https://wa.me/5583981741213?text=Oi%20Leko%2C%20vim%20pelo%20site"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center justify-center w-full py-3.5 rounded-full bg-[#00D4FF] text-black font-mono text-[12px] uppercase tracking-[1.5px] shadow-[0_-4px_30px_rgba(0,212,255,0.3)]"
+        // o ciano #00D4FF vinha da identidade azul que foi descartada: sobrou
+        // aqui e era, no celular, o elemento mais visível do site inteiro fora
+        // da paleta. Agora é o terracota do acento.
+        className="flex items-center justify-center w-full py-3.5 rounded-full bg-[var(--terra)] text-[var(--cream)] font-mono text-[12px] uppercase tracking-[1.5px] shadow-[0_-4px_30px_rgba(181,103,63,0.32)]"
       >
         {t("mobileCta.label")}
       </a>

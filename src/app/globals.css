@@ -413,7 +413,13 @@
 .card .ch { font-weight: 700; font-size: clamp(17px, 1.6vw, 22px); letter-spacing: -0.01em; margin-top: 8px; }
 .card .cd { font-weight: 300; font-size: 12.5px; line-height: 1.5; margin-top: 8px; opacity: 0.78; }
 
-/* projetos — placeholder tipográfico */
+/* projetos — preview real da tela + texto */
+/* a captura já sai tratada na paleta por scripts/grade-previews.py, então aqui
+   NÃO entra filtro CSS: o peso ficaria no cliente e o resultado seria outro no
+   modo escuro */
+.projcard .projshot { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; border-radius: 9px; border: 1px solid var(--hair); margin-bottom: 12px; opacity: 0.92; transition: opacity 0.35s; }
+.projcard:hover .projshot { opacity: 1; }
+.projcard .projshot--soon { display: flex; align-items: center; justify-content: center; border-style: dashed; font-family: var(--font-mono); font-size: 10px; letter-spacing: 1px; text-transform: uppercase; opacity: 0.38; }
 .projcard { position: relative; padding: clamp(13px, 1.2vw, 18px); border: 1px solid var(--hair); border-radius: 14px; display: flex; flex-direction: column; text-decoration: none; color: inherit; transition: transform 0.35s, border-color 0.35s; }
 .projcard:hover { transform: translateY(-4px); border-color: var(--terra); }
 .projcard .soon { font-family: var(--font-mono); font-size: 10px; letter-spacing: 1px; text-transform: uppercase; opacity: 0.45; }
@@ -494,6 +500,9 @@
 }
 @media (max-width: 540px) {
   .cards.c4, .cards.c3, .stack-grid { grid-template-columns: 1fr; }
+  /* o placeholder só existe pra manter a grade alinhada. Em coluna única não há
+     grade pra alinhar, e ele viraria meia tela de caixa vazia. */
+  .projcard .projshot--soon { display: none; }
 }
 
 /* ============================================================
