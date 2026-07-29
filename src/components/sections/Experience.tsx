@@ -14,7 +14,7 @@ export function Experience() {
         {t("experience.heading")}
       </h2>
       <p className="ed-lead rv">
-        {t("experience.body1")} {t("experience.body2")}
+        {t("experience.body1")}
       </p>
 
       <div className="cards c4 rv">

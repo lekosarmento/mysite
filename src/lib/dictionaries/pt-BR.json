@@ -51,10 +51,8 @@
   "about": {
     "label": "Sobre",
     "heading": "Marketing, operação e IA no mesmo cérebro.",
-    "paragraph1": "Não troquei marketing por código, aprofundei. Foram 15 anos liderando marketing, eventos e live marketing para marcas como Jack Daniel's, Ambev, Red Bull e Kwai, com equipes de até 100 pessoas e mais de 1.000 eventos produzidos.",
-    "paragraph2": "Esse repertório de operação real é o que hoje potencializa a IA que construo: entendo o gargalo do negócio antes de desenhar a arquitetura.",
-    "paragraph3": "Projeto e codifico agentes autônomos, automações n8n, RAG e produtos SaaS. E também a camada criativa com IA (imagem, vídeo, conteúdo).",
-    "paragraph4": "Do briefing à produção, sem terceirizar execução.",
+    "paragraph1": "Não troquei marketing por código, aprofundei. Vim da operação: prazo curto, marca grande e equipe de 100 pessoas esperando resposta.",
+    "paragraph2": "Hoje construo IA com a mesma régua. Se não aguenta a rotina de quem vai usar, não sai da minha mão.",
     "stats": [
       {
         "value": "15+",
@@ -235,7 +233,7 @@
     "heading": "Oportunidades em IA aplicada",
     "moreDetails": "+ detalhes técnicos",
     "lessDetails": "- recolher",
-    "body": "Especialista em IA Aplicada com sólida formação acadêmica (MBA IA para Negócios) e repertório de 15+ anos liderando operações complexas. Há 2 anos focado exclusivamente em projetar agentes autônomos, automações n8n e arquiteturas de produtos baseados em LLMs.",
+    "body": "Engenheiro de IA aplicada, MBA em IA para Negócios e 15 anos de operação antes disso. Foco em agentes autônomos, automações e produtos com LLM.",
     "stackLabel": "Stack que uso diariamente",
     "stackGroups": [
       {
@@ -316,8 +314,7 @@
   "experience": {
     "label": "Experiência",
     "heading": "Experiência operacional",
-    "body1": "Minha bagagem foi construída em operações complexas onde a execução sob pressão é a única métrica: megaeventos, marketing de grande alcance, marcas líderes.",
-    "body2": "Essa vivência prática me deu a capacidade de entender a lógica de processos físicos de negócios, permitindo projetar arquiteturas de IA que resolvem o gargalo, não o discurso.",
+    "body1": "Megaevento, marca líder, execução sob pressão e sem segunda chance. Foi essa a escola.",
     "cards": [
       {
         "company": "ANENO",

@@ -47,10 +47,11 @@ export function Sobre() {
           <h2 className="title rv" style={{ fontSize: "clamp(34px,5.4vw,76px)", marginTop: 14 }}>
             {t("about.heading")}
           </h2>
+          {/* dois parágrafos e ponto. Os números (15+, 1.000+, MBA) estão nos
+              stats logo abaixo e as marcas estão no mural de logos: repetir
+              isso em prosa era dizer três vezes a mesma coisa. */}
           <p className="rv">{t("about.paragraph1")}</p>
-          <p className="rv">
-            {t("about.paragraph2")} {t("about.paragraph3")} {t("about.paragraph4")}
-          </p>
+          <p className="rv">{t("about.paragraph2")}</p>
 
           <div className="stats rv">
             {stats.map((s, i) => (
