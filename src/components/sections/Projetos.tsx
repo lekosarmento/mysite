@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useLanguage } from "@/lib/LanguageContext";
 import { TechDetail } from "@/components/ui/TechDetail";
+import { ProductLoop } from "@/components/ui/ProductLoop";
 
 interface Project {
   /** o que o produto resolve, em linguagem de negócio */
@@ -16,6 +17,8 @@ interface Project {
   detail?: string;
   /** preview real da tela. Sem ele o card cai no placeholder */
   image?: string;
+  /** loop do produto rodando, sem extensão. Vira o poster quando ausente */
+  video?: string;
   link: string;
 }
 
@@ -45,24 +48,15 @@ export function Projetos() {
       <div className="cards c3 rv">
         {items.map((p, i) => (
           <div className="projcard" key={i}>
-            {/* prova visual antes do texto. Produto sem tela pública (Donna é
-                repositório, o Radar ainda não subiu) fica no placeholder, pra
-                grade não desalinhar */}
-            {p.image ? (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                className="projshot"
-                src={p.image}
-                alt={p.product ?? p.title}
-                width={1200}
-                height={750}
-                loading="lazy"
-              />
-            ) : (
-              <div className="projshot projshot--soon" aria-hidden>
-                {t("projects.imageSoon")}
-              </div>
-            )}
+            {/* prova visual antes do texto: o produto rodando quando existe
+                gravação, o print quando não, e o placeholder pros que não têm
+                tela pública (Donna é repositório, o Radar ainda não subiu) */}
+            <ProductLoop
+              video={p.video}
+              image={p.image}
+              alt={p.product ?? p.title}
+              vazio={t("projects.imageSoon") as string}
+            />
 
             {!p.link && <div className="soon">{t("projects.inProduction")}</div>}
             <div className="pname">{p.product}</div>

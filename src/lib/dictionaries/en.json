@@ -153,7 +153,8 @@
           "whatsapp"
         ],
         "link": "https://saudeinteligente.vercel.app/",
-        "image": "/images/previews/saude-inteligente.jpg"
+        "image": "/images/previews/saude-inteligente.jpg",
+        "video": "/videos/produtos/saude-inteligente"
       },
       {
         "title": "Konklave",
@@ -163,7 +164,8 @@
           "multi-agent"
         ],
         "link": "https://konklave-iota.vercel.app",
-        "image": "/images/previews/konklave.jpg"
+        "image": "/images/previews/konklave.jpg",
+        "video": "/videos/produtos/konklave"
       },
       {
         "title": "AI Content Radar",
@@ -183,7 +185,8 @@
           "next.js"
         ],
         "link": "https://site-aneno.vercel.app/",
-        "image": "/images/previews/aneno.jpg"
+        "image": "/images/previews/aneno.jpg",
+        "video": "/videos/produtos/aneno"
       },
       {
         "title": "This site",
@@ -194,7 +197,8 @@
           "design"
         ],
         "link": "https://leko.ia.br",
-        "image": "/images/previews/este-site.jpg"
+        "image": "/images/previews/este-site.jpg",
+        "video": "/videos/produtos/este-site"
       }
     ]
   },
