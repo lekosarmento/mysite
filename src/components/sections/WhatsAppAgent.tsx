@@ -5,7 +5,10 @@ import { TechDetail } from "@/components/ui/TechDetail";
 
 interface ProductItem {
   title: string;
+  /** parágrafo antigo. Ainda é o que `en`/`es` têm, e o fallback do fluxo */
   desc: string;
+  /** entra isto, acontece aquilo, sai aquilo. Três passos, sem parágrafo */
+  flow?: [string, string, string] | string[];
   /** termos técnicos do lastro (sempre visíveis). Ausente em `en`/`es` */
   tech?: string[];
   /** detalhe de engenharia, sob demanda. Ausente em `en`/`es` */
@@ -39,7 +42,20 @@ export function Products() {
           <div className="prow" key={i}>
             <span className="pn">P0{i + 1}</span>
             <span className="pt">{item.title}</span>
-            <span className="pd">{item.desc}</span>
+            {/* três passos em vez de parágrafo: o visitante entende o que a
+                solução faz sem ler prosa. `en`/`es` ainda não têm `flow` e
+                caem no parágrafo antigo. */}
+            {item.flow?.length ? (
+              <span className="pflow">
+                {item.flow.map((passo, n) => (
+                  <span className="pstep" key={n}>
+                    {passo}
+                  </span>
+                ))}
+              </span>
+            ) : (
+              <span className="pd">{item.desc}</span>
+            )}
             <TechDetail
               tech={item.tech}
               detail={item.detail}

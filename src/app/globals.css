@@ -377,6 +377,31 @@
 .prow .pd { font-weight: 300; font-size: 13.5px; color: var(--muted); max-width: 34ch; text-align: right; display: none; }
 @media (min-width: 900px) { .prow .pd { display: block; } }
 
+/* fluxo de 3 passos: entra isto → acontece aquilo → sai aquilo.
+   Substitui o parágrafo da direita. A seta é ::after em vez de caractere no
+   texto, pra não ser lida em voz alta nem quebrar sozinha numa linha. */
+/* vertical, não em três colunas: na largura que sobra à direita do título, três
+   colunas espremem cada passo em duas ou três linhas e quebram palavra no meio.
+   Empilhado, cada passo cabe numa linha só e o olho lê de cima pra baixo. */
+/* aparece no celular também: o parágrafo antigo era escondido lá por falta de
+   espaço, mas o fluxo é justamente o que explica a solução pra quem não é
+   técnico, e no mobile a cena é fluxo normal, então pode crescer. */
+.prow .pflow { display: block; grid-column: 2 / -1; margin-top: 10px; }
+.prow .pstep {
+  display: block; font-family: var(--font-mono); font-size: 10.5px;
+  letter-spacing: 0.6px; line-height: 1.5; color: var(--muted);
+}
+.prow .pstep + .pstep::before {
+  content: "↓"; display: block; color: var(--terra); opacity: 0.7;
+  font-size: 9px; line-height: 1.1; margin: 1px 0;
+}
+.prow .pstep:last-child { color: inherit; opacity: 0.92; }
+@media (min-width: 900px) {
+  /* no desktop volta pra coluna da direita do .prow, alinhado à direita */
+  .prow .pflow { grid-column: auto; margin-top: 0; text-align: right; }
+  .prow .pstep { white-space: nowrap; }
+}
+
 /* TESE */
 .tese-h {
   font-weight: 800; font-size: clamp(50px, 12vw, 168px); line-height: 0.84;
