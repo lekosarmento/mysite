@@ -51,8 +51,8 @@
   "about": {
     "label": "Sobre",
     "heading": "Marketing, operación e IA en el mismo cerebro.",
-    "paragraph1": "No cambié el marketing por el código, profundicé. Fueron 15 años liderando marketing, eventos y live marketing para marcas como Jack Daniel's, Ambev, Red Bull y Kwai, con equipos de hasta 100 personas y más de 1.000 eventos producidos.",
-    "paragraph2": "Ese repertorio de operación real es lo que hoy potencia la IA que construyo: entiendo el cuello de botella del negocio antes de diseñar la arquitectura.",
+    "paragraph1": "No cambié marketing por código, profundicé. Vengo de la operación: plazo corto, marca grande y equipo de 100 personas esperando respuesta.",
+    "paragraph2": "Hoy construyo IA con la misma vara. Si no aguanta la rutina de quien va a usarla, no sale de mis manos.",
     "stats": [
       {
         "value": "15+",
@@ -71,32 +71,99 @@
   "products": {
     "label": "Soluciones",
     "heading": "Lo que construyo",
-    "moreDetails": "+ especificaciones",
-    "lessDetails": "- recoger",
+    "moreDetails": "+ cómo funciona",
+    "lessDetails": "− recoger",
     "items": [
       {
-        "title": "Agentes de IA en WhatsApp",
-        "desc": "Atención, triaje y calificación 24/7 en lenguaje natural, con handoff humano cuando hace falta."
+        "title": "Un agente que no duerme",
+        "desc": "Responde, hace triaje y agenda en el WhatsApp de tu cliente a cualquier hora. Cuando el caso pide una persona, te lo pasa.",
+        "flow": [
+          "El cliente escribe por WhatsApp",
+          "El agente hace triaje, responde y agenda",
+          "El caso difícil llega a ti"
+        ],
+        "tech": [
+          "WhatsApp API",
+          "LLM",
+          "traspaso humano"
+        ],
+        "detail": "Agente conectado a la WhatsApp Cloud API, con memoria de la conversación, clasificación de intención y regla de escalado. Cuando el asunto se sale de lo que resuelve, la atención pasa a una persona con el historial adjunto."
       },
       {
-        "title": "SaaS a medida con IA",
-        "desc": "Productos como recepción médica y asistente jurídico, del MVP al sistema en producción."
+        "title": "El sistema que tu empresa no encuentra hecho",
+        "desc": "Cuando ninguna herramienta de estantería sirve, construyo la tuya, del primer prototipo al sistema funcionando con tus clientes dentro.",
+        "flow": [
+          "Tu proceso tal como es",
+          "Prototipo funcionando en semanas",
+          "Sistema en el aire con tus clientes"
+        ],
+        "tech": [
+          "Next.js",
+          "Supabase",
+          "multi-tenant"
+        ],
+        "detail": "Productos como recepción médica y asistente jurídico, del MVP al sistema en producción: base multi-tenant, autenticación, panel de administración y despliegue continuo."
       },
       {
-        "title": "RAG & base de conocimiento",
-        "desc": "Búsqueda semántica conectando LLMs a los datos y documentos de tu empresa."
+        "title": "Respuestas sacadas de tus propios documentos",
+        "desc": "La IA deja de inventar y pasa a responder con base en tus contratos, manuales y planillas.",
+        "flow": [
+          "Tus contratos, manuales y planillas",
+          "Indexados y buscables por sentido",
+          "Respuesta con la fuente adjunta"
+        ],
+        "tech": [
+          "RAG",
+          "pgvector",
+          "búsqueda semántica"
+        ],
+        "detail": "Indexo tus documentos en embeddings y le sirvo al modelo el fragmento correcto en el momento de la pregunta. pgvector en Supabase, recorte por sección y la fuente citada junto a la respuesta, para que puedas verificar de dónde salió."
       },
       {
-        "title": "Automatizaciones n8n",
-        "desc": "Flujos multi-etapa que eliminan trabajo manual e integran tus herramientas."
+        "title": "El trabajo repetitivo sale de tus manos",
+        "desc": "Esa tarea de llevar datos de un sistema a otro pasa a ocurrir sola, conectando las herramientas que ya usas.",
+        "flow": [
+          "El dato entra en un sistema",
+          "El flujo se dispara solo",
+          "Llega listo al otro"
+        ],
+        "tech": [
+          "n8n",
+          "APIs REST",
+          "webhooks"
+        ],
+        "detail": "Flujos de varias etapas en n8n, con manejo de errores y reprocesamiento, integrando CRM, planilla, correo y WhatsApp. Lo que hoy es copiar y pegar se vuelve un disparador."
       },
       {
-        "title": "Producción creativa con IA",
-        "desc": "Imagen, video y contenido para marketing y activaciones de marca, a escala."
+        "title": "Imagen y video al ritmo de la campaña",
+        "desc": "Piezas de marketing y activación producidas con IA, a escala, sin trabar el cronograma esperando una ventana de producción.",
+        "flow": [
+          "Briefing de la campaña",
+          "Generación dirigida con IA",
+          "Pieza lista dentro del plazo"
+        ],
+        "tech": [
+          "Veo",
+          "Runway",
+          "Midjourney",
+          "ComfyUI"
+        ],
+        "detail": "Dirección, generación y finalización de imagen, video y audio con IA, incluyendo pipelines propios en ComfyUI para mantener la consistencia de marca entre las piezas."
       },
       {
-        "title": "UX/UI & sitios con IA",
-        "desc": "Landing pages, interfaces y productos digitales con foco en claridad, conversión y marca."
+        "title": "Sitios e interfaces que convierten",
+        "desc": "Landing pages y productos digitales diseñados para ser claros para quien los usa y vender para quien paga.",
+        "flow": [
+          "Quién lo usa y qué necesita",
+          "Diseño y código en la misma mano",
+          "Página que convierte"
+        ],
+        "tech": [
+          "Next.js",
+          "Tailwind",
+          "design system"
+        ],
+        "detail": "UX, UI y código en la misma mano: design system, accesibilidad, rendimiento y medición. Este sitio es un ejemplo del estándar."
       }
     ]
   },
@@ -108,22 +175,22 @@
       {
         "num": "01",
         "title": "Operación + IA",
-        "desc": "15 años de marketing, eventos y operación real que potencian la IA que construyo. Entiendo el negocio antes de programar."
+        "desc": "15 años de marketing, eventos y operación real que potencian la IA que construyo. Entiendo el negocio antes de escribir la primera línea."
       },
       {
         "num": "02",
-        "title": "Diseño, programo y entrego",
-        "desc": "No tercerizo la ejecución. Del briefing al deploy en producción, la arquitectura y el código son míos."
+        "title": "Diseño, construyo y entrego",
+        "desc": "Del primer boceto al sistema en el aire, lo hace la misma persona. No lo paso a terceros."
       },
       {
         "num": "03",
         "title": "Productos funcionando, no diapositivas",
-        "desc": "Donna, Salud Inteligente y Konklave en producción, con tests, seguridad y protección de datos. No pruebas de concepto."
+        "desc": "Donna, Salud Inteligente y Konklave ya funcionando, con gente usándolos de verdad, seguridad y protección de datos en regla. No es una demostración."
       },
       {
         "num": "04",
         "title": "Ingeniero + creativo",
-        "desc": "Backend de agentes y RAG y también la capa creativa (imagen, video, marca) con IA. Los dos lados, integrados."
+        "desc": "Hago el motor por dentro, lo que piensa y busca en tus datos, y también la parte que se ve: imagen, video, marca. Los dos lados, integrados."
       }
     ]
   },
@@ -135,67 +202,108 @@
     "inProduction": "en producción",
     "items": [
       {
-        "title": "Donna",
-        "desc": "SaaS jurídico con 7 motores: monitorea tribunales, calcula plazos y mapea el perfil decisorio de jueces, inteligencia inédita en el mercado. ~10k líneas, multi-tenant, protección de datos.",
+        "title": "Un abogado que no pierde más plazos",
+        "product": "Donna",
+        "desc": "Vigila los procesos en los sistemas judiciales, calcula los plazos solo y además muestra cómo suele decidir cada juez.",
         "tags": [
           "saas",
           "jurídico",
           "multi-agente"
         ],
+        "tech": [
+          "SaaS multi-tenant",
+          "7 motores",
+          "protección de datos"
+        ],
+        "detail": "Siete motores independientes monitoreando los sistemas PJe y DJe, cálculo de plazos procesales y mapeo del perfil decisorio de los jueces, inteligencia que no existía hecha en el mercado. ~10k líneas, multi-tenant, en conformidad con la ley de protección de datos.",
         "link": "https://github.com/lekosarmento/donna"
       },
       {
-        "title": "Salud Inteligente",
-        "desc": "Recepción médica con 6 agentes autónomos en WhatsApp: triaje, agendamiento y FAQ en el canal del paciente; resúmenes y alertas en el canal del médico. Opera 24/7.",
+        "title": "La recepción del consultorio, 24 horas",
+        "product": "Salud Inteligente",
+        "desc": "Hace triaje, agenda consultas y resuelve dudas en el WhatsApp del paciente. El médico recibe el resumen del día listo.",
         "tags": [
           "saas",
           "ia",
           "whatsapp"
         ],
+        "tech": [
+          "6 agentes",
+          "WhatsApp API",
+          "Supabase"
+        ],
+        "detail": "Seis agentes autónomos en dos canales: triaje, agendamiento y preguntas frecuentes en el canal del paciente; resúmenes y alertas en el canal del médico. Opera 24/7 sin intervención.",
         "link": "https://saudeinteligente.vercel.app/",
         "image": "/images/previews/saude-inteligente.jpg",
         "video": "/videos/produtos/saude-inteligente"
       },
       {
-        "title": "Konklave",
-        "desc": "Plataforma multi-agente con 29 personas de IA debatiendo temas complejos, reglas de interacción y votación ponderada.",
+        "title": "29 especialistas de IA discutiendo tu problema",
+        "product": "Konklave",
+        "desc": "Cada uno defiende un punto de vista, debaten entre sí y la decisión sale por voto ponderado.",
         "tags": [
           "plataforma",
           "multi-agente"
         ],
+        "tech": [
+          "multiagente",
+          "orquestación",
+          "voto ponderado"
+        ],
+        "detail": "Plataforma con 29 personas de IA, reglas de interacción entre ellas y votación ponderada por la competencia del agente en el tema en debate.",
         "link": "https://konklave-iota.vercel.app",
         "image": "/images/previews/konklave.jpg",
         "video": "/videos/produtos/konklave"
       },
       {
-        "title": "AI Content Radar",
-        "desc": "Pipeline autónomo monitoreando 33 fuentes RSS y generando contenido optimizado por LLMs, 24 horas al día.",
+        "title": "Contenido que se abastece solo",
+        "product": "AI Content Radar",
+        "desc": "Rastrea 33 fuentes todo el día, elige lo que interesa y entrega el texto listo para revisión.",
         "tags": [
           "automatización",
           "pipeline"
         ],
+        "tech": [
+          "pipeline autónomo",
+          "RSS",
+          "LLM"
+        ],
+        "detail": "Pipeline autónomo monitoreando 33 fuentes RSS, con filtro de relevancia y generación de contenido optimizado por LLMs, 24 horas al día.",
         "link": ""
       },
       {
-        "title": "ANENO",
-        "desc": "Sitio institucional + Org Chart para gestión visual de equipos y proyectos de la agencia. Producto interno en producción.",
+        "title": "Quién hace qué, en una sola pantalla",
+        "product": "ANENO",
+        "desc": "Sitio institucional y organigrama vivo para ver equipos y proyectos de la agencia sin planilla.",
         "tags": [
           "sitio",
           "producto",
           "next.js"
         ],
+        "tech": [
+          "Next.js",
+          "producto interno"
+        ],
+        "detail": "Sitio institucional más organigrama para la gestión visual de equipos y proyectos. Producto interno de la agencia, en producción.",
         "link": "https://site-aneno.vercel.app/",
         "image": "/images/previews/aneno.jpg",
         "video": "/videos/produtos/aneno"
       },
       {
         "title": "Este sitio",
-        "desc": "Portafolio en deck inmersivo vertical (Next.js, R3F, framer-motion). Diseñado y programado por mí.",
+        "product": "leko.ia.br",
+        "desc": "Diseñado, escrito y codificado por mí, incluido el agente que te recibió en la puerta.",
         "tags": [
           "next.js",
           "r3f",
           "diseño"
         ],
+        "tech": [
+          "Next.js",
+          "R3F",
+          "framer-motion"
+        ],
+        "detail": "Portafolio en deck inmersivo vertical: escenas que se apilan con profundidad, i18n en tres idiomas y un agente de IA que presenta el sitio y después se convierte en chat.",
         "link": "https://leko.ia.br",
         "image": "/images/previews/este-site.jpg",
         "video": "/videos/produtos/este-site"
@@ -207,7 +315,7 @@
     "heading": "Oportunidades en IA aplicada",
     "moreDetails": "+ detalles técnicos",
     "lessDetails": "- recoger",
-    "body": "Especialista en IA Aplicada con sólida formación académica (MBA IA para Negocios) y repertorio de 15+ años liderando operaciones complejas. Hace 2 años enfocado exclusivamente en diseñar agentes autónomos, automatizaciones n8n y arquitecturas de productos basados en LLMs.",
+    "body": "Ingeniero de IA aplicada, MBA en IA para Negocios y 15 años de operación antes de eso. Enfoque en agentes autónomos, automatizaciones y productos con LLM.",
     "stackLabel": "Stack que uso a diario",
     "stackGroups": [
       {
@@ -288,7 +396,7 @@
   "experience": {
     "label": "Experiencia",
     "heading": "Experiencia operacional",
-    "body1": "Mi bagaje se construyó en operaciones complejas donde la ejecución bajo presión es la única métrica: megaeventos, marketing de gran alcance, marcas líderes.",
+    "body1": "Megaevento, marca líder, ejecución bajo presión y sin segunda oportunidad. Esa fue la escuela.",
     "cards": [
       {
         "company": "ANENO",
@@ -364,7 +472,7 @@
         "inicio": "Esta es mi carta de presentación: estrategia de IA para marketing, creatividad y productividad. Ven conmigo y te muestro qué significa en la práctica.",
         "sobre": "Antes del código hubo escenario: 15 años en marketing y eventos, más de 1.000 producciones para marcas como Jack Daniel's, Red Bull y Ambev. De ahí viene mi forma de resolver problemas.",
         "tese": "Mi tesis cabe en tres palabras: estrategia que funciona. Lo que diseño, lo pongo en producción. Las diapositivas bonitas no pagan las cuentas.",
-        "construo": "Esto es lo que construyo: agentes de WhatsApp, SaaS con IA, RAG, automatizaciones n8n y la capa creativa encima (imagen, video, contenido).",
+        "construo": "Esto es lo que construyo: atención que no duerme, sistemas a medida para lo que no encuentras hecho, respuestas sacadas de tus propios documentos, trabajo repetitivo saliendo de tus manos y la capa creativa encima, imagen y video al ritmo de la campaña.",
         "diferenciais": "¿Por qué yo y no una agencia? Porque aquí quien entiende el negocio, diseña la solución y escribe el código es la misma persona.",
         "portfolio": "Productos reales, funcionando ahora: Donna en el sector jurídico, Salud Inteligente en medicina, Konklave con 29 agentes debatiendo entre sí. Nada de pruebas de concepto.",
         "experiencia": "La trayectoria completa está aquí: de la operación de grandes eventos a la ingeniería de IA aplicada.",
