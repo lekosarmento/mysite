@@ -448,3 +448,16 @@ cena seguinte cobrir. A cena Portfólio ficou com 1468px de conteúdo contra 900
 de viewport, dentro do que o deck suporta desde o ajuste de 06/07.
 
 Continua fora de escopo: fases 3 a 6 e o rename de `WhatsAppAgent.tsx`.
+
+### Fase 5 concluída (2026-07-30)
+
+`en` e `es` sincronizados com a copy nova. Os três dicionários têm as mesmas 242
+chaves, com a mesma forma, e a verificação em produção confirma as três cenas
+(pt/en/es) com 18 passos de fluxo e 0 erro de console.
+
+Isso encerra a inconsistência conhecida que este plano tinha registrado como
+temporária. O guarda no `TechDetail` (commit `cc1f801`) continua valendo: é a
+rede de proteção pra qualquer chave que volte a faltar em algum idioma.
+
+Fases 3 (fotos de evento) e 4 (vídeo) seguem bloqueadas por material do Leko.
+Para vídeo, o caminho está especificado em `docs/HIGGSFIELD.md`.
