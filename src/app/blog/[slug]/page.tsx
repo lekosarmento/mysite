@@ -59,7 +59,7 @@ export default async function BlogPost({ params }: PageProps) {
     <main className="flex min-h-screen flex-col items-center justify-between w-full relative">
       <Navbar />
 
-      <article className="w-full min-h-screen pt-36 pb-20 px-6 md:px-10 bg-bg-primary selection:bg-[#00D4FF] selection:text-black">
+      <article className="w-full min-h-screen pt-36 pb-20 px-6 md:px-10 bg-bg-primary selection:bg-[#B5673F] selection:text-[#F2EFE7]">
         <div className="max-w-[760px] mx-auto">
           
           <Link href="/blog" className="inline-flex items-center font-mono text-[11px] uppercase tracking-widest text-text-muted hover:text-text-primary mb-12 transition-colors">
@@ -69,11 +69,11 @@ export default async function BlogPost({ params }: PageProps) {
           <header className="mb-14 border-b border-border-subtle pb-14">
             <div className="flex flex-wrap items-center justify-between gap-4 mb-6 w-full">
               <div className="flex flex-wrap items-center gap-4">
-                <span className="font-mono text-[11px] uppercase tracking-[2px] text-accent-cyan bg-[rgba(0,212,255,0.05)] px-4 py-2 rounded-full border border-[rgba(0,212,255,0.1)]">
+                <span className="font-mono text-[11px] uppercase tracking-[2px] text-accent-cyan bg-[rgba(181,103,63,0.07)] px-4 py-2 rounded-full border border-[rgba(181,103,63,0.18)]">
                   {post.category || 'ARTIGO'}
                 </span>
                 <span className="font-mono text-[12px] uppercase text-text-muted">
-                  {new Date(post.date).toLocaleDateString('pt-BR')}
+                  {new Date(post.date).toLocaleDateString('pt-BR', { timeZone: 'UTC' })}
                 </span>
               </div>
               
@@ -101,7 +101,7 @@ export default async function BlogPost({ params }: PageProps) {
                           prose-a:text-accent-cyan hover:prose-a:text-text-primary prose-a:underline-offset-4
                           prose-strong:text-text-primary prose-strong:font-semibold
                           prose-li:text-text-secondary prose-ul:list-disc
-                          prose-blockquote:border-l-accent-cyan prose-blockquote:bg-[rgba(0,212,255,0.02)] prose-blockquote:py-1">
+                          prose-blockquote:border-l-accent-cyan prose-blockquote:bg-[rgba(181,103,63,0.05)] prose-blockquote:py-1">
             <ReactMarkdown>{post.content}</ReactMarkdown>
           </div>
           

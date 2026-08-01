@@ -9,17 +9,17 @@ function BlogCard({ post }: { post: BlogPost }) {
       <div className="relative overflow-hidden rounded-2xl bg-[var(--color-bg-secondary)] border border-border-subtle transition-all duration-500 hover:border-text-primary hover:-translate-y-2 dark:hover:shadow-[0_20px_40px_rgba(0,0,0,0.5)] hover:shadow-[0_20px_40px_rgba(15,15,15,0.05)] h-full flex flex-col">
         {/* Holographic Header Card Block */}
         <div className="w-full h-48 bg-[#0F0F0F] relative overflow-hidden flex items-center justify-center border-b border-border-subtle">
-          <div className="absolute inset-0 bg-gradient-to-tr from-[rgba(0,212,255,0.05)] to-[rgba(139,92,246,0.05)] mix-blend-overlay"></div>
+          <div className="absolute inset-0 bg-gradient-to-tr from-[rgba(181,103,63,0.07)] to-[rgba(139,92,246,0.05)] mix-blend-overlay"></div>
           <span className="font-mono text-[90px] text-[rgba(255,255,255,0.02)] font-bold tracking-tighter absolute -right-4 -bottom-8 select-none">LEKO</span>
         </div>
         
         <div className="p-8 flex-1 flex flex-col">
           <div className="flex flex-wrap items-center gap-3 mb-4">
-            <span className="font-mono text-[10px] uppercase tracking-[2px] text-accent-cyan bg-[rgba(0,212,255,0.05)] px-3 py-1 rounded-full border border-[rgba(0,212,255,0.1)]">
+            <span className="font-mono text-[10px] uppercase tracking-[2px] text-accent-cyan bg-[rgba(181,103,63,0.07)] px-3 py-1 rounded-full border border-[rgba(181,103,63,0.18)]">
               {post.category || 'ARTIGO'}
             </span>
             <span className="font-mono text-[10px] uppercase text-text-muted">
-              {new Date(post.date).toLocaleDateString('pt-BR')}
+              {new Date(post.date).toLocaleDateString('pt-BR', { timeZone: 'UTC' })}
             </span>
           </div>
           <h2 className="text-xl font-medium text-text-primary mb-3 group-hover:text-accent-cyan transition-colors line-clamp-2">
