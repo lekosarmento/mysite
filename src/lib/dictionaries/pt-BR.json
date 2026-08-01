@@ -33,7 +33,7 @@
   },
   "hero": {
     "headline": "José Werkley",
-    "kicker": "Estratégia de IA para Marketing, Criatividade e Produtividade",
+    "kicker": "Marketing e IA, do posicionamento ao sistema no ar",
     "subtitle": "Não venho do laboratório, venho da operação. Construo agentes, automações e produtos de IA que funcionam fora da demo.",
     "pill_empresa": "Sou empresa",
     "pill_recrutador": "Sou recrutador",
@@ -77,43 +77,92 @@
       {
         "title": "Um atendente que não dorme",
         "desc": "Responde, faz triagem e agenda no WhatsApp do seu cliente a qualquer hora. Quando o caso pede gente, ele passa pra você.",
-        "flow": ["Cliente chama no WhatsApp", "Agente tria, responde e agenda", "Caso difícil cai pra você"],
-        "tech": ["WhatsApp API", "LLM", "handoff humano"],
+        "flow": [
+          "Cliente chama no WhatsApp",
+          "Agente tria, responde e agenda",
+          "Caso difícil cai pra você"
+        ],
+        "tech": [
+          "WhatsApp API",
+          "LLM",
+          "handoff humano"
+        ],
         "detail": "Agente ligado à WhatsApp Cloud API, com memória da conversa, classificação de intenção e regra de escalonamento. Quando o assunto foge do que ele resolve, o atendimento cai pra uma pessoa com o histórico junto."
       },
       {
         "title": "O sistema que sua empresa não acha pronto",
         "desc": "Quando nenhuma ferramenta de prateleira serve, eu construo a sua, do primeiro protótipo até o sistema rodando com seus clientes dentro.",
-        "flow": ["Seu processo do jeito que ele é", "Protótipo rodando em semanas", "Sistema no ar com seus clientes"],
-        "tech": ["Next.js", "Supabase", "multi-tenant"],
+        "flow": [
+          "Seu processo do jeito que ele é",
+          "Protótipo rodando em semanas",
+          "Sistema no ar com seus clientes"
+        ],
+        "tech": [
+          "Next.js",
+          "Supabase",
+          "multi-tenant"
+        ],
         "detail": "Produtos como recepção médica e assistente jurídico, do MVP ao sistema em produção: banco multi-tenant, autenticação, painel de administração e deploy contínuo."
       },
       {
         "title": "Respostas tiradas dos seus documentos",
         "desc": "A IA para de inventar e passa a responder com base nos seus contratos, manuais e planilhas.",
-        "flow": ["Seus contratos, manuais e planilhas", "Indexados e buscáveis por sentido", "Resposta com a fonte junto"],
-        "tech": ["RAG", "pgvector", "busca semântica"],
+        "flow": [
+          "Seus contratos, manuais e planilhas",
+          "Indexados e buscáveis por sentido",
+          "Resposta com a fonte junto"
+        ],
+        "tech": [
+          "RAG",
+          "pgvector",
+          "busca semântica"
+        ],
         "detail": "Indexo seus documentos em embeddings e sirvo o trecho certo pro modelo na hora da pergunta. pgvector no Supabase, recorte por seção e citação da fonte junto da resposta, pra você conferir de onde veio."
       },
       {
         "title": "O trabalho repetitivo sai da sua mão",
         "desc": "Aquela tarefa de levar dado de um sistema pro outro passa a acontecer sozinha, ligando as ferramentas que você já usa.",
-        "flow": ["O dado entra num sistema", "O fluxo dispara sozinho", "Chega pronto no outro"],
-        "tech": ["n8n", "APIs REST", "webhooks"],
+        "flow": [
+          "O dado entra num sistema",
+          "O fluxo dispara sozinho",
+          "Chega pronto no outro"
+        ],
+        "tech": [
+          "n8n",
+          "APIs REST",
+          "webhooks"
+        ],
         "detail": "Fluxos multi-etapas em n8n, com tratamento de erro e reprocessamento, integrando CRM, planilha, e-mail e WhatsApp. O que hoje é copiar e colar vira gatilho."
       },
       {
         "title": "Imagem e vídeo no ritmo da campanha",
         "desc": "Peças de marketing e ativação produzidas com IA, em escala, sem travar o cronograma esperando janela de produção.",
-        "flow": ["Briefing da campanha", "Geração dirigida com IA", "Peça pronta dentro do prazo"],
-        "tech": ["Veo", "Runway", "Midjourney", "ComfyUI"],
+        "flow": [
+          "Briefing da campanha",
+          "Geração dirigida com IA",
+          "Peça pronta dentro do prazo"
+        ],
+        "tech": [
+          "Veo",
+          "Runway",
+          "Midjourney",
+          "ComfyUI"
+        ],
         "detail": "Direção, geração e finalização de imagem, vídeo e áudio com IA, incluindo pipelines próprios no ComfyUI pra manter consistência de marca entre as peças."
       },
       {
         "title": "Site e interface que convertem",
         "desc": "Landing pages e produtos digitais desenhados pra ficar claros pra quem usa e vender pra quem paga.",
-        "flow": ["Quem usa e o que precisa", "Design e código na mesma mão", "Página que converte"],
-        "tech": ["Next.js", "Tailwind", "design system"],
+        "flow": [
+          "Quem usa e o que precisa",
+          "Design e código na mesma mão",
+          "Página que converte"
+        ],
+        "tech": [
+          "Next.js",
+          "Tailwind",
+          "design system"
+        ],
         "detail": "UX, UI e código na mesma mão: design system, acessibilidade, performance e medição. Este site é um exemplo do padrão."
       }
     ]
@@ -161,7 +210,11 @@
           "jurídico",
           "multi-agente"
         ],
-        "tech": ["SaaS multi-tenant", "7 motores", "LGPD"],
+        "tech": [
+          "SaaS multi-tenant",
+          "7 motores",
+          "LGPD"
+        ],
         "detail": "Sete motores independentes monitorando PJe e DJe, cálculo de prazo processual e mapeamento do perfil decisório de juízes, inteligência que não existia pronta no mercado. ~10k linhas, multi-tenant, em conformidade com a LGPD.",
         "link": "https://github.com/lekosarmento/donna"
       },
@@ -174,7 +227,11 @@
           "ia",
           "whatsapp"
         ],
-        "tech": ["6 agentes", "WhatsApp API", "Supabase"],
+        "tech": [
+          "6 agentes",
+          "WhatsApp API",
+          "Supabase"
+        ],
         "detail": "Seis agentes autônomos em dois canais: triagem, agendamento e FAQ no canal do paciente; resumos e alertas no canal do médico. Opera 24/7 sem intervenção.",
         "link": "https://saudeinteligente.vercel.app/",
         "image": "/images/previews/saude-inteligente.jpg",
@@ -188,7 +245,11 @@
           "plataforma",
           "multi-agente"
         ],
-        "tech": ["multi-agente", "orquestração", "votação ponderada"],
+        "tech": [
+          "multi-agente",
+          "orquestração",
+          "votação ponderada"
+        ],
         "detail": "Plataforma com 29 personas de IA, regras de interação entre elas e votação ponderada por competência do agente no tema em debate.",
         "link": "https://konklave-iota.vercel.app",
         "image": "/images/previews/konklave.jpg",
@@ -202,7 +263,11 @@
           "automação",
           "pipeline"
         ],
-        "tech": ["pipeline autônomo", "RSS", "LLM"],
+        "tech": [
+          "pipeline autônomo",
+          "RSS",
+          "LLM"
+        ],
         "detail": "Pipeline autônomo monitorando 33 fontes RSS, com crivo de relevância e geração de conteúdo otimizado por LLMs, 24 horas por dia.",
         "link": ""
       },
@@ -215,7 +280,10 @@
           "produto",
           "next.js"
         ],
-        "tech": ["Next.js", "produto interno"],
+        "tech": [
+          "Next.js",
+          "produto interno"
+        ],
         "detail": "Site institucional mais Org Chart para gestão visual de equipes e projetos. Produto interno da agência, em produção.",
         "link": "https://site-aneno.vercel.app/",
         "image": "/images/previews/aneno.jpg",
@@ -230,7 +298,11 @@
           "r3f",
           "design"
         ],
-        "tech": ["Next.js", "R3F", "framer-motion"],
+        "tech": [
+          "Next.js",
+          "R3F",
+          "framer-motion"
+        ],
         "detail": "Portfólio em deck imersivo vertical: cenas que empilham com profundidade, i18n em três idiomas e um agente de IA que apresenta o site e depois vira chat.",
         "link": "https://leko.ia.br",
         "image": "/images/previews/este-site.jpg",
@@ -325,24 +397,54 @@
     "label": "Experiência",
     "heading": "Experiência operacional",
     "body1": "Megaevento, marca líder, execução sob pressão e sem segunda chance. Foi essa a escola.",
-    "cards": [
+    "timeline": [
       {
-        "company": "ANENO",
-        "desc": "Gestão de projetos operacionais, cenografia, comunicação visual e ativações de marca."
+        "period": "2013–2020",
+        "company": "TagZag · Wave · Folks · Criart · BKF",
+        "role": "Atendimento e marketing em agência",
+        "note": "Sete anos de briefing, gestão de contas e campanhas integradas.",
+        "kind": "marketing"
       },
       {
-        "company": "Goa Shantti",
-        "desc": "Marketing de posicionamento, captação de patrocínios, produção e experiências de marca."
-      },
-      {
-        "company": "Skybar",
-        "desc": "Operação logística, gestão de equipes e programação no bar mais alto do Brasil."
-      },
-      {
+        "period": "até 2020",
         "company": "Helsinki Eventos",
-        "desc": "Direção de produção para marcas globais e nacionais como Moises.ai e Moura Dubeux."
+        "role": "Diretor de produção",
+        "note": "Produção com Luan Santana, Alok, Paulo Gustavo e Whindersson Nunes.",
+        "kind": "producao"
+      },
+      {
+        "period": "2020–2025",
+        "company": "Skybar · Skylounge · Skyrestô",
+        "role": "Sócio gestor de marketing e eventos",
+        "note": "1.000+ eventos em cinco anos, operação com mais de 100 pessoas.",
+        "kind": "marketing"
+      },
+      {
+        "period": "2024–2026",
+        "company": "Goa Shantti",
+        "role": "Diretor de marketing",
+        "note": "Do zero a 50 mil seguidores no orgânico, sem um real de mídia paga.",
+        "kind": "marketing"
+      },
+      {
+        "period": "2025–hoje",
+        "company": "Vertekia",
+        "role": "Fundador e builder de IA",
+        "note": "Agentes, automações e produtos de IA em produção, do briefing ao ar.",
+        "kind": "ia"
+      },
+      {
+        "period": "2026–hoje",
+        "company": "ANENO",
+        "role": "Gerente de projetos",
+        "note": "Ativações de Jack Daniel's, Kwai e Brahma, equipes de 25 a 65 por projeto.",
+        "kind": "marketing"
       }
-    ]
+    ],
+    "prev": "Anterior",
+    "next": "Próximo",
+    "hint": "arraste ou use as setas",
+    "regionLabel": "Linha do tempo da carreira"
   },
   "education": {
     "label": "Formação",

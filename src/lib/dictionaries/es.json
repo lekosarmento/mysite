@@ -33,7 +33,7 @@
   },
   "hero": {
     "headline": "José Werkley",
-    "kicker": "Estrategia de IA para Marketing, Creatividad y Productividad",
+    "kicker": "Marketing e IA, del posicionamiento al sistema en el aire",
     "subtitle": "No vengo del laboratorio, vengo de la operación. Construyo agentes, automatizaciones y productos de IA que funcionan fuera de la demo.",
     "pill_empresa": "Soy empresa",
     "pill_recrutador": "Soy reclutador",
@@ -397,24 +397,54 @@
     "label": "Experiencia",
     "heading": "Experiencia operacional",
     "body1": "Megaevento, marca líder, ejecución bajo presión y sin segunda oportunidad. Esa fue la escuela.",
-    "cards": [
+    "timeline": [
       {
-        "company": "ANENO",
-        "desc": "Gestión de proyectos operacionales, escenografía, comunicación visual y activaciones de marca."
+        "period": "2013–2020",
+        "company": "TagZag · Wave · Folks · Criart · BKF",
+        "role": "Atención y marketing en agencia",
+        "note": "Siete años de briefing, gestión de cuentas y campañas integradas.",
+        "kind": "marketing"
       },
       {
-        "company": "Goa Shantti",
-        "desc": "Marketing de posicionamiento, captación de patrocinios, producción y experiencias de marca."
-      },
-      {
-        "company": "Skybar",
-        "desc": "Operación logística, gestión de equipos y programación en el bar más alto de Brasil."
-      },
-      {
+        "period": "hasta 2020",
         "company": "Helsinki Eventos",
-        "desc": "Dirección de producción para marcas globales y nacionales como Moises.ai y Moura Dubeux."
+        "role": "Director de producción",
+        "note": "Producción con Luan Santana, Alok, Paulo Gustavo y Whindersson Nunes.",
+        "kind": "producao"
+      },
+      {
+        "period": "2020–2025",
+        "company": "Skybar · Skylounge · Skyrestô",
+        "role": "Socio gestor de marketing y eventos",
+        "note": "1.000+ eventos en cinco años, operación con más de 100 personas.",
+        "kind": "marketing"
+      },
+      {
+        "period": "2024–2026",
+        "company": "Goa Shantti",
+        "role": "Director de marketing",
+        "note": "De cero a 50 mil seguidores orgánicos, sin un peso de medios pagos.",
+        "kind": "marketing"
+      },
+      {
+        "period": "2025–hoy",
+        "company": "Vertekia",
+        "role": "Fundador y builder de IA",
+        "note": "Agentes, automatizaciones y productos de IA en producción, del briefing al aire.",
+        "kind": "ia"
+      },
+      {
+        "period": "2026–hoy",
+        "company": "ANENO",
+        "role": "Gerente de proyectos",
+        "note": "Activaciones de Jack Daniel's, Kwai y Brahma, equipos de 25 a 65 por proyecto.",
+        "kind": "marketing"
       }
-    ]
+    ],
+    "prev": "Anterior",
+    "next": "Siguiente",
+    "hint": "arrastra o usa las flechas",
+    "regionLabel": "Línea de tiempo de la carrera"
   },
   "education": {
     "label": "Formación",

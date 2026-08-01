@@ -1,11 +1,18 @@
 "use client";
 
 import { useLanguage } from "@/lib/LanguageContext";
+import { TimelineFromDict } from "@/components/ui/Timeline";
 
-/** Cena 09 do deck (tema sand). Experiência: lead + 4 cards de empresas. */
+/**
+ * Cena 07 do deck. Experiência como linha do tempo horizontal.
+ *
+ * Antes eram quatro cards com nome de empresa e uma frase de atribuição, sem
+ * data e sem cargo. Quem procura um head de marketing varre cargo e resultado,
+ * e nenhum dos dois aparecia: o site dizia "15 anos de marketing" no abstrato e
+ * nunca mostrava "Diretor de marketing" nem "0 a 50 mil no orgânico".
+ */
 export function Experience() {
   const { t } = useLanguage();
-  const cards = t("experience.cards") as { company: string; desc: string }[];
 
   return (
     <>
@@ -17,14 +24,7 @@ export function Experience() {
         {t("experience.body1")}
       </p>
 
-      <div className="cards c4 rv">
-        {cards.map((c, i) => (
-          <div className="card" key={i}>
-            <div className="ch">{c.company}</div>
-            <div className="cd">{c.desc}</div>
-          </div>
-        ))}
-      </div>
+      <TimelineFromDict />
     </>
   );
 }

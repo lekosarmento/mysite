@@ -462,6 +462,40 @@
 /* o disclosure precisa ficar ACIMA do link esticado pra continuar clicável */
 .projcard .techdetail { position: relative; z-index: 1; }
 
+/* ---- linha do tempo horizontal (cena Experiência) --------------------- */
+/* a margem à direita mantém a linha do tempo longe da navegação lateral do
+   deck (.spine, fixa em ~1314px num viewport de 1440): sem ela o último card
+   passava por baixo dos pontinhos */
+.tl { position: relative; z-index: 2; margin-top: clamp(16px, 2.4vh, 30px); }
+@media (min-width: 900px) { .tl { margin-right: clamp(40px, 6vw, 96px); } }
+/* o scroller é focável: é assim que quem usa teclado anda na linha do tempo,
+   com as setas, sem precisar de handler nenhum */
+.tl-scroller { overflow-x: auto; overflow-y: hidden; scroll-snap-type: x proximity; padding-bottom: 14px; scrollbar-width: thin; scrollbar-color: var(--hair) transparent; }
+.tl-scroller:focus-visible { outline: 1px solid var(--terra); outline-offset: 6px; border-radius: 6px; }
+.tl-track { position: relative; display: flex; gap: 0; list-style: none; margin: 0; padding: 0; width: max-content; }
+/* o trilho vive DENTRO do track, então acompanha a rolagem em vez de ficar
+   parado enquanto os pontos andam por cima dele */
+.tl-track::before { content: ""; position: absolute; left: 0; right: 0; top: 30px; height: 1px; background: var(--hair); }
+
+.tl-item { position: relative; flex: 0 0 clamp(208px, 23vw, 268px); scroll-snap-align: start; padding-right: clamp(18px, 2vw, 28px); }
+.tl-period { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 1.2px; color: var(--terra); height: 22px; }
+.tl-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--hair); border: 1px solid var(--paper); position: relative; top: 4px; margin-bottom: 16px; }
+.tl-item[data-kind="marketing"] .tl-dot { background: var(--terra); }
+.tl-item[data-kind="ia"] .tl-dot { background: var(--ink); }
+.tl-role { font-weight: 700; font-size: clamp(14px, 1.25vw, 17px); line-height: 1.25; letter-spacing: -0.01em; }
+.tl-company { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 1px; text-transform: uppercase; opacity: 0.55; margin-top: 6px; }
+.tl-note { font-weight: 300; font-size: 12.5px; line-height: 1.5; opacity: 0.8; margin-top: 9px; max-width: 30ch; }
+
+/* as setas ficam em terracota, não no hairline: a linha do tempo rola na
+   horizontal e isso não é óbvio, então o controle precisa ser visto. Com o
+   contorno fino de antes elas sumiam no fundo claro. */
+.tl-nav { display: flex; gap: 8px; margin-top: 14px; align-items: center; }
+.tl-nav button { font-family: var(--font-mono); font-size: 14px; width: 34px; height: 34px; border: 1px solid var(--terra); border-radius: 50%; background: none; color: var(--terra); cursor: pointer; transition: background 0.25s, color 0.25s, opacity 0.25s; }
+.tl-nav button:hover:not(:disabled) { background: var(--terra); color: var(--paper); }
+.tl-nav button:disabled { opacity: 0.22; cursor: default; }
+.tl-hint { font-family: var(--font-mono); font-size: 10px; letter-spacing: 1.2px; text-transform: uppercase; opacity: 0.42; margin-left: 8px; }
+.scene.t-ink .tl-dot, .scene.t-terra .tl-dot { border-color: var(--ink); }
+
 /* tags & pills */
 .tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 10px; }
 .tag { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 1px; text-transform: uppercase; border: 1px solid var(--hair); border-radius: 999px; padding: 4px 10px; opacity: 0.8; }
