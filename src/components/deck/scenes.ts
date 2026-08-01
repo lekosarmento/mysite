@@ -22,3 +22,16 @@ export const SCENES: SceneMeta[] = [
   { id: "stack", labelKey: "menu.stack", theme: "paper2" },
   { id: "contato", labelKey: "menu.contato", theme: "ink" },
 ];
+
+/**
+ * Número da cena como ele aparece na tela ("01", "07"...).
+ *
+ * Existe porque esses números já estiveram escritos na mão dentro de cada
+ * seção: ao inserir uma cena no meio do deck, todas as seguintes passaram a
+ * exibir o número da vizinha. Derivar de SCENES faz a ordem ter uma fonte só.
+ */
+export function sceneNumber(id: string): string {
+  const i = SCENES.findIndex((s) => s.id === id);
+  if (i === -1) throw new Error(`cena desconhecida em sceneNumber: ${id}`);
+  return String(i + 1).padStart(2, "0");
+}

@@ -1,6 +1,7 @@
 "use client";
 
 import { useLanguage } from "@/lib/LanguageContext";
+import { sceneNumber } from "@/components/deck/scenes";
 import { TechDetail } from "@/components/ui/TechDetail";
 
 interface ProductItem {
@@ -27,11 +28,11 @@ export function Products() {
   return (
     <>
       <span className="ghost" style={{ color: "var(--terra)" }} aria-hidden>
-        04
+        {sceneNumber("construo")}
       </span>
 
       <div className="prodhead rv">
-        <div className="idxbig">04 · {t("products.label")}</div>
+        <div className="idxbig">{sceneNumber("construo")} · {t("products.label")}</div>
         <h2 className="title" style={{ fontSize: "clamp(34px,5.4vw,76px)", marginTop: 12 }}>
           {t("products.heading")}
         </h2>

@@ -457,14 +457,28 @@
         "status": "In progress"
       },
       {
-        "title": "Bachelor's Degree in Advertising & Communications",
-        "institution": "",
-        "status": "Completed"
+        "title": "BA in Advertising and Marketing",
+        "institution": "UNESP",
+        "status": "2013"
+      }
+    ],
+    "certsLabel": "Certifications and further study",
+    "certs": [
+      {
+        "name": "Advanced prompt engineering, RAG and autonomous agent architectures",
+        "issuer": ""
       },
       {
-        "title": "Complementary Studies",
-        "institution": "Prompt Engineering, advanced RAG, autonomous agent architectures, orchestration, and advanced n8n workflows.",
-        "status": ""
+        "name": "Anthropic AI courses",
+        "issuer": "Anthropic"
+      },
+      {
+        "name": "Intermediate Python",
+        "issuer": ""
+      },
+      {
+        "name": "Workflow automation and orchestration with n8n",
+        "issuer": ""
       }
     ]
   },

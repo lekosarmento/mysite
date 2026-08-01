@@ -1,18 +1,27 @@
 "use client";
 
 import { useLanguage } from "@/lib/LanguageContext";
+import { sceneNumber } from "@/components/deck/scenes";
 
-/** Cena 10 do deck (tema terra). Formação acadêmica em lista. */
+/**
+ * Cena Formação (tema terra). Dois blocos: diploma e certificação.
+ *
+ * Antes era uma lista só, e os cursos complementares estavam espremidos dentro
+ * do campo de instituição de um item chamado "Estudos Complementares". Diploma
+ * e certificado são lidos de formas diferentes: o primeiro é credencial longa,
+ * o segundo é sinal de atualização recente. Misturar os dois enfraquece os dois.
+ */
 export function Education() {
   const { t } = useLanguage();
   const items = t("education.items") as { title: string; institution: string; status: string }[];
+  const certs = (t("education.certs") ?? []) as { name: string; issuer?: string }[];
 
   return (
     <>
       <span className="ghost" style={{ color: "var(--cream)" }} aria-hidden>
-        08
+        {sceneNumber("formacao")}
       </span>
-      <div className="idxbig rv">08 · {t("education.label")}</div>
+      <div className="idxbig rv">{sceneNumber("formacao")} · {t("education.label")}</div>
       <h2 className="title rv" style={{ fontSize: "clamp(34px,5.4vw,76px)", marginTop: 12 }}>
         {t("education.heading")}
       </h2>
@@ -29,6 +38,20 @@ export function Education() {
           </div>
         ))}
       </div>
+
+      {certs.length > 0 && (
+        <div className="certs rv">
+          <span className="certs-label">{t("education.certsLabel")}</span>
+          <ul className="certs-list">
+            {certs.map((c, i) => (
+              <li key={i}>
+                <span className="certs-name">{c.name}</span>
+                {c.issuer && <span className="certs-issuer">{c.issuer}</span>}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </>
   );
 }

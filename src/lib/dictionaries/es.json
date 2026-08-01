@@ -457,14 +457,28 @@
         "status": "En curso"
       },
       {
-        "title": "Grado en Publicidad y Propaganda",
-        "institution": "",
-        "status": "Concluida"
+        "title": "Licenciatura en Publicidad y Propaganda",
+        "institution": "UNESP",
+        "status": "2013"
+      }
+    ],
+    "certsLabel": "Certificaciones y estudios complementarios",
+    "certs": [
+      {
+        "name": "Prompt engineering avanzado, RAG y arquitecturas de agentes autónomos",
+        "issuer": ""
       },
       {
-        "title": "Estudios Complementarios",
-        "institution": "Prompt Engineering, RAG avanzado, arquitecturas de agentes autónomos, orquestación y flujos n8n avanzados.",
-        "status": ""
+        "name": "Cursos de IA de Anthropic",
+        "issuer": "Anthropic"
+      },
+      {
+        "name": "Python intermedio",
+        "issuer": ""
+      },
+      {
+        "name": "Automatización y orquestación de flujos con n8n",
+        "issuer": ""
       }
     ]
   },

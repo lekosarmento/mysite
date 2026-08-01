@@ -457,14 +457,28 @@
         "status": "Em andamento"
       },
       {
-        "title": "Graduação em Publicidade e Propaganda",
-        "institution": "",
-        "status": "Concluída"
+        "title": "Bacharelado em Publicidade e Propaganda",
+        "institution": "UNESP",
+        "status": "2013"
+      }
+    ],
+    "certsLabel": "Certificações e estudos complementares",
+    "certs": [
+      {
+        "name": "Prompt engineering avançado, RAG e arquiteturas de agentes autônomos",
+        "issuer": ""
       },
       {
-        "title": "Estudos Complementares",
-        "institution": "Prompt Engineering, RAG avançado, arquiteturas de agentes autônomos, orquestração e fluxos n8n avançados.",
-        "status": ""
+        "name": "Cursos de IA da Anthropic",
+        "issuer": "Anthropic"
+      },
+      {
+        "name": "Python intermediário",
+        "issuer": ""
+      },
+      {
+        "name": "Automação e orquestração de fluxos com n8n",
+        "issuer": ""
       }
     ]
   },

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useLanguage } from "@/lib/LanguageContext";
+import { sceneNumber } from "@/components/deck/scenes";
 import { TechDetail } from "@/components/ui/TechDetail";
 import { ProductLoop } from "@/components/ui/ProductLoop";
 
@@ -38,9 +39,9 @@ export function Projetos() {
   return (
     <>
       <span className="ghost" style={{ color: "var(--terra)" }} aria-hidden>
-        06
+        {sceneNumber("portfolio")}
       </span>
-      <div className="idxbig rv">06 · {t("projects.label")}</div>
+      <div className="idxbig rv">{sceneNumber("portfolio")} · {t("projects.label")}</div>
       <h2 className="title rv" style={{ fontSize: "clamp(30px,4.4vw,58px)", marginTop: 10 }}>
         {t("projects.heading")}
       </h2>

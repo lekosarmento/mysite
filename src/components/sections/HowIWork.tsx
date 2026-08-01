@@ -1,6 +1,7 @@
 "use client";
 
 import { useLanguage } from "@/lib/LanguageContext";
+import { sceneNumber } from "@/components/deck/scenes";
 
 /** Cena 07 do deck (tema paper). Processo: 4 passos em cards. */
 export function HowIWork() {
@@ -9,7 +10,7 @@ export function HowIWork() {
 
   return (
     <>
-      <div className="idxbig rv">05 · {t("howIWork.label")}</div>
+      <div className="idxbig rv">{sceneNumber("diferenciais")} · {t("howIWork.label")}</div>
       <h2 className="title rv" style={{ fontSize: "clamp(34px,5.4vw,76px)", marginTop: 12 }}>
         {t("howIWork.heading")}
       </h2>

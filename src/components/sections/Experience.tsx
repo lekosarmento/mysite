@@ -1,10 +1,11 @@
 "use client";
 
 import { useLanguage } from "@/lib/LanguageContext";
+import { sceneNumber } from "@/components/deck/scenes";
 import { TimelineFromDict } from "@/components/ui/Timeline";
 
 /**
- * Cena 07 do deck. Experiência como linha do tempo horizontal.
+ * Cena Experiência: linha do tempo horizontal.
  *
  * Antes eram quatro cards com nome de empresa e uma frase de atribuição, sem
  * data e sem cargo. Quem procura um head de marketing varre cargo e resultado,
@@ -16,7 +17,7 @@ export function Experience() {
 
   return (
     <>
-      <div className="idxbig rv">07 · {t("experience.label")}</div>
+      <div className="idxbig rv">{sceneNumber("experiencia")} · {t("experience.label")}</div>
       <h2 className="title rv" style={{ fontSize: "clamp(32px,5vw,68px)", marginTop: 12 }}>
         {t("experience.heading")}
       </h2>

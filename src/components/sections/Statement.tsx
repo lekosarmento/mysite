@@ -1,6 +1,7 @@
 "use client";
 
 import { useLanguage } from "@/lib/LanguageContext";
+import { sceneNumber } from "@/components/deck/scenes";
 
 /**
  * Cena 03 do deck (tema terra). Posicionamento: frase gigante (statement.line1
@@ -13,10 +14,10 @@ export function Statement() {
   return (
     <>
       <span className="ghost" style={{ color: "var(--cream)" }} aria-hidden>
-        03
+        {sceneNumber("tese")}
       </span>
 
-      <div className="idxbig rv">03 · {t("menu.tese")}</div>
+      <div className="idxbig rv">{sceneNumber("tese")} · {t("menu.tese")}</div>
       <h2 className="tese-h rv" style={{ marginTop: 18 }}>
         {t("statement.line1")}
         <br />

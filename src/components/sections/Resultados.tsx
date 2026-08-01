@@ -1,6 +1,7 @@
 "use client";
 
 import { useLanguage } from "@/lib/LanguageContext";
+import { sceneNumber } from "@/components/deck/scenes";
 
 interface Resultado {
   /** o número, grande. É o que segura o olho de quem varre */
@@ -27,10 +28,10 @@ export function Resultados() {
   return (
     <>
       <span className="ghost" style={{ color: "var(--cream)" }} aria-hidden>
-        07
+        {sceneNumber("resultados")}
       </span>
 
-      <div className="idxbig rv">07 · {t("resultados.label")}</div>
+      <div className="idxbig rv">{sceneNumber("resultados")} · {t("resultados.label")}</div>
       <h2 className="title rv" style={{ fontSize: "clamp(32px,5vw,68px)", marginTop: 12 }}>
         {t("resultados.heading")}
       </h2>

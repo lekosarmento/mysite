@@ -3,6 +3,7 @@
 import type { CSSProperties } from "react";
 
 import { useLanguage } from "@/lib/LanguageContext";
+import { sceneNumber } from "@/components/deck/scenes";
 
 // Logomarcas em /public/images/brands/<file>.png — já monocromáticas (branco)
 // com fundo vazado, geradas a partir dos arquivos originais das marcas.
@@ -33,7 +34,7 @@ export function Sobre() {
   return (
     <>
       <span className="ghost" style={{ color: "var(--cream)" }} aria-hidden>
-        02
+        {sceneNumber("sobre")}
       </span>
 
       <div className="about">
@@ -43,7 +44,7 @@ export function Sobre() {
         </div>
 
         <div>
-          <div className="idxbig rv">02 · {t("about.label")}</div>
+          <div className="idxbig rv">{sceneNumber("sobre")} · {t("about.label")}</div>
           <h2 className="title rv" style={{ fontSize: "clamp(34px,5.4vw,76px)", marginTop: 14 }}>
             {t("about.heading")}
           </h2>
