@@ -22,7 +22,8 @@
     "portfolio": "Portfolio",
     "formacao": "Education",
     "stack": "Stack",
-    "foot": "João Pessoa, BR · Worldwide"
+    "foot": "João Pessoa, BR · Worldwide",
+    "resultados": "Results"
   },
   "nav": {
     "sobre": "About",
@@ -441,8 +442,8 @@
         "kind": "marketing"
       }
     ],
-    "prev": "Previous",
-    "next": "Next",
+    "prev": "Previous timeline entry",
+    "next": "Next timeline entry",
     "hint": "drag or use the arrows",
     "regionLabel": "Career timeline"
   },
@@ -508,7 +509,8 @@
         "experiencia": "The full journey is here: from operating major events to applied AI engineering.",
         "formacao": "Academic grounding too: an MBA in AI for Business and continuous study, because this field waits for no one.",
         "stack": "My everyday tools: Claude, OpenAI, Gemini, n8n, Supabase, Next.js, and the AI creative arsenal. By the way, I'm built with one of them myself.",
-        "contato": "And that's it! If anything here made sense for your business, this is the way. Or better: want to talk to me right now? Ask me anything."
+        "contato": "And that's it! If anything here made sense for your business, this is the way. Or better: want to talk to me right now? Ask me anything.",
+        "resultados": "And marketing isn't just my past: it's results with numbers on them. From zero to 50 thousand organic followers, over a thousand events produced and an operation of more than a hundred people."
       }
     },
     "chat": {
@@ -522,5 +524,36 @@
     "launcher": {
       "label": "Chat with Leko's agent"
     }
+  },
+  "resultados": {
+    "label": "Results",
+    "heading": "Marketing that turned into numbers",
+    "lead": "What I've actually run, with a real brand, a real team and a real budget.",
+    "areasLabel": "What I owned",
+    "areas": [
+      "brand positioning",
+      "organic growth",
+      "events calendar",
+      "partnerships and influencers",
+      "integrated campaigns",
+      "brand activation"
+    ],
+    "items": [
+      {
+        "value": "0 → 50k",
+        "label": "organic followers",
+        "context": "Goa Shantti, without a cent of paid media"
+      },
+      {
+        "value": "1,000+",
+        "label": "events produced",
+        "context": "Skybar, five years, four a week"
+      },
+      {
+        "value": "100+",
+        "label": "people in the operation",
+        "context": "staff, suppliers, artists and production"
+      }
+    ]
   }
 }

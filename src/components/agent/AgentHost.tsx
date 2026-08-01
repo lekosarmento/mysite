@@ -27,6 +27,7 @@ const TOUR_POSES: Record<string, (typeof POSES)[keyof typeof POSES]> = {
   construo: POSES.explicando,
   diferenciais: POSES.confiante,
   portfolio: POSES.apresentando,
+  resultados: POSES.confiante,
   experiencia: POSES.explicando,
   formacao: POSES.neutro,
   stack: POSES.destacando,

@@ -693,3 +693,21 @@
   .ag-avatar, .ag-bubble, .ag-chat { animation: none; }
   .ag-caret { animation: none; }
 }
+
+/* ---- cena Resultados (marketing) -------------------------------------- */
+/* números grandes com contexto: número sozinho não prova nada, e o contexto em
+   mono embaixo é o que separa "50 mil seguidores" de "50 mil no orgânico, sem
+   mídia paga, em 14 meses" */
+.res { position: relative; z-index: 2; display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(18px, 3vw, 48px); margin-top: clamp(20px, 3.4vh, 44px); }
+.res-value { font-weight: 800; font-size: clamp(34px, 5.4vw, 76px); letter-spacing: -0.03em; line-height: 1; color: var(--terra); }
+.res-label { font-weight: 300; font-size: clamp(13px, 1.3vw, 17px); margin-top: 10px; opacity: 0.92; }
+.res-context { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.8px; line-height: 1.5; margin-top: 8px; opacity: 0.55; max-width: 26ch; }
+
+.res-areas { position: relative; z-index: 2; margin-top: clamp(20px, 3.2vh, 42px); }
+.res-areas-label { font-family: var(--font-mono); font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.45; }
+.res-areas-list { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 12px; }
+
+@media (max-width: 900px) {
+  .res { grid-template-columns: 1fr; gap: 22px; }
+  .res-context { max-width: 100%; }
+}

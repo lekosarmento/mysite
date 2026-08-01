@@ -8,7 +8,7 @@ export interface SceneMeta {
   theme: SceneTheme;
 }
 
-// ORDEM AUTORITATIVA (10 cenas). Convergência marketing + operação + IA.
+// ORDEM AUTORITATIVA (11 cenas). Convergência marketing + operação + IA.
 export const SCENES: SceneMeta[] = [
   { id: "inicio", labelKey: "menu.inicio", theme: "paper" },
   { id: "sobre", labelKey: "menu.sobre", theme: "ink" },
@@ -16,6 +16,7 @@ export const SCENES: SceneMeta[] = [
   { id: "construo", labelKey: "menu.construo", theme: "paper2" },
   { id: "diferenciais", labelKey: "menu.diferenciais", theme: "ink" },
   { id: "portfolio", labelKey: "menu.portfolio", theme: "sand" },
+  { id: "resultados", labelKey: "menu.resultados", theme: "ink" },
   { id: "experiencia", labelKey: "menu.experiencia", theme: "paper" },
   { id: "formacao", labelKey: "menu.formacao", theme: "terra" },
   { id: "stack", labelKey: "menu.stack", theme: "paper2" },

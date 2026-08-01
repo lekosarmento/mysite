@@ -22,7 +22,8 @@
     "portfolio": "Portafolio",
     "formacao": "Formación",
     "stack": "Stack",
-    "foot": "João Pessoa, BR · Atención global"
+    "foot": "João Pessoa, BR · Atención global",
+    "resultados": "Resultados"
   },
   "nav": {
     "sobre": "Sobre",
@@ -441,8 +442,8 @@
         "kind": "marketing"
       }
     ],
-    "prev": "Anterior",
-    "next": "Siguiente",
+    "prev": "Etapa anterior de la línea de tiempo",
+    "next": "Siguiente etapa de la línea de tiempo",
     "hint": "arrastra o usa las flechas",
     "regionLabel": "Línea de tiempo de la carrera"
   },
@@ -508,7 +509,8 @@
         "experiencia": "La trayectoria completa está aquí: de la operación de grandes eventos a la ingeniería de IA aplicada.",
         "formacao": "Base académica también: MBA en IA para Negocios y estudio continuo, porque esta área no espera a nadie.",
         "stack": "Mis herramientas de todos los días: Claude, OpenAI, Gemini, n8n, Supabase, Next.js y el arsenal creativo con IA. Por cierto, yo mismo estoy hecho con una de ellas.",
-        "contato": "¡Y eso es todo! Si algo aquí tuvo sentido para tu negocio, este es el camino. O mejor: ¿quieres hablar conmigo ahora mismo? Pregúntame lo que quieras."
+        "contato": "¡Y eso es todo! Si algo aquí tuvo sentido para tu negocio, este es el camino. O mejor: ¿quieres hablar conmigo ahora mismo? Pregúntame lo que quieras.",
+        "resultados": "Y marketing no es solo mi pasado: es resultado con número. De cero a 50 mil seguidores orgánicos, más de mil eventos producidos y una operación con más de cien personas."
       }
     },
     "chat": {
@@ -522,5 +524,36 @@
     "launcher": {
       "label": "Hablar con el agente de Leko"
     }
+  },
+  "resultados": {
+    "label": "Resultados",
+    "heading": "Marketing que se volvió número",
+    "lead": "Lo que ya manejé con marca, equipo y presupuesto de verdad.",
+    "areasLabel": "Lo que estaba en mis manos",
+    "areas": [
+      "posicionamiento de marca",
+      "crecimiento orgánico",
+      "calendario de eventos",
+      "alianzas e influencers",
+      "campañas integradas",
+      "activación de marca"
+    ],
+    "items": [
+      {
+        "value": "0 → 50 mil",
+        "label": "seguidores orgánicos",
+        "context": "Goa Shantti, sin un peso de medios pagos"
+      },
+      {
+        "value": "1.000+",
+        "label": "eventos producidos",
+        "context": "Skybar, cinco años, cuatro por semana"
+      },
+      {
+        "value": "100+",
+        "label": "personas en la operación",
+        "context": "equipo, proveedores, artistas y producción"
+      }
+    ]
   }
 }
