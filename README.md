@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# leko.ia.br
 
-## Getting Started
+Meu site pessoal e portfólio: quem eu sou, o que construo e um blog sobre IA aplicada.
 
-First, run the development server:
+🔗 **No ar:** [leko.ia.br](https://leko.ia.br)
+
+<!-- TODO: adicionar um print do hero em docs/preview.png -->
+<!-- ![Site](docs/preview.png) -->
+
+---
+
+## Destaques
+
+- **Hero em 3D** com React Three Fiber e Drei, com uma cena de grafo animada.
+- **Três idiomas** (português, inglês e espanhol) com dicionários JSON e troca de idioma sem recarregar a página.
+- **Caminhos por perfil:** o visitante escolhe "sou empresa", "sou recrutador" ou "fale comigo" e vê o conteúdo mais relevante para ele.
+- **Blog em Markdown** com front matter (`gray-matter`) e renderização via `react-markdown` + Tailwind Typography.
+- **Rascunhos de post com IA:** um painel admin gera um rascunho via OpenRouter, eu reviso e edito, e só então publico.
+- **Feed de notícias de IA** agregado do Hacker News e de feeds RSS.
+- **Comentários e compartilhamento** nos posts.
+- **Detalhes de interação:** scroll suave com Lenis, cursor customizado, botões magnéticos, textura de grão e animações com Framer Motion.
+
+## Stack
+
+Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS 4 · Three.js / React Three Fiber · Framer Motion · Lenis · OpenRouter · Vercel Analytics
+
+## Rodando localmente
 
 ```bash
+git clone https://github.com/lekosarmento/mysite.git
+cd mysite
+npm install
+echo "OPENROUTER_API_KEY=sua-chave" > .env.local   # só é necessária para gerar rascunhos
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Estrutura
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+src/
+  app/
+    page.tsx            # home, montada a partir das seções
+    blog/               # listagem e página de cada post
+    admin/              # gerar, revisar e publicar posts
+    api/                # generate, admin/draft, admin/publish, comments, visitors
+  components/
+    3d/                 # cena do hero
+    sections/           # Hero, Sobre, Projetos, Stack, Experiência…
+    ui/                 # Navbar, cursor, botões, scroll suave
+  content/blog/         # posts em Markdown
+  lib/
+    dictionaries/       # pt-BR, en, es
+    blog.ts             # leitura dos posts
+    news.ts             # agregador de notícias
+```
